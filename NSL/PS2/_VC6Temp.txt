@@ -1,0 +1,1 @@
+ /c /nologo /FD /W0 /I . /I C:\usr\local\sce\ee\include /I C:\usr\local\sce\ee\gcc\ee\include /I C:\usr\local\sce\ee\gcc\lib\gcc-lib\ee\2.9-ee-991111\include /Fd"nsl_ps2___Win32_PS2_EE_Bootable/" /I C:\usr\local\sce\ee\include /I C:\usr\local\sce\common\include /I ..\\ /D SN_TARGET_PS2

@@ -1,0 +1,112 @@
+USEINFO(AllTranslucent, INT, 0, 1, 1, 0, NO)
+#ifdef TARGET_XBOX
+USEINFO(AlphaFalloffScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(AlphaFalloffOffset, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(AlphaFalloffMin, FLOAT, 0, 1, .01f, 0, YES)
+USEINFO(AlphaFalloffMax, FLOAT, 0, 1, .01f, 1, YES)
+#endif
+USEINFO(Autowiggle, INT, 0, 1, 1, 0, NO)
+#ifdef TARGET_XBOX
+USEINFO(BackfaceCull, INT, 0, 1, 1, 1, NO)
+#else
+USEINFO(BackfaceCull, INT, 0, 1, 1, 0, NO)
+#endif
+USEINFO(BilinearFilter, INT, 0, 1, 1, 1, YES)
+#ifdef TARGET_GC
+USEINFO(GCBumpScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(GCColorNearR, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorNearG, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorNearB, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorNearA, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorFarR, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorFarG, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorFarB, INT, 0, 255, 1, 10, YES)
+USEINFO(GCColorFarA, INT, 0, 255, 1, 10, YES)
+USEINFO(GCFalloffScale, FLOAT, -10, 10, .1f, 1, YES)
+USEINFO(GCFalloffOffset, FLOAT, -10, 10, .01f, 1, YES)
+#endif
+#ifdef TARGET_XBOX
+USEINFO(BumpFalloffScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(BumpFalloffOffset, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(BumpFalloffMin, FLOAT, 0, 1, .01f, 0, YES)
+USEINFO(BumpFalloffMax, FLOAT, 0, 1, .01f, 1, YES)
+USEINFO(BumpScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(ColorNearR, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorNearG, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorNearB, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorNearA, FLOAT, 0, 1, .01f, 1, NO)
+USEINFO(ColorFarR, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorFarG, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorFarB, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorFarA, FLOAT, 0, 1, .01f, 1, NO)
+USEINFO(ColorSpecularR, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorSpecularG, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorSpecularB, FLOAT, 0, 1, .01f, .5f, YES)
+USEINFO(ColorSpecularA, FLOAT, 0, 1, .01f, 1, NO)
+USEINFO(DrawBumpMap, INT, 0, 1, 1, 1, YES)
+#endif
+#ifdef TARGET_PS2
+USEINFO(DrawDarkPass, INT, 0, 1, 1, 1, NO)
+USEINFO(DrawHighPass, INT, 0, 1, 1, 1, NO)
+#else
+USEINFO(DrawDarkPass, INT, 0, 1, 1, 0, NO)
+USEINFO(DrawHighPass, INT, 0, 1, 1, 0, NO)
+#endif
+#ifdef TARGET_XBOX
+USEINFO(DrawFoamPass, INT, 0, 1, 1, 1, YES)
+#endif
+USEINFO(DrawLightPass, INT, 0, 1, 1, 1, NO)
+#ifdef TARGET_XBOX
+USEINFO(DrawNearFar, INT, 0, 1, 1, 1, YES)
+#endif
+USEINFO(DrawShadowQuad, INT, 0, 1, 1, 0, NO)
+#ifdef TARGET_PS2
+USEINFO(DrawSpotPass, INT, 0, 1, 1, 1, NO)
+#else
+USEINFO(DrawSpotPass, INT, 0, 1, 1, 0, NO)
+#endif
+#ifdef TARGET_XBOX
+USEINFO(DrawSpecularPass, INT, 0, 1, 1, 0, YES)
+#endif
+USEINFO(DrawTexture, INT, 0, 1, 1, 1, NO)
+USEINFO(DrawTextureAnim, INT, 0, 1, 1, 1, NO)
+USEINFO(FixedShadowTex, INT, 0, 1, 1, 0, NO)
+#ifdef TARGET_PS2
+USEINFO(FoamPass, INT, 0, 1, 1, 1, NO)
+#else
+USEINFO(FoamPass, INT, 0, 1, 1, 0, NO)
+#endif
+#ifdef TARGET_GC
+USEINFO(BumpPass, INT, 0, 1, 1, 1, YES)
+#endif
+USEINFO(ForceZ, INT, 0, 1, 1, 1, NO)
+USEINFO(MultiTexture, INT, 0, 1, 1, 1, NO)
+#ifdef TARGET_XBOX
+USEINFO(RGBFalloffScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(RGBFalloffOffset, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(RGBFalloffMin, FLOAT, 0, 1, .01f, 0, YES)
+USEINFO(RGBFalloffMax, FLOAT, 0, 1, .01f, 1, YES)
+#endif
+USEINFO(ScissorWaveMesh, INT, 0, 1, 1, 1, NO)
+USEINFO(ShadowBlur, INT, 0, 1, 1, 0, NO)
+USEINFO(ShadowDistort, INT, 0, 1, 1, 0, NO)
+USEINFO(ShadowLights, INT, 0, 1, 1, 1, NO)
+USEINFO(ShadowLoRes, INT, 0, 1, 1, 1, NO)
+USEINFO(ShadowPass, INT, 0, 1, 1, 1, NO)
+USEINFO(ShadowTrans, INT, 0, 1, 1, 1, NO)
+#ifdef TARGET_XBOX
+USEINFO(SpecularFalloffScale, FLOAT, 0, 10, .1f, 1, YES)
+USEINFO(SpecularFalloffOffset, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(SunDirectionX, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(SunDirectionY, FLOAT, -1, 1, .01f, 0, YES)
+USEINFO(SunDirectionZ, FLOAT, -1, 1, .01f, 1, YES)
+#endif
+#ifndef TARGET_GC
+USEINFO(Transparency, INT, 0, 1, 1, 1, NO)
+#else
+USEINFO(Transparency, INT, 0, 1, 1, 0, NO)
+#endif
+USEINFO(TransSortFirst, INT, 0, 1, 1, 0, NO)
+USEINFO(TrilinearFilter, INT, 0, 1, 1, 0, NO)
+USEINFO(UseLights, INT, 0, 1, 1, 0, NO)
+USEINFO(UseTextureSun, INT, 0, 1, 1, 0, NO)

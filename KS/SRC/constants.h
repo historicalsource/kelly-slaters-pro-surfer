@@ -1,0 +1,7 @@
+#ifndef HEADER_FILE_REDUCER_CONSTANTS
+#define HEADER_FILE_REDUCER_CONSTANTS
+
+// from camera.h
+#define MIN_CAMERA_PRIORITY -1000.0f
+
+#endif

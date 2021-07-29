@@ -1,0 +1,7 @@
+USEINFO(Far)
+#ifndef TARGET_XBOX
+USEINFO(Horizon)
+#endif
+//USEINFO(Near)
+USEINFO(Seam)
+USEINFO(Wave)

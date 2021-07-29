@@ -1,0 +1,25 @@
+#include "ngl_PixelShadersMacro.h"
+
+; map (opaque) + detail map (add signed) + enviro map (blend const) + light map (blend).
+
+tex t0  ; base map
+tex t1  ; detail map
+tex t2  ; enviro map
+tex t3  ; light map
+
+mul r1, t0, v1
+
+; r0 = map + detail map
+mul r0, t1, v0
+add r0.rgb, r1.rgb, r0_bias.rgb
+
+; r0 = r0 + enviro map
+mul r1, t2, v0
+xmma discard.rgb, discard.rgb, r0.rgb, r0.rgb, 1-ENVIROMAP_BM_CONST, r1.rgb, ENVIROMAP_BM_CONST
+
+; r0 = r0 + light map
+mul r1, t3, v0
+xmma discard.rgb, discard.rgb, r0.rgb, r0.rgb, 1-r1.a, r1.rgb, r1.a
++mov r0.a, t0.a
+
+XFC_SPECULAR

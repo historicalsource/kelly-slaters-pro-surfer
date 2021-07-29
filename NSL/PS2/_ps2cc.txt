@@ -1,0 +1,17 @@
+-fno-exceptions
+-fdevstudio
+-G0
+-g
+-DSN_TARGET_PS2
+-w
+-O2
+-I.
+-IC:\usr\local\sce\ee\include
+-IC:\usr\local\sce\common\include
+-I..
+-I"C:\Program Files\Microsoft Xbox SDK\Include"
+-IC:\mssdk\include
+-IC:\usr\local\sce\common\include
+-IC:\usr\local\sce\ee\include
+-c C:\NSL\common\nsl_common.cpp
+-o PS2_EE_Debug\nsl_common.obj

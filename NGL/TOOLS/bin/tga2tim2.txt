@@ -1,0 +1,187 @@
+
+             =======================================
+                     TGA2Tim2 - TGA Converter
+                           v0.96 Notes
+             =======================================
+
+
+General Capabilities
+---------------------
+  - Reads TGA image files including compressed and/or palletized
+  - Save files as TGA or TM2
+  - Change image bit depths
+	- Create and apply palette remappings between similar images
+
+
+Bugs and Shortcomings
+---------------------
+  - ACDSee does not properly display TGAs with 32 bit palettes or 16 bit
+		palettes. These files are valid however and can be viewed with
+		Photoshop or other programs.
+	- Relative paths in the target file specification are considered to
+		be paths relative to the directory of the original file, NOT paths
+		relative to the original directory.
+	- Needs some speed optimizations
+
+Command Line Options
+---------------------
+  tga2tim2 [-t][-r] [-b:bitdepth[,paldepth] [palopt]] [file]  [outfile]
+    -t save files as TGAs
+    TGA options
+       -d destructive mode
+       -u undo mode
+		TM2 options
+			 -a=align where align is either 16 or 128 - sets output file
+          alignment value
+		   GS options : Individual fields in the GS Registers:
+          TEX0, TEX1, TEXA, TEXCLUT, FBA, PABE
+			    can be set to specific values with options like:
+			 --tcc=1
+			    which sets the value of TEX0.TCC to 1
+    -r recurse subdirectories
+    -b:bitdepth[,paldepth] change color depth to bitdepth
+       When bitdepth is 8 color reduction to a palette occurs. The bit
+			 depth of the palette can be set with the ,paldepth option.
+       Palette options
+       -s:palfile save palette to palfile
+       -l:palfile load palette from palfile
+       -m:mapfile create a palette remapping
+       -i:mapfile load and apply a remapping
+    file the source TGA file to read (wildcards ok)
+    outfile the output filename (defaults to *.TM2)
+
+
+Filenames
+---------------------
+  By default the program reads all the TGA files in the current
+  directory and saves them in TM2 format with the same name and
+  a TM2 extension.
+
+  The input file command line parameter allows a specific file or
+  set of files to be processed. The parameter supports the standard
+  DOS wildcard characters ? and *, and can include a directory path.
+
+  Input files are recusively searched for from the current directory
+  or the directory of the specified input file when the -r parameter
+  is used.
+
+	Input files with a TM2 file extension will be loaded as TM2 files
+	instead of TGA files. Note that the program has not been extensively
+	tested with TM2s as input files so unexpected results are possible.
+
+  The output file command line parameter controls can be used to
+  indicate the output file names. In addition to the normal wildcard
+  characters, the output file name can contain the following string
+  replacement macros:
+   Macro Replaced with
+   ----- ---------------
+    %v   The drive letter of the input filename
+    %p   The path of the input filename
+    %n   The base name of the input filename
+    %e   The extension of the input filename
+
+  Files can be saved in TGA format by using the -t parameter. If no
+  output file parameter is used with this option, the default action
+  will be to save the file with the same name. The original file
+  is renamed with a TGC extension unless the -d option is used in
+  which case it is deleted. The backed up TGC files can be restored
+  using the -u option.
+
+  In general any paths specified on the command line will work with
+  either forward slashes or backslashes for compatibility with UNIX
+  make files. The only case where this fails is for names whose first
+  character is a forward slash that could be interpreted as a command
+  line flag.
+
+  Long filenames with embedded spaces should be wrapped in quotes.
+
+
+GS Field support
+---------------------
+	The following GS fields can be set from the command line:
+		TEX0 register
+		--tbp0=<num> Sets the TEX0.TBP0 field to <num>
+		--tbw=<num>  Sets the TEX0.TBW  field to <num>
+		--tcc=<num>  Sets the TEX0.TCC  field to <num>
+		--tfx=<num>  Sets the TEX0.TFX  field to <num>
+		--cld=<num>  Sets the TEX0.CLD  field to <num>
+
+		TEX1 register
+		--lcm=<num>  Sets the TEX1.LCM  field to <num>
+		--mxl=<num>  Sets the TEX1.MXL  field to <num>
+		--mmag=<num> Sets the TEX1.MMAG field to <num>
+		--mmin=<num> Sets the TEX1.MMIN field to <num>
+		--mtba=<num> Sets the TEX1.MTBA field to <num>
+		--l=<num>    Sets the TEX1.L    field to <num>
+		--k=<num>    Sets the TEX1.K    field to <num>
+
+		TEXA register
+	  --ta0=<num>  Sets the TEXA.TA0 field to <num>
+	  --aem=<num>  Sets the TEXA.AEM field to <num>
+	  --ta1=<num>  Sets the TEXA.TA1 field to <num>
+
+		PABE register
+	  --pabe=<num> Sets the PABE.PABE field to <num>
+
+		FBA register
+	  --fba=<num>  Sets the FBA.FBA field to <num>
+
+		TEXCLUT register
+		--cbw=<num>  Sets the TEXCLUT.CBW field to <num>
+		--cov=<num>  Sets the TEXCLUT.COV field to <num>
+		--cou=<num>  Sets the TEXCLUT.COU field to <num>
+
+	These fields are set automatically and are not user accessible
+		TEX0.PSM
+    TEX0.TW
+    TEX0.TH
+    TEX0.CBP
+    TEX0.CPSM
+    TEX0.CSM
+    TEX0.CSA
+
+
+Changing Bitdepths
+---------------------
+  When converting an image to a palettized bitdepth with the -b:8
+  parameter, the program will make an initial pass through all the
+  input files and generate a single shared palette palette. A second
+  pass converts the files to this single palette. The bit depth of
+	the palette can be set by adding the depth to the end of the -b
+	parameter. For example -b:8,32 will result in a 32 bit palette.
+
+	Palettizing effectively quantizes all colors to 6 bits.
+
+  The generated palette can be saved to a file (proprietary format)
+  with the -s:<filename> parameter.
+
+  A previously generated palette saved with the -s parameter can be
+  loaded and and used as the target palette with the -l:<filename>
+  option.
+
+
+Palette Index Maps
+---------------------
+  When two images or sets of images are essentially the same except
+  for their palettes then it should be possible to only load one
+  of the files and switch palettes to draw the other.
+
+  For this to work the palette indexes of the second set of images
+  may need to be sorted for the palette to work with the first set
+  of images. TGA2TIM2 is capable of doing this.
+
+  To generate the appropriate palette reindexing use the
+  -m:<mapfilename> parameter, and specify the file you wish to match
+  in place of the input file and the file that should match it in
+  place of the output file. This will not change either or the files,
+  but it will generate a file named whatever <mapfilename> was.
+
+  To actually change the files run the program again using the
+  -i:<mapfilename> parameter and specify the file(s) to convert as
+  the input file.
+
+  If the two images do not match exactly, the program will print
+  warnings.
+
+
+

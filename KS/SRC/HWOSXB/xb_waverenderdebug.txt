@@ -1,0 +1,2 @@
+USEINFO(DrawSubmission0, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawSubmission1, INT, 0, 1, 1, 1, YES)

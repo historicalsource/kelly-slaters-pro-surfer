@@ -1,0 +1,19 @@
+ENUMMAC(OP_ARG_NULL,"NULL")  // no argument
+ENUMMAC(OP_ARG_NUM ,"NUM ")  // constant numeric value (4 bytes)
+ENUMMAC(OP_ARG_NUMR,"NUMR")  // constant numeric value used in reverse position (4 bytes; only applies to non-commutative operations)
+ENUMMAC(OP_ARG_STR ,"STR ")  // constant string value (4 bytes)
+ENUMMAC(OP_ARG_WORD,"WORD")  // constant integer value (2 bytes)
+ENUMMAC(OP_ARG_PCR ,"PCR ")  // PC-relative address (2 bytes)
+ENUMMAC(OP_ARG_SPR ,"SPR ")  // SP-relative address (2 bytes)
+ENUMMAC(OP_ARG_POPO,"POPO")  // stack contents (pop) plus offset (2 bytes)
+ENUMMAC(OP_ARG_SDR ,"SDR ")  // static data member reference (4 bytes)
+ENUMMAC(OP_ARG_SFR ,"SFR ")  // script function member reference (4 bytes)
+ENUMMAC(OP_ARG_LFR ,"LFR ")  // library function member reference (4 bytes)
+ENUMMAC(OP_ARG_CLV ,"CLV ")  // class value reference (4 bytes)
+ENUMMAC(OP_ARG_PCR_SYM,"PCR_SYM")  // unresolved PC-relative reference
+ENUMMAC(OP_ARG_SPR_SYM,"SPR_SYM")  // unresolved stack reference
+ENUMMAC(OP_ARG_SYM    ,"SYM")      // symbol argument used by OP_SPR_SYM, OP_PCR_SYM (dummy opcodes; see below)
+
+// opcode arguments for SIGNAL
+ENUMMAC(OP_ARG_SIG ,"SIG ")  // global signal value (2 bytes)
+ENUMMAC(OP_ARG_PSIG,"PSIG")  // stack contents (pop) gives context for signal value (2 bytes)

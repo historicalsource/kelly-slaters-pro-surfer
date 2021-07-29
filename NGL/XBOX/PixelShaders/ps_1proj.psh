@@ -1,0 +1,9 @@
+#include "ngl_PixelShadersMacro.h"
+
+; 1 projector light (blend)
+
+tex t0
+
+mul r0, t0, v0.a
+
+XFC_NO_SPECULAR

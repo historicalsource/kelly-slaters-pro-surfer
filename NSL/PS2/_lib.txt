@@ -1,0 +1,11 @@
+create PS2_EE_Bootable/nsl.lib
+addmod ./PS2_EE_Debug/gas_utility.obj
+addmod ./PS2_EE_Debug/nl_ps2.obj
+addmod ./PS2_EE_Debug/nsl_ps2.obj
+addmod ./PS2_EE_Debug/nsl_ps2_emitter.obj
+addmod ./PS2_EE_Debug/nsl_ps2_sound.obj
+addmod ./PS2_EE_Debug/nsl_ps2_source.obj
+addmod ./PS2_EE_Debug/nsl.obj
+addmod ./PS2_EE_Debug/nsl_common.obj
+save
+end

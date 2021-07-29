@@ -1,0 +1,100 @@
+; font file
+version 0x102
+cellheight 16 ascent 12
+firstglyph 32 numglyphs 95
+; char bmofsx bmofsy cellwidth glyphofsx glyphofsy glyphwidth glyphheight
+ 32 x 2 y 14 w 8 gx 0 gy 12 gw 5 gh 5
+ 33 x 11 y 6 w 8 gx 4 gy 4 gw 5 gh 12
+ 34 x 20 y 6 w 8 gx 2 gy 4 gw 9 gh 8
+ 35 x 33 y 5 w 8 gx 1 gy 3 gw 10 gh 14
+ 36 x 47 y 5 w 8 gx 2 gy 3 gw 8 gh 14
+ 37 x 59 y 6 w 8 gx 1 gy 4 gw 9 gh 12
+ 38 x 72 y 7 w 8 gx 2 gy 5 gw 9 gh 11
+ 39 x 85 y 6 w 8 gx 3 gy 4 gw 5 gh 8
+ 40 x 94 y 6 w 8 gx 4 gy 4 gw 6 gh 14
+ 41 x 104 y 6 w 8 gx 2 gy 4 gw 6 gh 14
+ 42 x 114 y 6 w 8 gx 2 gy 4 gw 9 gh 10
+ 43 x 127 y 7 w 8 gx 1 gy 5 gw 11 gh 11
+ 44 x 142 y 12 w 8 gx 2 gy 10 gw 7 gh 8
+ 45 x 153 y 10 w 8 gx 1 gy 8 gw 10 gh 5
+ 46 x 167 y 12 w 8 gx 3 gy 10 gw 6 gh 6
+ 47 x 177 y 5 w 8 gx 0 gy 3 gw 11 gh 14
+ 48 x 192 y 6 w 8 gx 1 gy 4 gw 10 gh 12
+ 49 x 206 y 5 w 8 gx 1 gy 3 gw 10 gh 13
+ 50 x 220 y 6 w 8 gx 1 gy 4 gw 9 gh 12
+ 51 x 233 y 6 w 8 gx 1 gy 4 gw 9 gh 12
+ 52 x 2 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 53 x 16 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 54 x 30 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 55 x 44 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 56 x 58 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 57 x 72 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 58 x 86 y 28 w 8 gx 3 gy 6 gw 6 gh 10
+ 59 x 96 y 28 w 8 gx 2 gy 6 gw 7 gh 11
+ 60 x 107 y 26 w 8 gx 1 gy 4 gw 10 gh 13
+ 61 x 121 y 28 w 8 gx 1 gy 6 gw 10 gh 7
+ 62 x 135 y 26 w 8 gx 1 gy 4 gw 10 gh 13
+ 63 x 149 y 26 w 8 gx 2 gy 4 gw 9 gh 12
+ 64 x 162 y 25 w 8 gx 1 gy 3 gw 9 gh 14
+ 65 x 175 y 26 w 8 gx 1 gy 4 gw 11 gh 12
+ 66 x 190 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 67 x 204 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 68 x 218 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 69 x 232 y 26 w 8 gx 1 gy 4 gw 10 gh 12
+ 70 x 2 y 46 w 8 gx 1 gy 4 gw 10 gh 12
+ 71 x 16 y 46 w 8 gx 1 gy 4 gw 11 gh 13
+ 72 x 31 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 73 x 46 y 46 w 8 gx 2 gy 4 gw 9 gh 12
+ 74 x 59 y 46 w 8 gx 1 gy 4 gw 10 gh 12
+ 75 x 73 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 76 x 88 y 46 w 8 gx 1 gy 4 gw 10 gh 12
+ 77 x 102 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 78 x 117 y 46 w 8 gx 0 gy 4 gw 12 gh 12
+ 79 x 133 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 80 x 148 y 46 w 8 gx 1 gy 4 gw 10 gh 12
+ 81 x 162 y 46 w 8 gx 1 gy 4 gw 12 gh 14
+ 82 x 178 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 83 x 193 y 46 w 8 gx 1 gy 4 gw 10 gh 12
+ 84 x 207 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 85 x 222 y 46 w 8 gx 1 gy 4 gw 11 gh 12
+ 86 x 237 y 46 w 8 gx 0 gy 4 gw 12 gh 12
+ 87 x 2 y 66 w 8 gx 1 gy 4 gw 11 gh 12
+ 88 x 17 y 66 w 8 gx 1 gy 4 gw 11 gh 12
+ 89 x 32 y 66 w 8 gx 1 gy 4 gw 11 gh 12
+ 90 x 47 y 66 w 8 gx 2 gy 4 gw 9 gh 12
+ 91 x 60 y 66 w 8 gx 3 gy 4 gw 7 gh 14
+ 92 x 71 y 65 w 8 gx 0 gy 3 gw 11 gh 14
+ 93 x 86 y 66 w 8 gx 1 gy 4 gw 7 gh 14
+ 94 x 97 y 65 w 8 gx 1 gy 3 gw 9 gh 9
+ 95 x 110 y 77 w 8 gx 0 gy 15 gw 12 gh 5
+ 96 x 126 y 66 w 8 gx 3 gy 4 gw 6 gh 6
+ 97 x 136 y 68 w 8 gx 1 gy 6 gw 11 gh 10
+ 98 x 151 y 66 w 8 gx 0 gy 4 gw 11 gh 12
+ 99 x 166 y 68 w 8 gx 1 gy 6 gw 10 gh 10
+100 x 180 y 66 w 8 gx 1 gy 4 gw 11 gh 12
+101 x 195 y 67 w 8 gx 1 gy 5 gw 10 gh 11
+102 x 209 y 66 w 8 gx 1 gy 4 gw 10 gh 12
+103 x 223 y 68 w 8 gx 1 gy 6 gw 11 gh 12
+104 x 238 y 66 w 8 gx 1 gy 4 gw 11 gh 12
+105 x 2 y 86 w 8 gx 2 gy 4 gw 9 gh 12
+106 x 15 y 86 w 8 gx 1 gy 4 gw 9 gh 14
+107 x 28 y 86 w 8 gx 1 gy 4 gw 11 gh 12
+108 x 43 y 86 w 8 gx 2 gy 4 gw 9 gh 12
+109 x 56 y 88 w 8 gx 0 gy 6 gw 12 gh 10
+110 x 72 y 88 w 8 gx 1 gy 6 gw 11 gh 10
+111 x 87 y 88 w 8 gx 1 gy 6 gw 10 gh 10
+112 x 101 y 88 w 8 gx 1 gy 6 gw 10 gh 12
+113 x 115 y 88 w 8 gx 1 gy 6 gw 11 gh 12
+114 x 130 y 88 w 8 gx 1 gy 6 gw 10 gh 10
+115 x 144 y 88 w 8 gx 1 gy 6 gw 10 gh 10
+116 x 158 y 87 w 8 gx 1 gy 5 gw 10 gh 11
+117 x 172 y 88 w 8 gx 1 gy 6 gw 11 gh 10
+118 x 187 y 88 w 8 gx 0 gy 6 gw 12 gh 10
+119 x 203 y 88 w 8 gx 1 gy 6 gw 11 gh 10
+120 x 218 y 88 w 8 gx 1 gy 6 gw 10 gh 10
+121 x 232 y 88 w 8 gx 1 gy 6 gw 11 gh 12
+122 x 2 y 108 w 8 gx 1 gy 6 gw 11 gh 10
+123 x 17 y 106 w 8 gx 2 gy 4 gw 7 gh 13
+124 x 28 y 106 w 8 gx 3 gy 4 gw 5 gh 14
+125 x 37 y 106 w 8 gx 2 gy 4 gw 7 gh 13
+126 x 48 y 109 w 8 gx 1 gy 7 gw 10 gh 6

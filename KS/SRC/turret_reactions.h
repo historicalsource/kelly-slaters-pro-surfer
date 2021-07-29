@@ -1,0 +1,8 @@
+MAC(TURRET_PC_NONE,            "none")
+MAC(TURRET_PC_DEACTIVATE,      "deactivate")
+MAC(TURRET_PC_DESTROY,         "destroy")
+MAC(TURRET_PC_FRANTIC,         "frantic")
+MAC(TURRET_PC_LOCKUP,          "lockup")
+MAC(TURRET_PC_SLOW,            "slow")
+MAC(TURRET_PC_TARGET_ENEMIES,  "target_enemies")
+MAC(TURRET_PC_TARGET_ALL,      "target_all")

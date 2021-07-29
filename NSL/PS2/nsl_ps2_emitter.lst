@@ -1,0 +1,2345 @@
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 1
+
+
+   1              		.file	1 "nsl_ps2_emitter.cpp"
+   2              		#@stabs
+   3              	gcc2_compiled.:
+   4              	__gnu_compiled_cplusplus:
+   5              	.stabs "C:\\NSL\\WORKING\\ps2/",100,0,0,$Ltext0
+   6              	.stabs "nsl_ps2_emitter.cpp",100,0,0,$Ltext0
+   7              		.text
+   8              	$Ltext0:
+   9              	.stabs "int:t1=r1;00000000000000000000000000000000020000000000;000000000000000000000000000000000177
+  10              	.stabs "char:t2=r2;0;127;",128,0,0,0
+  11              	.stabs "long int:t3=r1;00000000000000000000001000000000000000000000;0000000000000000000000077777777
+  12              	.stabs "unsigned int:t4=r1;00000000000000000000000000000000000000000000;000000000000000000000000000
+  13              	.stabs "long unsigned int:t5=r1;00000000000000000000000000000000000000000000;0000000000000000000000
+  14              	.stabs "long long int:t6=r1;00000000000000000000001000000000000000000000;00000000000000000000000777
+  15              	.stabs "long long unsigned int:t7=r1;00000000000000000000000000000000000000000000;00000000000000000
+  16              	.stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  17              	.stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  18              	.stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  19              	.stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  20              	.stabs "__int128_t:t12=r1;02000000000000000000000000000000000000000000;0177777777777777777777777777
+  21              	.stabs "__uint128_t:t13=r1;00000000000000000000000000000000000000000000;037777777777777777777777777
+  22              	.stabs "float:t14=r1;4;0;",128,0,0,0
+  23              	.stabs "double:t15=r1;8;0;",128,0,0,0
+  24              	.stabs "long double:t16=r1;8;0;",128,0,0,0
+  25              	.stabs "complex int:t17=s8real:1,0,32;imag:1,32,32;;",128,0,0,0
+  26              	.stabs "complex float:t18=r18;4;0;",128,0,0,0
+  27              	.stabs "complex double:t19=r19;8;0;",128,0,0,0
+  28              	.stabs "complex long double:t20=r20;8;0;",128,0,0,0
+  29              	.stabs "bool:t21=@s32;-16;",128,0,0,0
+  30              	.stabs "void:t22=22",128,0,0,0
+  31              	.stabs "__wchar_t:t23=r1;00000000000000000000000000000000020000000000;00000000000000000000000000000
+  32              	.stabs "__vtbl_ptr_type:t24=s8__delta:8,0,16;__index:8,16,16;__pfn:25=*22,32,32;__delta2:8,32,16;;"
+  33              	.stabs "nlUchar:t26=11",128,0,14,0
+  34              	.stabs "nlUint8:t27=11",128,0,15,0
+  35              	.stabs "nlUint16:t28=9",128,0,16,0
+  36              	.stabs "nlUint32:t29=4",128,0,17,0
+  37              	.stabs "nlUint64:t30=5",128,0,18,0
+  38              	.stabs "nlInt8:t31=10",128,0,19,0
+  39              	.stabs "nlInt16:t32=8",128,0,20,0
+  40              	.stabs "nlInt32:t33=1",128,0,21,0
+  41              	.stabs "nlInt64:t34=3",128,0,22,0
+  42              	.stabs "nlMatrix4x4:t35=36=ar1;0;3;37=ar1;0;3;14",128,0,31,0
+  43              	.stabs "nlVector4d:t38=37",128,0,32,0
+  44              	.stabs "nlVector3d:t39=40=ar1;0;2;14",128,0,33,0
+  45              	.stabs "nslSourceId:t41=29",128,0,74,0
+  46              	.stabs "nslSoundId:t42=29",128,0,75,0
+  47              	.stabs "nslEmitterId:t43=29",128,0,76,0
+  48              	.stabs "_nslSpeakerModeEnum:t44=eNSL_SPEAKER_STEREO:0,NSL_SPEAKER_MONO:1,NSL_SPEAKER_HEADPHONE:2,NS
+  49              	.stabs "nslSpeakerModeEnum:t45=44",128,0,90,0
+  50              	.stabs "_nslOutputModeEnum:t46=eNSL_OUTPUT_ANALOG:0,NSL_OUTPUT_DIGITAL:1,NSL_OUTPUT_BOTH:2,NSL_OUTP
+  51              	.stabs "nslOutputModeEnum:t47=46",128,0,99,0
+  52              	.stabs "_nslSourceTypeEnum:t48=eNSL_SOURCETYPE_SFX:0,NSL_SOURCETYPE_AMBIENT:1,NSL_SOURCETYPE_MUSIC:
+  53              	.stabs "nslSourceTypeEnum:t49=48",128,0,114,0
+  54              	.stabs "_nslSoundParamEnum:t50=eNSL_SOUNDPARAM_VOLUME:0,NSL_SOUNDPARAM_PITCH:1,NSL_SOUNDPARAM_MINDI
+  55              	.stabs "nslSoundParamEnum:t51=50",128,0,124,0
+  56              	.stabs "_nslSoundStatusEnum:t52=eNSL_SOUNDSTATUS_INVALID:0,NSL_SOUNDSTATUS_QUEUING:1,NSL_SOUNDSTATU
+  57              	.stabs "nslSoundStatusEnum:t53=52",128,0,133,0
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 2
+
+
+  58              	.stabs "_nslLanguageEnum:t54=eNSL_LANGUAGE_NONE:0,NSL_LANGUAGE_ENGLISH:1,NSL_LANGUAGE_FRENCH:2,NSL_
+  59              	.stabs "nslLanguageEnum:t55=54",128,0,161,0
+  60              	.stabs "_nslPlatformEnum:t56=eNSL_PLATFORM_PS2:0,NSL_PLATFORM_XBOX:1,NSL_PLATFORM_GAMECUBE:2,NSL_PL
+  61              	.stabs "nslPlatformEnum:t57=56",128,0,173,0
+  62              	.stabs "nslFileBuf:T58=s8Buf:59=*11,0,32;Size:4,32,32;__as::60=##61=&58;:RC10nslFileBuf;2A.;nslFile
+  63              	.stabs "nslFileBuf:Tt58",128,0,200,0
+  64              	.stabs "nslSystemCallbackStruct:Tt65=s24ReadFile:66=*67=f21,0,32;ReleaseFile:68=*69=f22,32,32;Criti
+  65              	.stabs "__int32_t:t81=1",128,0,106,0
+  66              	.stabs "__uint32_t:t82=4",128,0,107,0
+  67              	.stabs "size_t:t83=4",128,0,170,0
+  68              	.stabs "clock_t:t84=5",128,0,36,0
+  69              	.stabs "time_t:t85=3",128,0,41,0
+  70              	.stabs "tm:Tt86=s36tm_sec:1,0,32;tm_min:1,32,32;tm_hour:1,64,32;tm_mday:1,96,32;tm_mon:1,128,32;tm_
+  71              	.stabs "ULong:t92=82",128,0,28,0
+  72              	.stabs "_glue:Tt93=s12_next:94=*93,0,32;_niobs:1,32,32;_iobs:95=*96=xs__sFILE:,64,32;__as::97=##98=
+  73              	.stabs "_Bigint:Tt101=s24_next:102=*101,0,32;_k:1,32,32;_maxwds:1,64,32;_sign:1,96,32;_wds:1,128,32
+  74              	.stabs "_atexit:Tt108=s136_next:109=*108,0,32;_ind:1,32,32;_fns:110=ar1;0;31;111=*112=f22,64,1024;_
+  75              	.stabs "__sbuf:Tt117=s8_base:59,0,32;_size:1,32,32;__as::118=##119=&117;:RC6__sbuf;2A.;__sbuf::120=
+  76              	.stabs "_fpos_t:t123=3",128,0,74,0
+  77              	.stabs "__sFILE:Tt96=s88_p:59,0,32;_r:1,32,32;_w:1,64,32;_flags:8,96,16;_file:8,112,16;_bf:117,128,
+  78              	.stabs "_reent:Tt135=s748_errno:1,0,32;_stdin:95,32,32;_stdout:95,64,32;_stderr:95,96,32;_inc:1,128
+  79              	.stabs "__as::164=#146,165=&146,166=*146,167=&146,22;:__as__Q26_reent3$_0RCQ26_reent3$_0;2A.;$_0::1
+  80              	.stabs "__gnuc_va_list:t178=145",128,0,29,0
+  81              	.stabs "fpos_t:t179=123",128,0,50,0
+  82              	.stabs "FILE:t180=96",128,0,52,0
+  83              	.stabs "GasRpcArgs:t181=s64string_arg:182=ar1;0;47;2,0,384;int_arg:183=ar1;0;3;1,384,128;__as::184=
+  84              	.stabs "GasCommandEntry:t191=s12instance_id:4,0,32;set_volume:8,32,1;set_paused:8,33,1;set_pitch:8,
+  85              	.stabs "GasStatusEntry:t199=s1is_valid:11,0,1;is_ready:11,1,1;is_playing:11,2,1;unused_bits:11,3,5;
+  86              	.stabs "GasStatus:t207=s56rpc_retval1:1,0,32;rpc_retval2:1,32,32;instances:208=ar1;0;47;199,64,384;
+  87              	.stabs "mallinfo:Tt216=s40arena:1,0,32;ordblks:1,32,32;smblks:1,64,32;hblks:1,96,32;hblkhd:1,128,32
+  88              	.stabs "nslPs2CdDvdMode:t222=eNSL_PS2_CD_MODE:0,NSL_PS2_DVD_MODE:1,;",128,0,65,0
+  89              	.stabs "nslSource:Tt223=s88used:21,0,32;looping:21,32,32;fileName:182,64,384;myId:41,448,32;size:1,
+  90              	.stabs "nslSound:Tt229=s88isReady:21,0,32;used:21,32,32;inRange:21,64,32;isReallyReady:21,96,32;isP
+  91              	.stabs "fifo_queue<unsigned int>:Tt235=s12queue:/0236=*42,0,32;queue_max:/08,32,16;start:/08,48,16;
+  92              	.stabs "nslEmitter:Tt250=s64used:21,0,32;autoRelease:21,32,32;isALineEmitter:21,64,32;myId:43,96,32
+  93              	.stabs "nslSystem:Tt256=s61648listenerPo:35,0,512;sourceSlots:257=ar1;0;255;223,512,180224;soundSlo
+  94              	.stabs "_nslClearBehaviour:t266=eNSL_CLEAR_INIT:0,NSL_CLEAR_RESET:1,NSL_CLEAR_FREE:2,;",128,0,215,0
+  95              	.stabs "_nslEmitterCallback:t267=268=*269=f1",128,0,223,0
+  96              	.stabs "_nslSoundCallback:t270=271=*272=f1",128,0,228,0
+  97              	.stabs "_nslSourceCallback:t273=274=*275=f1",128,0,232,0
+  98              		.rdata
+  99              		.align	3
+ 100              	$LC0:
+ 101 0000 42616420 		.ascii	"Bad Sound ID 0x%x\n\000"
+ 101      536F756E 
+ 101      64204944 
+ 101      20307825 
+ 101      780A00
+ 102 0013 00000000 		.align	3
+ 102      00
+ 103              	$LC1:
+ 104 0018 54686973 		.ascii	"This source id is the INVALID id\000"
+ 104      20736F75 
+ 104      72636520 
+ 104      69642069 
+ 104      73207468 
+ 105 0039 00000000 		.align	3
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 3
+
+
+ 105      000000
+ 106              	$LC2:
+ 107 0040 54686973 		.ascii	"This source has a bad GAS id\000"
+ 107      20736F75 
+ 107      72636520 
+ 107      68617320 
+ 107      61206261 
+ 108 005d 000000   		.align	3
+ 109              	$LC3:
+ 110 0060 54686973 		.ascii	"This source is above the max number of sources\000"
+ 110      20736F75 
+ 110      72636520 
+ 110      69732061 
+ 110      626F7665 
+ 111 008f 00       		.align	3
+ 112              	$LC4:
+ 113 0090 54686973 		.ascii	"This ID passed does not match the id for the source slot"
+ 113      20494420 
+ 113      70617373 
+ 113      65642064 
+ 113      6F657320 
+ 114 00c8 00       		.ascii	"\000"
+ 115 00c9 00000000 		.align	3
+ 115      000000
+ 116              	$LC5:
+ 117 00d0 54484520 		.ascii	"THE INSTANCE PART OF THE ID IS NOT > 0\000"
+ 117      494E5354 
+ 117      414E4345 
+ 117      20504152 
+ 117      54204F46 
+ 118 00f7 00       		.align	3
+ 119              	$LC6:
+ 120 00f8 4E534C20 		.ascii	"NSL NOT INITIALIZED\000"
+ 120      4E4F5420 
+ 120      494E4954 
+ 120      49414C49 
+ 120      5A454400 
+ 121 010c 00000000 		.align	3
+ 122              	$LC7:
+ 123 0110 42616420 		.ascii	"Bad Emitter ID 0x%x\n\000"
+ 123      456D6974 
+ 123      74657220 
+ 123      49442030 
+ 123      7825780A 
+ 124              		.text
+ 125              		.p2align 3
+ 126              		.globl	nslCreateEmitter__FRA2_Cf
+ 127              	$LFB1:
+ 128              	$LM1:
+ 129              		.stabn 68,0,11,$LM1
+ 130              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 131              		.ent	nslCreateEmitter__FRA2_Cf
+ 132              	nslCreateEmitter__FRA2_Cf:
+ 133              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 134              		.mask	0xc0000000,-16
+ 135              		.fmask	0x00000000,0
+ 136 0000 D0FFBD27 		subu	$sp,$sp,48
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 4
+
+
+ 137              	$LCFI0:
+ 138 0004 2000BFFF 		sd	$31,32($sp)
+ 139              	$LCFI1:
+ 140 0008 1000BEFF 		sd	$fp,16($sp)
+ 141              	$LCFI2:
+ 142 000c 2DF0A003 		move	$fp,$sp
+ 143              	$LCFI3:
+ 144 0010 0000C4AF 		sw	$4,0($fp)
+ 145              	$LM2:
+ 146              		.stabn 68,0,11,$LM2
+ 147              	$LBB2:
+ 148              	$LM3:
+ 149              		.stabn 68,0,12,$LM3
+ 150 0014 0100023C 		lw	$2,nsl+61560
+ 150      78F0428C 
+ 151 001c 04004014 		bne	$2,$0,$L26
+ 151      00000000 
+ 152 0024 01000224 		li	$2,1			# 0x1
+ 153 0028 60000010 		b	$L25
+ 153      00000000 
+ 154              		.p2align 2
+ 155              	$L26:
+ 156              	$LM4:
+ 157              		.stabn 68,0,13,$LM4
+ 158 0030 0000000C 		jal	_nslInitialized__Fv
+ 158      00000000 
+ 159              	$LM5:
+ 160              		.stabn 68,0,14,$LM5
+ 161              	$LBB3:
+ 162 0038 0400C0AF 		sw	$0,4($fp)
+ 163 003c 00000000 		.p2align 3
+ 164              	$L27:
+ 165 0040 0400C28F 		lw	$2,4($fp)
+ 166 0044 00014328 		slt	$3,$2,256
+ 167 0048 03006014 		bne	$3,$0,$L30
+ 167      00000000 
+ 168 0050 53000010 		b	$L28
+ 168      00000000 
+ 169              		.p2align 2
+ 170              	$L30:
+ 171              	$LM6:
+ 172              		.stabn 68,0,16,$LM6
+ 173 0058 0400C28F 		lw	$2,4($fp)
+ 174 005c 2D184000 		move	$3,$2
+ 175 0060 80110300 		sll	$2,$3,6
+ 176 0064 0100033C 		la	$3,nsl+45120
+ 176      40B06324 
+ 177 006c 21106200 		addu	$2,$3,$2
+ 178 0070 0000438C 		lw	$3,0($2)
+ 179 0074 45006014 		bne	$3,$0,$L29
+ 179      00000000 
+ 180              	$LM7:
+ 181              		.stabn 68,0,18,$LM7
+ 182 007c 0400C48F 		lw	$4,4($fp)
+ 183 0080 2D280000 		move	$5,$0
+ 184 0084 01000624 		li	$6,1			# 0x1
+ 185 0088 0000000C 		jal	_nslClearEmitterSlot__FUib18_nslClearBehaviour
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 5
+
+
+ 185      00000000 
+ 186              	$LM8:
+ 187              		.stabn 68,0,19,$LM8
+ 188 0090 0400C28F 		lw	$2,4($fp)
+ 189 0094 2D184000 		move	$3,$2
+ 190 0098 80110300 		sll	$2,$3,6
+ 191 009c 0100033C 		la	$3,nsl+45120
+ 191      40B06324 
+ 192 00a4 21106200 		addu	$2,$3,$2
+ 193 00a8 01000324 		li	$3,1			# 0x1
+ 194 00ac 000043AC 		sw	$3,0($2)
+ 195              	$LM9:
+ 196              		.stabn 68,0,20,$LM9
+ 197 00b0 0400C28F 		lw	$2,4($fp)
+ 198 00b4 2D184000 		move	$3,$2
+ 199 00b8 80110300 		sll	$2,$3,6
+ 200 00bc 0100033C 		la	$3,nsl+45124
+ 200      44B06324 
+ 201 00c4 21106200 		addu	$2,$3,$2
+ 202 00c8 000040AC 		sw	$0,0($2)
+ 203              	$LM10:
+ 204              		.stabn 68,0,21,$LM10
+ 205 00cc 0400C28F 		lw	$2,4($fp)
+ 206 00d0 2D184000 		move	$3,$2
+ 207 00d4 80110300 		sll	$2,$3,6
+ 208 00d8 0100033C 		la	$3,nsl+45128
+ 208      48B06324 
+ 209 00e0 21106200 		addu	$2,$3,$2
+ 210 00e4 000040AC 		sw	$0,0($2)
+ 211              	$LM11:
+ 212              		.stabn 68,0,22,$LM11
+ 213 00e8 0100023C 		lw	$2,nsl+61512
+ 213      48F0428C 
+ 214 00f0 01004324 		addu	$3,$2,1
+ 215 00f4 0100013C 		sw	$3,nsl+61512
+ 215      48F023AC 
+ 216              	$LM12:
+ 217              		.stabn 68,0,23,$LM12
+ 218 00fc 0400C28F 		lw	$2,4($fp)
+ 219 0100 2D184000 		move	$3,$2
+ 220 0104 80110300 		sll	$2,$3,6
+ 221 0108 0100033C 		la	$3,nsl+45160
+ 221      68B06324 
+ 222 0110 21104300 		addu	$2,$2,$3
+ 223 0114 2D204000 		move	$4,$2
+ 224 0118 0000C58F 		lw	$5,0($fp)
+ 225 011c 0C000624 		li	$6,12			# 0xc
+ 226 0120 0000000C 		jal	memcpy
+ 226      00000000 
+ 227              	$LM13:
+ 228              		.stabn 68,0,27,$LM13
+ 229 0128 0400C28F 		lw	$2,4($fp)
+ 230 012c 2D184000 		move	$3,$2
+ 231 0130 80110300 		sll	$2,$3,6
+ 232 0134 0100033C 		la	$3,nsl+45132
+ 232      4CB06324 
+ 233 013c 21106200 		addu	$2,$3,$2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 6
+
+
+ 234 0140 0400C38F 		lw	$3,4($fp)
+ 235 0144 2D206000 		move	$4,$3
+ 236 0148 80190400 		sll	$3,$4,6
+ 237 014c 0100043C 		la	$4,nsl+45132
+ 237      4CB08424 
+ 238 0154 21188300 		addu	$3,$4,$3
+ 239 0158 0000648C 		lw	$4,0($3)
+ 240 015c 00048324 		addu	$3,$4,1024
+ 241 0160 000043AC 		sw	$3,0($2)
+ 242              	$LM14:
+ 243              		.stabn 68,0,28,$LM14
+ 244 0164 0400C28F 		lw	$2,4($fp)
+ 245 0168 2D184000 		move	$3,$2
+ 246 016c 80110300 		sll	$2,$3,6
+ 247 0170 0100033C 		la	$3,nsl+45132
+ 247      4CB06324 
+ 248 0178 21106200 		addu	$2,$3,$2
+ 249 017c 0000438C 		lw	$3,0($2)
+ 250 0180 2D106000 		move	$2,$3
+ 251 0184 09000010 		b	$L25
+ 251      00000000 
+ 252              		.p2align 2
+ 253              	$L31:
+ 254              	$LM15:
+ 255              		.stabn 68,0,30,$LM15
+ 256              	$L29:
+ 257 018c 0400C28F 		lw	$2,4($fp)
+ 258 0190 01004324 		addu	$3,$2,1
+ 259 0194 0400C3AF 		sw	$3,4($fp)
+ 260 0198 A9FF0010 		b	$L27
+ 260      00000000 
+ 261              		.p2align 2
+ 262              	$L28:
+ 263              	$LBE3:
+ 264              	$LM16:
+ 265              		.stabn 68,0,31,$LM16
+ 266 01a0 2D100000 		move	$2,$0
+ 267 01a4 01000010 		b	$L25
+ 267      00000000 
+ 268              	$LBE2:
+ 269              	$LM17:
+ 270              		.stabn 68,0,32,$LM17
+ 271              		.p2align 2
+ 272              	$L25:
+ 273 01ac 2DE8C003 		move	$sp,$fp
+ 274 01b0 2000BFDF 		ld	$31,32($sp)
+ 275 01b4 1000BEDF 		ld	$fp,16($sp)
+ 276 01b8 3000BD27 		addu	$sp,$sp,48
+ 277 01bc 0800E003 		j	$31
+ 277      00000000 
+ 278              		.end	nslCreateEmitter__FRA2_Cf
+ 279              	$LFE1:
+ 280              	.stabs "nslCreateEmitter__FRA2_Cf:F43",36,0,11,nslCreateEmitter__FRA2_Cf
+ 281              	.stabs "position:p276=&40",160,0,11,-48
+ 282              	.stabn 192,0,0,$LBB2
+ 283              	.stabs "i:1",128,0,14,-44
+ 284              	.stabn 192,0,0,$LBB3
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 7
+
+
+ 285              	.stabn 224,0,0,$LBE3
+ 286              	.stabn 224,0,0,$LBE2
+ 287              	$Lscope0:
+ 288              	.stabs "",36,0,0,$Lscope0-nslCreateEmitter__FRA2_Cf
+ 289 01c4 00000000 		.p2align 3
+ 290              		.globl	nslCreateLineEmitter__FRA2_CfT0
+ 291              	$LFB2:
+ 292              	$LM18:
+ 293              		.stabn 68,0,39,$LM18
+ 294              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 295              		.ent	nslCreateLineEmitter__FRA2_CfT0
+ 296              	nslCreateLineEmitter__FRA2_CfT0:
+ 297              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 298              		.mask	0xc0000000,-16
+ 299              		.fmask	0x00000000,0
+ 300 01c8 D0FFBD27 		subu	$sp,$sp,48
+ 301              	$LCFI4:
+ 302 01cc 2000BFFF 		sd	$31,32($sp)
+ 303              	$LCFI5:
+ 304 01d0 1000BEFF 		sd	$fp,16($sp)
+ 305              	$LCFI6:
+ 306 01d4 2DF0A003 		move	$fp,$sp
+ 307              	$LCFI7:
+ 308 01d8 0000C4AF 		sw	$4,0($fp)
+ 309 01dc 0400C5AF 		sw	$5,4($fp)
+ 310              	$LM19:
+ 311              		.stabn 68,0,39,$LM19
+ 312              	$LBB4:
+ 313              	$LM20:
+ 314              		.stabn 68,0,40,$LM20
+ 315 01e0 0100023C 		lw	$2,nsl+61560
+ 315      78F0428C 
+ 316 01e8 04004014 		bne	$2,$0,$L33
+ 316      00000000 
+ 317 01f0 01000224 		li	$2,1			# 0x1
+ 318 01f4 76000010 		b	$L32
+ 318      00000000 
+ 319              		.p2align 2
+ 320              	$L33:
+ 321              	$LM21:
+ 322              		.stabn 68,0,41,$LM21
+ 323 01fc 0000000C 		jal	_nslInitialized__Fv
+ 323      00000000 
+ 324              	$LM22:
+ 325              		.stabn 68,0,42,$LM22
+ 326              	$LBB5:
+ 327 0204 0800C0AF 		sw	$0,8($fp)
+ 328              		.p2align 3
+ 329              	$L34:
+ 330 0208 0800C28F 		lw	$2,8($fp)
+ 331 020c 00014328 		slt	$3,$2,256
+ 332 0210 03006014 		bne	$3,$0,$L37
+ 332      00000000 
+ 333 0218 6A000010 		b	$L35
+ 333      00000000 
+ 334              		.p2align 2
+ 335              	$L37:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 8
+
+
+ 336              	$LM23:
+ 337              		.stabn 68,0,44,$LM23
+ 338 0220 0800C28F 		lw	$2,8($fp)
+ 339 0224 2D184000 		move	$3,$2
+ 340 0228 80110300 		sll	$2,$3,6
+ 341 022c 0100033C 		la	$3,nsl+45120
+ 341      40B06324 
+ 342 0234 21106200 		addu	$2,$3,$2
+ 343 0238 0000438C 		lw	$3,0($2)
+ 344 023c 5C006014 		bne	$3,$0,$L36
+ 344      00000000 
+ 345              	$LM24:
+ 346              		.stabn 68,0,46,$LM24
+ 347 0244 0800C48F 		lw	$4,8($fp)
+ 348 0248 2D280000 		move	$5,$0
+ 349 024c 01000624 		li	$6,1			# 0x1
+ 350 0250 0000000C 		jal	_nslClearEmitterSlot__FUib18_nslClearBehaviour
+ 350      00000000 
+ 351              	$LM25:
+ 352              		.stabn 68,0,47,$LM25
+ 353 0258 0800C28F 		lw	$2,8($fp)
+ 354 025c 2D184000 		move	$3,$2
+ 355 0260 80110300 		sll	$2,$3,6
+ 356 0264 0100033C 		la	$3,nsl+45120
+ 356      40B06324 
+ 357 026c 21106200 		addu	$2,$3,$2
+ 358 0270 01000324 		li	$3,1			# 0x1
+ 359 0274 000043AC 		sw	$3,0($2)
+ 360              	$LM26:
+ 361              		.stabn 68,0,48,$LM26
+ 362 0278 0800C28F 		lw	$2,8($fp)
+ 363 027c 2D184000 		move	$3,$2
+ 364 0280 80110300 		sll	$2,$3,6
+ 365 0284 0100033C 		la	$3,nsl+45124
+ 365      44B06324 
+ 366 028c 21106200 		addu	$2,$3,$2
+ 367 0290 000040AC 		sw	$0,0($2)
+ 368              	$LM27:
+ 369              		.stabn 68,0,49,$LM27
+ 370 0294 0800C28F 		lw	$2,8($fp)
+ 371 0298 2D184000 		move	$3,$2
+ 372 029c 80110300 		sll	$2,$3,6
+ 373 02a0 0100033C 		la	$3,nsl+45128
+ 373      48B06324 
+ 374 02a8 21106200 		addu	$2,$3,$2
+ 375 02ac 01000324 		li	$3,1			# 0x1
+ 376 02b0 000043AC 		sw	$3,0($2)
+ 377              	$LM28:
+ 378              		.stabn 68,0,50,$LM28
+ 379 02b4 0100023C 		lw	$2,nsl+61512
+ 379      48F0428C 
+ 380 02bc 01004324 		addu	$3,$2,1
+ 381 02c0 0100013C 		sw	$3,nsl+61512
+ 381      48F023AC 
+ 382              	$LM29:
+ 383              		.stabn 68,0,51,$LM29
+ 384 02c8 0800C28F 		lw	$2,8($fp)
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 9
+
+
+ 385 02cc 2D184000 		move	$3,$2
+ 386 02d0 80110300 		sll	$2,$3,6
+ 387 02d4 0100033C 		la	$3,nsl+45136
+ 387      50B06324 
+ 388 02dc 21104300 		addu	$2,$2,$3
+ 389 02e0 2D204000 		move	$4,$2
+ 390 02e4 0000C58F 		lw	$5,0($fp)
+ 391 02e8 0C000624 		li	$6,12			# 0xc
+ 392 02ec 0000000C 		jal	memcpy
+ 392      00000000 
+ 393              	$LM30:
+ 394              		.stabn 68,0,52,$LM30
+ 395 02f4 0800C28F 		lw	$2,8($fp)
+ 396 02f8 2D184000 		move	$3,$2
+ 397 02fc 80110300 		sll	$2,$3,6
+ 398 0300 0100033C 		la	$3,nsl+45148
+ 398      5CB06324 
+ 399 0308 21104300 		addu	$2,$2,$3
+ 400 030c 2D204000 		move	$4,$2
+ 401 0310 0400C58F 		lw	$5,4($fp)
+ 402 0314 0C000624 		li	$6,12			# 0xc
+ 403 0318 0000000C 		jal	memcpy
+ 403      00000000 
+ 404              	$LM31:
+ 405              		.stabn 68,0,53,$LM31
+ 406 0320 0800C28F 		lw	$2,8($fp)
+ 407 0324 2D184000 		move	$3,$2
+ 408 0328 80110300 		sll	$2,$3,6
+ 409 032c 0100033C 		la	$3,nsl+45160
+ 409      68B06324 
+ 410 0334 21104300 		addu	$2,$2,$3
+ 411 0338 2D204000 		move	$4,$2
+ 412 033c 0000C58F 		lw	$5,0($fp)
+ 413 0340 0C000624 		li	$6,12			# 0xc
+ 414 0344 0000000C 		jal	memcpy
+ 414      00000000 
+ 415              	$LM32:
+ 416              		.stabn 68,0,54,$LM32
+ 417 034c 0800C28F 		lw	$2,8($fp)
+ 418 0350 2D184000 		move	$3,$2
+ 419 0354 80110300 		sll	$2,$3,6
+ 420 0358 0100033C 		la	$3,nsl+45132
+ 420      4CB06324 
+ 421 0360 21106200 		addu	$2,$3,$2
+ 422 0364 0800C38F 		lw	$3,8($fp)
+ 423 0368 2D206000 		move	$4,$3
+ 424 036c 80190400 		sll	$3,$4,6
+ 425 0370 0100043C 		la	$4,nsl+45132
+ 425      4CB08424 
+ 426 0378 21188300 		addu	$3,$4,$3
+ 427 037c 0000648C 		lw	$4,0($3)
+ 428 0380 00048324 		addu	$3,$4,1024
+ 429 0384 000043AC 		sw	$3,0($2)
+ 430              	$LM33:
+ 431              		.stabn 68,0,55,$LM33
+ 432 0388 0800C28F 		lw	$2,8($fp)
+ 433 038c 2D184000 		move	$3,$2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 10
+
+
+ 434 0390 80110300 		sll	$2,$3,6
+ 435 0394 0100033C 		la	$3,nsl+45132
+ 435      4CB06324 
+ 436 039c 21106200 		addu	$2,$3,$2
+ 437 03a0 0000438C 		lw	$3,0($2)
+ 438 03a4 2D106000 		move	$2,$3
+ 439 03a8 09000010 		b	$L32
+ 439      00000000 
+ 440              		.p2align 2
+ 441              	$L38:
+ 442              	$LM34:
+ 443              		.stabn 68,0,57,$LM34
+ 444              	$L36:
+ 445 03b0 0800C28F 		lw	$2,8($fp)
+ 446 03b4 01004324 		addu	$3,$2,1
+ 447 03b8 0800C3AF 		sw	$3,8($fp)
+ 448 03bc 92FF0010 		b	$L34
+ 448      00000000 
+ 449              		.p2align 2
+ 450              	$L35:
+ 451              	$LBE5:
+ 452              	$LM35:
+ 453              		.stabn 68,0,58,$LM35
+ 454 03c4 2D100000 		move	$2,$0
+ 455 03c8 01000010 		b	$L32
+ 455      00000000 
+ 456              	$LBE4:
+ 457              	$LM36:
+ 458              		.stabn 68,0,59,$LM36
+ 459              		.p2align 2
+ 460              	$L32:
+ 461 03d0 2DE8C003 		move	$sp,$fp
+ 462 03d4 2000BFDF 		ld	$31,32($sp)
+ 463 03d8 1000BEDF 		ld	$fp,16($sp)
+ 464 03dc 3000BD27 		addu	$sp,$sp,48
+ 465 03e0 0800E003 		j	$31
+ 465      00000000 
+ 466              		.end	nslCreateLineEmitter__FRA2_CfT0
+ 467              	$LFE2:
+ 468              	.stabs "nslCreateLineEmitter__FRA2_CfT0:F43",36,0,39,nslCreateLineEmitter__FRA2_CfT0
+ 469              	.stabs "startPos:p276",160,0,39,-48
+ 470              	.stabs "endPos:p276",160,0,39,-44
+ 471              	.stabn 192,0,0,$LBB4
+ 472              	.stabs "i:1",128,0,42,-40
+ 473              	.stabn 192,0,0,$LBB5
+ 474              	.stabn 224,0,0,$LBE5
+ 475              	.stabn 224,0,0,$LBE4
+ 476              	$Lscope1:
+ 477              	.stabs "",36,0,0,$Lscope1-nslCreateLineEmitter__FRA2_CfT0
+ 478              		.p2align 3
+ 479              		.globl	nslReleaseEmitter__FUi
+ 480              	$LFB3:
+ 481              	$LM37:
+ 482              		.stabn 68,0,66,$LM37
+ 483              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 484              		.ent	nslReleaseEmitter__FUi
+ 485              	nslReleaseEmitter__FUi:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 11
+
+
+ 486              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 487              		.mask	0xc0000000,-16
+ 488              		.fmask	0x00000000,0
+ 489 03e8 D0FFBD27 		subu	$sp,$sp,48
+ 490              	$LCFI8:
+ 491 03ec 2000BFFF 		sd	$31,32($sp)
+ 492              	$LCFI9:
+ 493 03f0 1000BEFF 		sd	$fp,16($sp)
+ 494              	$LCFI10:
+ 495 03f4 2DF0A003 		move	$fp,$sp
+ 496              	$LCFI11:
+ 497 03f8 0000C4AF 		sw	$4,0($fp)
+ 498              	$LM38:
+ 499              		.stabn 68,0,66,$LM38
+ 500              	$LBB6:
+ 501              	$LM39:
+ 502              		.stabn 68,0,68,$LM39
+ 503 03fc 0100023C 		lw	$2,nsl+61560
+ 503      78F0428C 
+ 504 0404 03004014 		bne	$2,$0,$L40
+ 504      00000000 
+ 505 040c 36000010 		b	$L39
+ 505      00000000 
+ 506              		.p2align 2
+ 507              	$L40:
+ 508              	$LM40:
+ 509              		.stabn 68,0,69,$LM40
+ 510 0414 0000000C 		jal	_nslInitialized__Fv
+ 510      00000000 
+ 511              	$LM41:
+ 512              		.stabn 68,0,70,$LM41
+ 513 041c 0000C48F 		lw	$4,0($fp)
+ 514 0420 0000000C 		jal	_nslCheckEmitterIdValidity__FUi
+ 514      00000000 
+ 515              	$LM42:
+ 516              		.stabn 68,0,71,$LM42
+ 517 0428 0100023C 		lw	$2,nsl+61512
+ 517      48F0428C 
+ 518 0430 FFFF4324 		addu	$3,$2,-1
+ 519 0434 0100013C 		sw	$3,nsl+61512
+ 519      48F023AC 
+ 520              	$LM43:
+ 521              		.stabn 68,0,73,$LM43
+ 522 043c 00000000 		.p2align 3
+ 523              	$L41:
+ 524 0440 0000C38F 		lw	$3,0($fp)
+ 525 0444 FF036230 		andi	$2,$3,0x3ff
+ 526 0448 2D184000 		move	$3,$2
+ 527 044c 80110300 		sll	$2,$3,6
+ 528 0450 0100033C 		la	$3,nsl+45172
+ 528      74B06324 
+ 529 0458 21104300 		addu	$2,$2,$3
+ 530 045c 2D204000 		move	$4,$2
+ 531 0460 0000000C 		jal	size__t10fifo_queue1ZUi
+ 531      00000000 
+ 532 0468 03004014 		bne	$2,$0,$L44
+ 532      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 12
+
+
+ 533 0470 16000010 		b	$L42
+ 533      00000000 
+ 534              		.p2align 2
+ 535              	$L44:
+ 536              	$LBB7:
+ 537              	$LM44:
+ 538              		.stabn 68,0,75,$LM44
+ 539 0478 0000C38F 		lw	$3,0($fp)
+ 540 047c FF036230 		andi	$2,$3,0x3ff
+ 541 0480 2D184000 		move	$3,$2
+ 542 0484 80110300 		sll	$2,$3,6
+ 543 0488 0100033C 		la	$3,nsl+45172
+ 543      74B06324 
+ 544 0490 21104300 		addu	$2,$2,$3
+ 545 0494 2D204000 		move	$4,$2
+ 546 0498 0000000C 		jal	pop__t10fifo_queue1ZUi
+ 546      00000000 
+ 547 04a0 0400C2AF 		sw	$2,4($fp)
+ 548              	$LM45:
+ 549              		.stabn 68,0,76,$LM45
+ 550 04a4 0400C48F 		lw	$4,4($fp)
+ 551 04a8 0000000C 		jal	nslGetSoundStatus__FUi
+ 551      00000000 
+ 552 04b0 04004010 		beq	$2,$0,$L45
+ 552      00000000 
+ 553              	$LM46:
+ 554              		.stabn 68,0,77,$LM46
+ 555 04b8 0400C48F 		lw	$4,4($fp)
+ 556 04bc 0000000C 		jal	nslStopSound__FUi
+ 556      00000000 
+ 557              	$L45:
+ 558              	$LBE7:
+ 559 04c4 DEFF0010 		b	$L41
+ 559      00000000 
+ 560              		.p2align 2
+ 561              	$L42:
+ 562              	$LM47:
+ 563              		.stabn 68,0,80,$LM47
+ 564 04cc 0000C38F 		lw	$3,0($fp)
+ 565 04d0 FF036230 		andi	$2,$3,0x3ff
+ 566 04d4 2D204000 		move	$4,$2
+ 567 04d8 2D280000 		move	$5,$0
+ 568 04dc 01000624 		li	$6,1			# 0x1
+ 569 04e0 0000000C 		jal	_nslClearEmitterSlot__FUib18_nslClearBehaviour
+ 569      00000000 
+ 570              	$LBE6:
+ 571              	$LM48:
+ 572              		.stabn 68,0,81,$LM48
+ 573              	$L39:
+ 574 04e8 2DE8C003 		move	$sp,$fp
+ 575 04ec 2000BFDF 		ld	$31,32($sp)
+ 576 04f0 1000BEDF 		ld	$fp,16($sp)
+ 577 04f4 3000BD27 		addu	$sp,$sp,48
+ 578 04f8 0800E003 		j	$31
+ 578      00000000 
+ 579              		.end	nslReleaseEmitter__FUi
+ 580              	$LFE3:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 13
+
+
+ 581              	.stabs "nslReleaseEmitter__FUi:F22",36,0,66,nslReleaseEmitter__FUi
+ 582              	.stabs "emitterToRelease:p43",160,0,66,-48
+ 583              	.stabn 192,0,0,$LBB6
+ 584              	.stabs "mySound:42",128,0,75,-44
+ 585              	.stabn 192,0,0,$LBB7
+ 586              	.stabn 224,0,0,$LBE7
+ 587              	.stabn 224,0,0,$LBE6
+ 588              	$Lscope2:
+ 589              	.stabs "",36,0,0,$Lscope2-nslReleaseEmitter__FUi
+ 590              		.p2align 3
+ 591              		.globl	nslSetEmitterPosition__FUiRA2_Cf
+ 592              	$LFB4:
+ 593              	$LM49:
+ 594              		.stabn 68,0,88,$LM49
+ 595              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 596              		.ent	nslSetEmitterPosition__FUiRA2_Cf
+ 597              	nslSetEmitterPosition__FUiRA2_Cf:
+ 598              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 599              		.mask	0xc0000000,-16
+ 600              		.fmask	0x00000000,0
+ 601 0500 D0FFBD27 		subu	$sp,$sp,48
+ 602              	$LCFI12:
+ 603 0504 2000BFFF 		sd	$31,32($sp)
+ 604              	$LCFI13:
+ 605 0508 1000BEFF 		sd	$fp,16($sp)
+ 606              	$LCFI14:
+ 607 050c 2DF0A003 		move	$fp,$sp
+ 608              	$LCFI15:
+ 609 0510 0000C4AF 		sw	$4,0($fp)
+ 610 0514 0400C5AF 		sw	$5,4($fp)
+ 611              	$LM50:
+ 612              		.stabn 68,0,88,$LM50
+ 613              	$LBB8:
+ 614              	$LM51:
+ 615              		.stabn 68,0,89,$LM51
+ 616 0518 0100023C 		lw	$2,nsl+61560
+ 616      78F0428C 
+ 617 0520 03004014 		bne	$2,$0,$L47
+ 617      00000000 
+ 618 0528 12000010 		b	$L46
+ 618      00000000 
+ 619              		.p2align 2
+ 620              	$L47:
+ 621              	$LM52:
+ 622              		.stabn 68,0,90,$LM52
+ 623 0530 0000000C 		jal	_nslInitialized__Fv
+ 623      00000000 
+ 624              	$LM53:
+ 625              		.stabn 68,0,91,$LM53
+ 626 0538 0000C48F 		lw	$4,0($fp)
+ 627 053c 0000000C 		jal	_nslCheckEmitterIdValidity__FUi
+ 627      00000000 
+ 628              	$LM54:
+ 629              		.stabn 68,0,92,$LM54
+ 630 0544 0000C38F 		lw	$3,0($fp)
+ 631 0548 FF036230 		andi	$2,$3,0x3ff
+ 632 054c 2D184000 		move	$3,$2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 14
+
+
+ 633 0550 80110300 		sll	$2,$3,6
+ 634 0554 0100033C 		la	$3,nsl+45160
+ 634      68B06324 
+ 635 055c 21104300 		addu	$2,$2,$3
+ 636 0560 2D204000 		move	$4,$2
+ 637 0564 0400C58F 		lw	$5,4($fp)
+ 638 0568 0C000624 		li	$6,12			# 0xc
+ 639 056c 0000000C 		jal	memcpy
+ 639      00000000 
+ 640              	$LBE8:
+ 641              	$LM55:
+ 642              		.stabn 68,0,97,$LM55
+ 643              	$L46:
+ 644 0574 2DE8C003 		move	$sp,$fp
+ 645 0578 2000BFDF 		ld	$31,32($sp)
+ 646 057c 1000BEDF 		ld	$fp,16($sp)
+ 647 0580 3000BD27 		addu	$sp,$sp,48
+ 648 0584 0800E003 		j	$31
+ 648      00000000 
+ 649              		.end	nslSetEmitterPosition__FUiRA2_Cf
+ 650              	$LFE4:
+ 651              	.stabs "nslSetEmitterPosition__FUiRA2_Cf:F22",36,0,88,nslSetEmitterPosition__FUiRA2_Cf
+ 652              	.stabs "emitterToSet:p43",160,0,88,-48
+ 653              	.stabs "newPosition:p276",160,0,88,-44
+ 654              	.stabn 192,0,0,$LBB8
+ 655              	.stabn 224,0,0,$LBE8
+ 656              	$Lscope3:
+ 657              	.stabs "",36,0,0,$Lscope3-nslSetEmitterPosition__FUiRA2_Cf
+ 658 058c 00000000 		.p2align 3
+ 659              		.globl	nslSetEmitterAutoRelease__FUi
+ 660              	$LFB5:
+ 661              	$LM56:
+ 662              		.stabn 68,0,104,$LM56
+ 663              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 664              		.ent	nslSetEmitterAutoRelease__FUi
+ 665              	nslSetEmitterAutoRelease__FUi:
+ 666              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 667              		.mask	0xc0000000,-16
+ 668              		.fmask	0x00000000,0
+ 669 0590 D0FFBD27 		subu	$sp,$sp,48
+ 670              	$LCFI16:
+ 671 0594 2000BFFF 		sd	$31,32($sp)
+ 672              	$LCFI17:
+ 673 0598 1000BEFF 		sd	$fp,16($sp)
+ 674              	$LCFI18:
+ 675 059c 2DF0A003 		move	$fp,$sp
+ 676              	$LCFI19:
+ 677 05a0 0000C4AF 		sw	$4,0($fp)
+ 678              	$LM57:
+ 679              		.stabn 68,0,104,$LM57
+ 680              	$LBB9:
+ 681              	$LM58:
+ 682              		.stabn 68,0,105,$LM58
+ 683 05a4 0100023C 		lw	$2,nsl+61560
+ 683      78F0428C 
+ 684 05ac 03004014 		bne	$2,$0,$L49
+ 684      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 15
+
+
+ 685 05b4 0F000010 		b	$L48
+ 685      00000000 
+ 686              		.p2align 2
+ 687              	$L49:
+ 688              	$LM59:
+ 689              		.stabn 68,0,106,$LM59
+ 690 05bc 0000000C 		jal	_nslInitialized__Fv
+ 690      00000000 
+ 691              	$LM60:
+ 692              		.stabn 68,0,107,$LM60
+ 693 05c4 0000C48F 		lw	$4,0($fp)
+ 694 05c8 0000000C 		jal	_nslCheckEmitterIdValidity__FUi
+ 694      00000000 
+ 695              	$LM61:
+ 696              		.stabn 68,0,108,$LM61
+ 697 05d0 0000C38F 		lw	$3,0($fp)
+ 698 05d4 FF036230 		andi	$2,$3,0x3ff
+ 699 05d8 2D184000 		move	$3,$2
+ 700 05dc 80110300 		sll	$2,$3,6
+ 701 05e0 0100033C 		la	$3,nsl+45124
+ 701      44B06324 
+ 702 05e8 21106200 		addu	$2,$3,$2
+ 703 05ec 01000324 		li	$3,1			# 0x1
+ 704 05f0 000043AC 		sw	$3,0($2)
+ 705              	$LBE9:
+ 706              	$LM62:
+ 707              		.stabn 68,0,109,$LM62
+ 708              	$L48:
+ 709 05f4 2DE8C003 		move	$sp,$fp
+ 710 05f8 2000BFDF 		ld	$31,32($sp)
+ 711 05fc 1000BEDF 		ld	$fp,16($sp)
+ 712 0600 3000BD27 		addu	$sp,$sp,48
+ 713 0604 0800E003 		j	$31
+ 713      00000000 
+ 714              		.end	nslSetEmitterAutoRelease__FUi
+ 715              	$LFE5:
+ 716              	.stabs "nslSetEmitterAutoRelease__FUi:F22",36,0,104,nslSetEmitterAutoRelease__FUi
+ 717              	.stabs "emitterToSet:p43",160,0,104,-48
+ 718              	.stabn 192,0,0,$LBB9
+ 719              	.stabn 224,0,0,$LBE9
+ 720              	$Lscope4:
+ 721              	.stabs "",36,0,0,$Lscope4-nslSetEmitterAutoRelease__FUi
+ 722 060c 00000000 		.p2align 3
+ 723              		.globl	_nslReleaseAllEmitters__Fv
+ 724              	$LFB6:
+ 725              	$LM63:
+ 726              		.stabn 68,0,116,$LM63
+ 727              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 728              		.ent	_nslReleaseAllEmitters__Fv
+ 729              	_nslReleaseAllEmitters__Fv:
+ 730              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 731              		.mask	0xc0000000,-16
+ 732              		.fmask	0x00000000,0
+ 733 0610 D0FFBD27 		subu	$sp,$sp,48
+ 734              	$LCFI20:
+ 735 0614 2000BFFF 		sd	$31,32($sp)
+ 736              	$LCFI21:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 16
+
+
+ 737 0618 1000BEFF 		sd	$fp,16($sp)
+ 738              	$LCFI22:
+ 739 061c 2DF0A003 		move	$fp,$sp
+ 740              	$LCFI23:
+ 741              	$LM64:
+ 742              		.stabn 68,0,116,$LM64
+ 743              	$LBB10:
+ 744              	$LM65:
+ 745              		.stabn 68,0,117,$LM65
+ 746 0620 0100023C 		lw	$2,nsl+61560
+ 746      78F0428C 
+ 747 0628 03004014 		bne	$2,$0,$L51
+ 747      00000000 
+ 748 0630 3D000010 		b	$L50
+ 748      00000000 
+ 749              		.p2align 2
+ 750              	$L51:
+ 751              	$LM66:
+ 752              		.stabn 68,0,118,$LM66
+ 753 0638 0000000C 		jal	_nslInitialized__Fv
+ 753      00000000 
+ 754              	$LM67:
+ 755              		.stabn 68,0,119,$LM67
+ 756              	$LBB11:
+ 757 0640 0000C0AF 		sw	$0,0($fp)
+ 758 0644 00000000 		.p2align 3
+ 759              	$L52:
+ 760 0648 0000C28F 		lw	$2,0($fp)
+ 761 064c 00014328 		slt	$3,$2,256
+ 762 0650 03006014 		bne	$3,$0,$L55
+ 762      00000000 
+ 763 0658 22000010 		b	$L53
+ 763      00000000 
+ 764              		.p2align 2
+ 765              	$L55:
+ 766              	$LM68:
+ 767              		.stabn 68,0,121,$LM68
+ 768 0660 0000C28F 		lw	$2,0($fp)
+ 769 0664 58000324 		li	$3,88			# 0x58
+ 770 0668 18104300 		mult	$2,$2,$3
+ 771 066c 0000033C 		la	$3,nsl+22652
+ 771      7C586324 
+ 772 0674 21106200 		addu	$2,$3,$2
+ 773 0678 0000438C 		lw	$3,0($2)
+ 774 067c 14006010 		beq	$3,$0,$L54
+ 774      00000000 
+ 775 0684 0000C28F 		lw	$2,0($fp)
+ 776 0688 58000324 		li	$3,88			# 0x58
+ 777 068c 18104300 		mult	$2,$2,$3
+ 778 0690 0000033C 		la	$3,nsl+22596
+ 778      44586324 
+ 779 0698 21106200 		addu	$2,$3,$2
+ 780 069c 0000438C 		lw	$3,0($2)
+ 781 06a0 01000224 		li	$2,1			# 0x1
+ 782 06a4 0A006214 		bne	$3,$2,$L54
+ 782      00000000 
+ 783              	$LM69:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 17
+
+
+ 784              		.stabn 68,0,123,$LM69
+ 785 06ac 0000C28F 		lw	$2,0($fp)
+ 786 06b0 58000324 		li	$3,88			# 0x58
+ 787 06b4 18104300 		mult	$2,$2,$3
+ 788 06b8 0000033C 		la	$3,nsl+22644
+ 788      74586324 
+ 789 06c0 21106200 		addu	$2,$3,$2
+ 790 06c4 0000448C 		lw	$4,0($2)
+ 791 06c8 0000000C 		jal	nslStopSound__FUi
+ 791      00000000 
+ 792              	$L56:
+ 793              	$LM70:
+ 794              		.stabn 68,0,125,$LM70
+ 795              	$L54:
+ 796 06d0 0000C28F 		lw	$2,0($fp)
+ 797 06d4 01004324 		addu	$3,$2,1
+ 798 06d8 0000C3AF 		sw	$3,0($fp)
+ 799 06dc DAFF0010 		b	$L52
+ 799      00000000 
+ 800              		.p2align 2
+ 801              	$L53:
+ 802              	$LBE11:
+ 803              	$LM71:
+ 804              		.stabn 68,0,126,$LM71
+ 805              	$LBB12:
+ 806 06e4 0400C0AF 		sw	$0,4($fp)
+ 807              		.p2align 3
+ 808              	$L57:
+ 809 06e8 0400C28F 		lw	$2,4($fp)
+ 810 06ec 00014328 		slt	$3,$2,256
+ 811 06f0 03006014 		bne	$3,$0,$L60
+ 811      00000000 
+ 812 06f8 0B000010 		b	$L58
+ 812      00000000 
+ 813              		.p2align 2
+ 814              	$L60:
+ 815              	$LM72:
+ 816              		.stabn 68,0,128,$LM72
+ 817 0700 0400C48F 		lw	$4,4($fp)
+ 818 0704 2D280000 		move	$5,$0
+ 819 0708 01000624 		li	$6,1			# 0x1
+ 820 070c 0000000C 		jal	_nslClearEmitterSlot__FUib18_nslClearBehaviour
+ 820      00000000 
+ 821              	$LM73:
+ 822              		.stabn 68,0,129,$LM73
+ 823              	$L59:
+ 824 0714 0400C28F 		lw	$2,4($fp)
+ 825 0718 01004324 		addu	$3,$2,1
+ 826 071c 0400C3AF 		sw	$3,4($fp)
+ 827 0720 F1FF0010 		b	$L57
+ 827      00000000 
+ 828              		.p2align 2
+ 829              	$L58:
+ 830              	$LBE12:
+ 831              	$LBE10:
+ 832              	$LM74:
+ 833              		.stabn 68,0,130,$LM74
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 18
+
+
+ 834              	$L50:
+ 835 0728 2DE8C003 		move	$sp,$fp
+ 836 072c 2000BFDF 		ld	$31,32($sp)
+ 837 0730 1000BEDF 		ld	$fp,16($sp)
+ 838 0734 3000BD27 		addu	$sp,$sp,48
+ 839 0738 0800E003 		j	$31
+ 839      00000000 
+ 840              		.end	_nslReleaseAllEmitters__Fv
+ 841              	$LFE6:
+ 842              	.stabs "_nslReleaseAllEmitters__Fv:F22",36,0,116,_nslReleaseAllEmitters__Fv
+ 843              	.stabn 192,0,0,$LBB10
+ 844              	.stabs "i:1",128,0,119,-48
+ 845              	.stabn 192,0,0,$LBB11
+ 846              	.stabn 224,0,0,$LBE11
+ 847              	.stabs "i:1",128,0,126,-44
+ 848              	.stabn 192,0,0,$LBB12
+ 849              	.stabn 224,0,0,$LBE12
+ 850              	.stabn 224,0,0,$LBE10
+ 851              	$Lscope5:
+ 852              	.stabs "",36,0,0,$Lscope5-_nslReleaseAllEmitters__Fv
+ 853              		.p2align 3
+ 854              		.globl	nslSetSoundEmitter__FUiUi
+ 855              	$LFB7:
+ 856              	$LM75:
+ 857              		.stabn 68,0,139,$LM75
+ 858              	.stabs "nsl_ps2_emitter.cpp",132,0,0,$Ltext0
+ 859              		.ent	nslSetSoundEmitter__FUiUi
+ 860              	nslSetSoundEmitter__FUiUi:
+ 861              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 862              		.mask	0xc0000000,-16
+ 863              		.fmask	0x00000000,0
+ 864 0740 D0FFBD27 		subu	$sp,$sp,48
+ 865              	$LCFI24:
+ 866 0744 2000BFFF 		sd	$31,32($sp)
+ 867              	$LCFI25:
+ 868 0748 1000BEFF 		sd	$fp,16($sp)
+ 869              	$LCFI26:
+ 870 074c 2DF0A003 		move	$fp,$sp
+ 871              	$LCFI27:
+ 872 0750 0000C4AF 		sw	$4,0($fp)
+ 873 0754 0400C5AF 		sw	$5,4($fp)
+ 874              	$LM76:
+ 875              		.stabn 68,0,139,$LM76
+ 876              	$LBB13:
+ 877              	$LM77:
+ 878              		.stabn 68,0,140,$LM77
+ 879 0758 0100023C 		lw	$2,nsl+61560
+ 879      78F0428C 
+ 880 0760 03004014 		bne	$2,$0,$L62
+ 880      00000000 
+ 881 0768 3C000010 		b	$L61
+ 881      00000000 
+ 882              		.p2align 2
+ 883              	$L62:
+ 884              	$LM78:
+ 885              		.stabn 68,0,141,$LM78
+ 886 0770 0000000C 		jal	_nslInitialized__Fv
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 19
+
+
+ 886      00000000 
+ 887              	$LM79:
+ 888              		.stabn 68,0,142,$LM79
+ 889 0778 0000C48F 		lw	$4,0($fp)
+ 890 077c 0000000C 		jal	_nslCheckEmitterIdValidity__FUi
+ 890      00000000 
+ 891              	$LM80:
+ 892              		.stabn 68,0,143,$LM80
+ 893 0784 0400C48F 		lw	$4,4($fp)
+ 894 0788 0000000C 		jal	_nslCheckSoundIdValidity__FUi
+ 894      00000000 
+ 895              	$LM81:
+ 896              		.stabn 68,0,145,$LM81
+ 897 0790 0400C38F 		lw	$3,4($fp)
+ 898 0794 FF036230 		andi	$2,$3,0x3ff
+ 899 0798 58000324 		li	$3,88			# 0x58
+ 900 079c 18104300 		mult	$2,$2,$3
+ 901 07a0 0000033C 		la	$3,nsl+22652
+ 901      7C586324 
+ 902 07a8 21106200 		addu	$2,$3,$2
+ 903 07ac 0000438C 		lw	$3,0($2)
+ 904 07b0 15006010 		beq	$3,$0,$L63
+ 904      00000000 
+ 905              	$LM82:
+ 906              		.stabn 68,0,147,$LM82
+ 907 07b8 0400C38F 		lw	$3,4($fp)
+ 908 07bc FF036230 		andi	$2,$3,0x3ff
+ 909 07c0 58000324 		li	$3,88			# 0x58
+ 910 07c4 18104300 		mult	$2,$2,$3
+ 911 07c8 0000033C 		la	$3,nsl+22652
+ 911      7C586324 
+ 912 07d0 21106200 		addu	$2,$3,$2
+ 913 07d4 0000438C 		lw	$3,0($2)
+ 914 07d8 FF036230 		andi	$2,$3,0x3ff
+ 915 07dc 2D184000 		move	$3,$2
+ 916 07e0 80110300 		sll	$2,$3,6
+ 917 07e4 0100033C 		la	$3,nsl+45172
+ 917      74B06324 
+ 918 07ec 21104300 		addu	$2,$2,$3
+ 919 07f0 0400C327 		addu	$3,$fp,4
+ 920 07f4 2D204000 		move	$4,$2
+ 921 07f8 2D286000 		move	$5,$3
+ 922 07fc 01000624 		li	$6,1			# 0x1
+ 923 0800 0000000C 		jal	find__t10fifo_queue1ZUiRCUis
+ 923      00000000 
+ 924              	$L63:
+ 925              	$LM83:
+ 926              		.stabn 68,0,149,$LM83
+ 927 0808 0000C38F 		lw	$3,0($fp)
+ 928 080c FF036230 		andi	$2,$3,0x3ff
+ 929 0810 2D184000 		move	$3,$2
+ 930 0814 80110300 		sll	$2,$3,6
+ 931 0818 0100033C 		la	$3,nsl+45172
+ 931      74B06324 
+ 932 0820 21104300 		addu	$2,$2,$3
+ 933 0824 0400C327 		addu	$3,$fp,4
+ 934 0828 2D204000 		move	$4,$2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 20
+
+
+ 935 082c 2D286000 		move	$5,$3
+ 936 0830 0000000C 		jal	push__t10fifo_queue1ZUiRCUi
+ 936      00000000 
+ 937              	$LM84:
+ 938              		.stabn 68,0,150,$LM84
+ 939 0838 0400C38F 		lw	$3,4($fp)
+ 940 083c FF036230 		andi	$2,$3,0x3ff
+ 941 0840 58000324 		li	$3,88			# 0x58
+ 942 0844 18104300 		mult	$2,$2,$3
+ 943 0848 0000033C 		la	$3,nsl+22652
+ 943      7C586324 
+ 944 0850 21106200 		addu	$2,$3,$2
+ 945 0854 0000C38F 		lw	$3,0($fp)
+ 946 0858 000043AC 		sw	$3,0($2)
+ 947              	$LBE13:
+ 948              	$LM85:
+ 949              		.stabn 68,0,152,$LM85
+ 950              	$L61:
+ 951 085c 2DE8C003 		move	$sp,$fp
+ 952 0860 2000BFDF 		ld	$31,32($sp)
+ 953 0864 1000BEDF 		ld	$fp,16($sp)
+ 954 0868 3000BD27 		addu	$sp,$sp,48
+ 955 086c 0800E003 		j	$31
+ 955      00000000 
+ 956              		.end	nslSetSoundEmitter__FUiUi
+ 957              	$LFE7:
+ 958              	.stabs "nslSetSoundEmitter__FUiUi:F22",36,0,139,nslSetSoundEmitter__FUiUi
+ 959              	.stabs "soundEmitter:p43",160,0,139,-48
+ 960              	.stabs "soundInstance:p42",160,0,139,-44
+ 961              	.stabn 192,0,0,$LBB13
+ 962              	.stabn 224,0,0,$LBE13
+ 963              	$Lscope6:
+ 964              	.stabs "",36,0,0,$Lscope6-nslSetSoundEmitter__FUiUi
+ 965 0874 00000000 		.p2align 3
+ 966              		.weak	pop__t10fifo_queue1ZUi
+ 967              	$LFB8:
+ 968              	.stabs "../ps2/fifo_queue.cpp",132,0,0,$Ltext1
+ 969              	$Ltext1:
+ 970              	$LM86:
+ 971              		.stabn 68,0,101,$LM86
+ 972              	.stabs "../ps2/fifo_queue.cpp",132,0,0,$Ltext0
+ 973              		.ent	pop__t10fifo_queue1ZUi
+ 974              	pop__t10fifo_queue1ZUi:
+ 975              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 976              		.mask	0x40000000,-16
+ 977              		.fmask	0x00000000,0
+ 978 0878 E0FFBD27 		subu	$sp,$sp,32
+ 979              	$LCFI28:
+ 980 087c 1000BEFF 		sd	$fp,16($sp)
+ 981              	$LCFI29:
+ 982 0880 2DF0A003 		move	$fp,$sp
+ 983              	$LCFI30:
+ 984 0884 2D188000 		move	$3,$4
+ 985              	$LM87:
+ 986              		.stabn 68,0,101,$LM87
+ 987              	$LBB14:
+ 988              	$LM88:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 21
+
+
+ 989              		.stabn 68,0,102,$LM88
+ 990 0888 06006284 		lh	$2,6($3)
+ 991 088c 2D204000 		move	$4,$2
+ 992 0890 80100400 		sll	$2,$4,2
+ 993 0894 0000648C 		lw	$4,0($3)
+ 994 0898 21104400 		addu	$2,$2,$4
+ 995 089c 0000448C 		lw	$4,0($2)
+ 996 08a0 0000C4AF 		sw	$4,0($fp)
+ 997              	$LM89:
+ 998              		.stabn 68,0,104,$LM89
+ 999 08a4 0A006284 		lh	$2,10($3)
+ 1000 08a8 05004014 		bne	$2,$0,$L65
+ 1000      00000000 
+ 1001              	$LM90:
+ 1002              		.stabn 68,0,105,$LM90
+ 1003 08b0 FFFF023C 		li	$2,4294901760			# 0xffff0000
+ 1004 08b4 FFFF4234 		ori	$2,$2,0xffff
+ 1005 08b8 11000010 		b	$L64
+ 1005      00000000 
+ 1006              		.p2align 2
+ 1007              	$L65:
+ 1008              	$LM91:
+ 1009              		.stabn 68,0,107,$LM91
+ 1010 08c0 06006294 		lhu	$2,6($3)
+ 1011 08c4 01004424 		addu	$4,$2,1
+ 1012 08c8 060064A4 		sh	$4,6($3)
+ 1013              	$LM92:
+ 1014              		.stabn 68,0,108,$LM92
+ 1015 08cc 06006284 		lh	$2,6($3)
+ 1016 08d0 04006484 		lh	$4,4($3)
+ 1017 08d4 2A104400 		slt	$2,$2,$4
+ 1018 08d8 02004014 		bne	$2,$0,$L66
+ 1018      00000000 
+ 1019              	$LM93:
+ 1020              		.stabn 68,0,110,$LM93
+ 1021 08e0 060060A4 		sh	$0,6($3)
+ 1022              	$L66:
+ 1023              	$LM94:
+ 1024              		.stabn 68,0,112,$LM94
+ 1025 08e4 0A006294 		lhu	$2,10($3)
+ 1026 08e8 FFFF4424 		addu	$4,$2,-1
+ 1027 08ec 0A0064A4 		sh	$4,10($3)
+ 1028              	$LM95:
+ 1029              		.stabn 68,0,114,$LM95
+ 1030 08f0 0000C48F 		lw	$4,0($fp)
+ 1031 08f4 2D108000 		move	$2,$4
+ 1032 08f8 01000010 		b	$L64
+ 1032      00000000 
+ 1033              	$LBE14:
+ 1034              	$LM96:
+ 1035              		.stabn 68,0,114,$LM96
+ 1036              	$L64:
+ 1037 0900 2DE8C003 		move	$sp,$fp
+ 1038 0904 1000BEDF 		ld	$fp,16($sp)
+ 1039 0908 2000BD27 		addu	$sp,$sp,32
+ 1040 090c 0800E003 		j	$31
+ 1040      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 22
+
+
+ 1041              		.end	pop__t10fifo_queue1ZUi
+ 1042              	$LFE8:
+ 1043              	.stabs "pop__t10fifo_queue1ZUi:F42",36,0,101,pop__t10fifo_queue1ZUi
+ 1044              	.stabs "this:P240",64,0,101,3
+ 1045              	.stabs "ret:42",128,0,102,-32
+ 1046              	.stabn 192,0,0,$LBB14
+ 1047              	.stabn 224,0,0,$LBE14
+ 1048              	$Lscope7:
+ 1049              	.stabs "",36,0,0,$Lscope7-pop__t10fifo_queue1ZUi
+ 1050 0914 00000000 		.p2align 3
+ 1051              		.weak	find__t10fifo_queue1ZUiRCUis
+ 1052              	$LFB9:
+ 1053              	$LM97:
+ 1054              		.stabn 68,0,126,$LM97
+ 1055              	.stabs "../ps2/fifo_queue.cpp",132,0,0,$Ltext0
+ 1056              		.ent	find__t10fifo_queue1ZUiRCUis
+ 1057              	find__t10fifo_queue1ZUiRCUis:
+ 1058              		.frame	$fp,64,$31		# vars= 16, regs= 6/0, args= 0, extra= 0
+ 1059              		.mask	0xc0010000,-16
+ 1060              		.fmask	0x00000000,0
+ 1061 0918 C0FFBD27 		subu	$sp,$sp,64
+ 1062              	$LCFI31:
+ 1063 091c 3000BFFF 		sd	$31,48($sp)
+ 1064              	$LCFI32:
+ 1065 0920 2000BEFF 		sd	$fp,32($sp)
+ 1066              	$LCFI33:
+ 1067 0924 1000B0FF 		sd	$16,16($sp)
+ 1068              	$LCFI34:
+ 1069 0928 2DF0A003 		move	$fp,$sp
+ 1070              	$LCFI35:
+ 1071 092c 2D808000 		move	$16,$4
+ 1072 0930 0000C5AF 		sw	$5,0($fp)
+ 1073 0934 2D10C000 		move	$2,$6
+ 1074 0938 0400C2A7 		sh	$2,4($fp)
+ 1075              	$LM98:
+ 1076              		.stabn 68,0,126,$LM98
+ 1077              	$LBB15:
+ 1078              	$LM99:
+ 1079              		.stabn 68,0,127,$LM99
+ 1080 093c 06000296 		lhu	$2,6($16)
+ 1081 0940 0600C2A7 		sh	$2,6($fp)
+ 1082              	$LM100:
+ 1083              		.stabn 68,0,129,$LM100
+ 1084 0944 0A000286 		lh	$2,10($16)
+ 1085 0948 0400401C 		bgtz	$2,$L68
+ 1085      00000000 
+ 1086              	$LM101:
+ 1087              		.stabn 68,0,130,$LM101
+ 1088 0950 2D100000 		move	$2,$0
+ 1089 0954 52000010 		b	$L67
+ 1089      00000000 
+ 1090              		.p2align 2
+ 1091              	$L68:
+ 1092              	$LM102:
+ 1093              		.stabn 68,0,131,$LM102
+ 1094 095c 0600C287 		lh	$2,6($fp)
+ 1095 0960 2D184000 		move	$3,$2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 23
+
+
+ 1096 0964 80100300 		sll	$2,$3,2
+ 1097 0968 0000038E 		lw	$3,0($16)
+ 1098 096c 21104300 		addu	$2,$2,$3
+ 1099 0970 0000C38F 		lw	$3,0($fp)
+ 1100 0974 0000428C 		lw	$2,0($2)
+ 1101 0978 0000638C 		lw	$3,0($3)
+ 1102 097c 0A004314 		bne	$2,$3,$L69
+ 1102      00000000 
+ 1103              	$LM103:
+ 1104              		.stabn 68,0,133,$LM103
+ 1105 0984 0400C287 		lh	$2,4($fp)
+ 1106 0988 04004010 		beq	$2,$0,$L70
+ 1106      00000000 
+ 1107              	$LM104:
+ 1108              		.stabn 68,0,135,$LM104
+ 1109 0990 2D200002 		move	$4,$16
+ 1110 0994 0000000C 		jal	pop__t10fifo_queue1ZUi
+ 1110      00000000 
+ 1111              	$L70:
+ 1112              	$LM105:
+ 1113              		.stabn 68,0,137,$LM105
+ 1114 099c 01000224 		li	$2,1			# 0x1
+ 1115 09a0 3F000010 		b	$L67
+ 1115      00000000 
+ 1116              		.p2align 2
+ 1117              	$L69:
+ 1118              		.set	noreorder
+ 1119 09a8 00000000 		nop
+ 1120              		.set	reorder
+ 1121              	$LM106:
+ 1122              		.stabn 68,0,139,$LM106
+ 1123 09ac 00000000 		.p2align 3
+ 1124              	$L71:
+ 1125 09b0 0600C287 		lh	$2,6($fp)
+ 1126 09b4 08000386 		lh	$3,8($16)
+ 1127 09b8 03004314 		bne	$2,$3,$L73
+ 1127      00000000 
+ 1128 09c0 34000010 		b	$L72
+ 1128      00000000 
+ 1129              		.p2align 2
+ 1130              	$L73:
+ 1131              	$LM107:
+ 1132              		.stabn 68,0,141,$LM107
+ 1133 09c8 0600C297 		lhu	$2,6($fp)
+ 1134 09cc 01004324 		addu	$3,$2,1
+ 1135 09d0 0600C3A7 		sh	$3,6($fp)
+ 1136              	$LM108:
+ 1137              		.stabn 68,0,142,$LM108
+ 1138 09d4 0600C287 		lh	$2,6($fp)
+ 1139 09d8 04000386 		lh	$3,4($16)
+ 1140 09dc 2A104300 		slt	$2,$2,$3
+ 1141 09e0 02004014 		bne	$2,$0,$L74
+ 1141      00000000 
+ 1142              	$LM109:
+ 1143              		.stabn 68,0,143,$LM109
+ 1144 09e8 0600C0A7 		sh	$0,6($fp)
+ 1145              	$L74:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 24
+
+
+ 1146              	$LM110:
+ 1147              		.stabn 68,0,144,$LM110
+ 1148 09ec 0600C287 		lh	$2,6($fp)
+ 1149 09f0 2D184000 		move	$3,$2
+ 1150 09f4 80100300 		sll	$2,$3,2
+ 1151 09f8 0000038E 		lw	$3,0($16)
+ 1152 09fc 21104300 		addu	$2,$2,$3
+ 1153 0a00 0000C38F 		lw	$3,0($fp)
+ 1154 0a04 0000428C 		lw	$2,0($2)
+ 1155 0a08 0000638C 		lw	$3,0($3)
+ 1156 0a0c 1F004314 		bne	$2,$3,$L75
+ 1156      00000000 
+ 1157              	$LM111:
+ 1158              		.stabn 68,0,146,$LM111
+ 1159 0a14 0400C287 		lh	$2,4($fp)
+ 1160 0a18 19004010 		beq	$2,$0,$L76
+ 1160      00000000 
+ 1161              	$LM112:
+ 1162              		.stabn 68,0,148,$LM112
+ 1163 0a20 0600C287 		lh	$2,6($fp)
+ 1164 0a24 2D184000 		move	$3,$2
+ 1165 0a28 80100300 		sll	$2,$3,2
+ 1166 0a2c 0000038E 		lw	$3,0($16)
+ 1167 0a30 21104300 		addu	$2,$2,$3
+ 1168 0a34 08000386 		lh	$3,8($16)
+ 1169 0a38 2D206000 		move	$4,$3
+ 1170 0a3c 80180400 		sll	$3,$4,2
+ 1171 0a40 0000048E 		lw	$4,0($16)
+ 1172 0a44 21186400 		addu	$3,$3,$4
+ 1173 0a48 0000648C 		lw	$4,0($3)
+ 1174 0a4c 000044AC 		sw	$4,0($2)
+ 1175              	$LM113:
+ 1176              		.stabn 68,0,149,$LM113
+ 1177 0a50 0A000296 		lhu	$2,10($16)
+ 1178 0a54 FFFF4324 		addu	$3,$2,-1
+ 1179 0a58 0A0003A6 		sh	$3,10($16)
+ 1180              	$LM114:
+ 1181              		.stabn 68,0,150,$LM114
+ 1182 0a5c 08000296 		lhu	$2,8($16)
+ 1183 0a60 FFFF4324 		addu	$3,$2,-1
+ 1184 0a64 080003A6 		sh	$3,8($16)
+ 1185              	$LM115:
+ 1186              		.stabn 68,0,151,$LM115
+ 1187 0a68 08000286 		lh	$2,8($16)
+ 1188 0a6c 04004104 		bgez	$2,$L76
+ 1188      00000000 
+ 1189              	$LM116:
+ 1190              		.stabn 68,0,152,$LM116
+ 1191 0a74 04000296 		lhu	$2,4($16)
+ 1192 0a78 FFFF4324 		addu	$3,$2,-1
+ 1193 0a7c 080003A6 		sh	$3,8($16)
+ 1194              	$L77:
+ 1195              	$L76:
+ 1196              	$LM117:
+ 1197              		.stabn 68,0,154,$LM117
+ 1198 0a80 01000224 		li	$2,1			# 0x1
+ 1199 0a84 06000010 		b	$L67
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 25
+
+
+ 1199      00000000 
+ 1200              		.p2align 2
+ 1201              	$L75:
+ 1202 0a8c C8FF0010 		b	$L71
+ 1202      00000000 
+ 1203              		.p2align 2
+ 1204              	$L72:
+ 1205              	$LM118:
+ 1206              		.stabn 68,0,157,$LM118
+ 1207 0a94 2D100000 		move	$2,$0
+ 1208 0a98 01000010 		b	$L67
+ 1208      00000000 
+ 1209              	$LBE15:
+ 1210              	$LM119:
+ 1211              		.stabn 68,0,157,$LM119
+ 1212              	$L67:
+ 1213 0aa0 2DE8C003 		move	$sp,$fp
+ 1214 0aa4 3000BFDF 		ld	$31,48($sp)
+ 1215 0aa8 2000BEDF 		ld	$fp,32($sp)
+ 1216 0aac 1000B0DF 		ld	$16,16($sp)
+ 1217 0ab0 4000BD27 		addu	$sp,$sp,64
+ 1218 0ab4 0800E003 		j	$31
+ 1218      00000000 
+ 1219              		.end	find__t10fifo_queue1ZUiRCUis
+ 1220              	$LFE9:
+ 1221              	.stabs "find__t10fifo_queue1ZUiRCUis:F8",36,0,126,find__t10fifo_queue1ZUiRCUis
+ 1222              	.stabs "this:P240",64,0,126,16
+ 1223              	.stabs "index_to_find:p277=&42",160,0,126,-64
+ 1224              	.stabs "remove_flag:p8",160,0,126,-60
+ 1225              	.stabs "curr:8",128,0,127,-58
+ 1226              	.stabn 192,0,0,$LBB15
+ 1227              	.stabn 224,0,0,$LBE15
+ 1228              	$Lscope8:
+ 1229              	.stabs "",36,0,0,$Lscope8-find__t10fifo_queue1ZUiRCUis
+ 1230 0abc 00000000 		.p2align 3
+ 1231              		.weak	push__t10fifo_queue1ZUiRCUi
+ 1232              	$LFB10:
+ 1233              	$LM120:
+ 1234              		.stabn 68,0,54,$LM120
+ 1235              	.stabs "../ps2/fifo_queue.cpp",132,0,0,$Ltext0
+ 1236              		.ent	push__t10fifo_queue1ZUiRCUi
+ 1237              	push__t10fifo_queue1ZUiRCUi:
+ 1238              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 1239              		.mask	0x40000000,-16
+ 1240              		.fmask	0x00000000,0
+ 1241 0ac0 E0FFBD27 		subu	$sp,$sp,32
+ 1242              	$LCFI36:
+ 1243 0ac4 1000BEFF 		sd	$fp,16($sp)
+ 1244              	$LCFI37:
+ 1245 0ac8 2DF0A003 		move	$fp,$sp
+ 1246              	$LCFI38:
+ 1247 0acc 2D188000 		move	$3,$4
+ 1248 0ad0 0000C5AF 		sw	$5,0($fp)
+ 1249              	$LM121:
+ 1250              		.stabn 68,0,54,$LM121
+ 1251              	$LBB16:
+ 1252              	$LM122:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 26
+
+
+ 1253              		.stabn 68,0,55,$LM122
+ 1254 0ad4 0A006284 		lh	$2,10($3)
+ 1255 0ad8 04006484 		lh	$4,4($3)
+ 1256 0adc 2A104400 		slt	$2,$2,$4
+ 1257 0ae0 04004014 		bne	$2,$0,$L79
+ 1257      00000000 
+ 1258              	$LM123:
+ 1259              		.stabn 68,0,57,$LM123
+ 1260 0ae8 2D100000 		move	$2,$0
+ 1261 0aec 19000010 		b	$L78
+ 1261      00000000 
+ 1262              		.p2align 2
+ 1263              	$L79:
+ 1264              	$LM124:
+ 1265              		.stabn 68,0,59,$LM124
+ 1266 0af4 08006294 		lhu	$2,8($3)
+ 1267 0af8 01004424 		addu	$4,$2,1
+ 1268 0afc 080064A4 		sh	$4,8($3)
+ 1269              	$LM125:
+ 1270              		.stabn 68,0,60,$LM125
+ 1271 0b00 08006284 		lh	$2,8($3)
+ 1272 0b04 04006484 		lh	$4,4($3)
+ 1273 0b08 2A104400 		slt	$2,$2,$4
+ 1274 0b0c 02004014 		bne	$2,$0,$L80
+ 1274      00000000 
+ 1275              	$LM126:
+ 1276              		.stabn 68,0,62,$LM126
+ 1277 0b14 080060A4 		sh	$0,8($3)
+ 1278              	$L80:
+ 1279              	$LM127:
+ 1280              		.stabn 68,0,64,$LM127
+ 1281 0b18 08006284 		lh	$2,8($3)
+ 1282 0b1c 2D204000 		move	$4,$2
+ 1283 0b20 80100400 		sll	$2,$4,2
+ 1284 0b24 0000648C 		lw	$4,0($3)
+ 1285 0b28 21104400 		addu	$2,$2,$4
+ 1286 0b2c 0000C48F 		lw	$4,0($fp)
+ 1287 0b30 0000858C 		lw	$5,0($4)
+ 1288 0b34 000045AC 		sw	$5,0($2)
+ 1289              	$LM128:
+ 1290              		.stabn 68,0,65,$LM128
+ 1291 0b38 0A006294 		lhu	$2,10($3)
+ 1292 0b3c 01004424 		addu	$4,$2,1
+ 1293 0b40 0A0064A4 		sh	$4,10($3)
+ 1294              	$LM129:
+ 1295              		.stabn 68,0,66,$LM129
+ 1296 0b44 0A006484 		lh	$4,10($3)
+ 1297 0b48 2D108000 		move	$2,$4
+ 1298 0b4c 01000010 		b	$L78
+ 1298      00000000 
+ 1299              	$LBE16:
+ 1300              	$LM130:
+ 1301              		.stabn 68,0,66,$LM130
+ 1302              	$L78:
+ 1303 0b54 2DE8C003 		move	$sp,$fp
+ 1304 0b58 1000BEDF 		ld	$fp,16($sp)
+ 1305 0b5c 2000BD27 		addu	$sp,$sp,32
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 27
+
+
+ 1306 0b60 0800E003 		j	$31
+ 1306      00000000 
+ 1307              		.end	push__t10fifo_queue1ZUiRCUi
+ 1308              	$LFE10:
+ 1309              	.stabs "push__t10fifo_queue1ZUiRCUi:F8",36,0,54,push__t10fifo_queue1ZUiRCUi
+ 1310              	.stabs "this:P240",64,0,54,3
+ 1311              	.stabs "index_to_add:p277",160,0,54,-32
+ 1312              	.stabn 192,0,0,$LBB16
+ 1313              	.stabn 224,0,0,$LBE16
+ 1314              	$Lscope9:
+ 1315              	.stabs "",36,0,0,$Lscope9-push__t10fifo_queue1ZUiRCUi
+ 1316              		.p2align 3
+ 1317              		.weak	size__t10fifo_queue1ZUi
+ 1318              	$LFB11:
+ 1319              	.stabs "../ps2/fifo_queue.h",132,0,0,$Ltext2
+ 1320              	$Ltext2:
+ 1321              	$LM131:
+ 1322              		.stabn 68,0,25,$LM131
+ 1323              	.stabs "../ps2/fifo_queue.h",132,0,0,$Ltext0
+ 1324              		.ent	size__t10fifo_queue1ZUi
+ 1325              	size__t10fifo_queue1ZUi:
+ 1326              		.frame	$fp,16,$31		# vars= 0, regs= 2/0, args= 0, extra= 0
+ 1327              		.mask	0x40000000,-16
+ 1328              		.fmask	0x00000000,0
+ 1329 0b68 F0FFBD27 		subu	$sp,$sp,16
+ 1330              	$LCFI39:
+ 1331 0b6c 0000BEFF 		sd	$fp,0($sp)
+ 1332              	$LCFI40:
+ 1333 0b70 2DF0A003 		move	$fp,$sp
+ 1334              	$LCFI41:
+ 1335 0b74 2D188000 		move	$3,$4
+ 1336              	$LM132:
+ 1337              		.stabn 68,0,25,$LM132
+ 1338              	$LBB17:
+ 1339 0b78 0A006484 		lh	$4,10($3)
+ 1340 0b7c 2D108000 		move	$2,$4
+ 1341 0b80 01000010 		b	$L43
+ 1341      00000000 
+ 1342              	$LBE17:
+ 1343              	$LM133:
+ 1344              		.stabn 68,0,25,$LM133
+ 1345              	$L43:
+ 1346 0b88 2DE8C003 		move	$sp,$fp
+ 1347 0b8c 0000BEDF 		ld	$fp,0($sp)
+ 1348 0b90 1000BD27 		addu	$sp,$sp,16
+ 1349 0b94 0800E003 		j	$31
+ 1349      00000000 
+ 1350              		.end	size__t10fifo_queue1ZUi
+ 1351              	$LFE11:
+ 1352              	.stabs "size__t10fifo_queue1ZUi:F1",36,0,25,size__t10fifo_queue1ZUi
+ 1353              	.stabs "this:P240",64,0,25,3
+ 1354              	.stabn 192,0,0,$LBB17
+ 1355              	.stabn 224,0,0,$LBE17
+ 1356              	$Lscope10:
+ 1357              	.stabs "",36,0,0,$Lscope10-size__t10fifo_queue1ZUi
+ 1358 0b9c 00000000 		.p2align 3
+ 1359              		.weak	_nslCheckEmitterIdValidity__FUi
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 28
+
+
+ 1360              	$LFB12:
+ 1361              	.stabs "../ps2/nsl_ps2.h",132,0,0,$Ltext3
+ 1362              	$Ltext3:
+ 1363              	$LM134:
+ 1364              		.stabn 68,0,314,$LM134
+ 1365              	.stabs "../ps2/nsl_ps2.h",132,0,0,$Ltext0
+ 1366              		.ent	_nslCheckEmitterIdValidity__FUi
+ 1367              	_nslCheckEmitterIdValidity__FUi:
+ 1368              		.frame	$fp,64,$31		# vars= 16, regs= 6/0, args= 0, extra= 0
+ 1369              		.mask	0xc0010000,-16
+ 1370              		.fmask	0x00000000,0
+ 1371 0ba0 C0FFBD27 		subu	$sp,$sp,64
+ 1372              	$LCFI42:
+ 1373 0ba4 3000BFFF 		sd	$31,48($sp)
+ 1374              	$LCFI43:
+ 1375 0ba8 2000BEFF 		sd	$fp,32($sp)
+ 1376              	$LCFI44:
+ 1377 0bac 1000B0FF 		sd	$16,16($sp)
+ 1378              	$LCFI45:
+ 1379 0bb0 2DF0A003 		move	$fp,$sp
+ 1380              	$LCFI46:
+ 1381 0bb4 2D808000 		move	$16,$4
+ 1382              	$LM135:
+ 1383              		.stabn 68,0,314,$LM135
+ 1384              	$LBB18:
+ 1385              	$LM136:
+ 1386              		.stabn 68,0,315,$LM136
+ 1387 0bb8 03000016 		bne	$16,$0,$L20
+ 1387      00000000 
+ 1388 0bc0 2D000010 		b	$L19
+ 1388      00000000 
+ 1389              		.p2align 2
+ 1390              	$L20:
+ 1391              	$LM137:
+ 1392              		.stabn 68,0,316,$LM137
+ 1393 0bc8 FF030232 		andi	$2,$16,0x3ff
+ 1394 0bcc 0000C2AF 		sw	$2,0($fp)
+ 1395              	$LM138:
+ 1396              		.stabn 68,0,317,$LM138
+ 1397 0bd0 FFFF023C 		li	$2,4294901760			# 0xffff0000
+ 1398 0bd4 00FC4234 		ori	$2,$2,0xfc00
+ 1399 0bd8 24180202 		and	$3,$16,$2
+ 1400 0bdc 0400C3AF 		sw	$3,4($fp)
+ 1401              	$LM139:
+ 1402              		.stabn 68,0,318,$LM139
+ 1403 0be0 06000016 		bne	$16,$0,$L21
+ 1403      00000000 
+ 1404              	$LM140:
+ 1405              		.stabn 68,0,319,$LM140
+ 1406 0be8 0000043C 		la	$4,$LC7
+ 1406      10018424 
+ 1407 0bf0 2D280002 		move	$5,$16
+ 1408 0bf4 0000000C 		jal	nslFatal__FPCce
+ 1408      00000000 
+ 1409              	$L21:
+ 1410              	$LM141:
+ 1411              		.stabn 68,0,320,$LM141
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 29
+
+
+ 1412 0bfc 0000C28F 		lw	$2,0($fp)
+ 1413 0c00 0001432C 		sltu	$3,$2,256
+ 1414 0c04 06006014 		bne	$3,$0,$L22
+ 1414      00000000 
+ 1415              	$LM142:
+ 1416              		.stabn 68,0,321,$LM142
+ 1417 0c0c 0000043C 		la	$4,$LC7
+ 1417      10018424 
+ 1418 0c14 2D280002 		move	$5,$16
+ 1419 0c18 0000000C 		jal	nslFatal__FPCce
+ 1419      00000000 
+ 1420              	$L22:
+ 1421              	$LM143:
+ 1422              		.stabn 68,0,322,$LM143
+ 1423 0c20 0000C28F 		lw	$2,0($fp)
+ 1424 0c24 2D184000 		move	$3,$2
+ 1425 0c28 80110300 		sll	$2,$3,6
+ 1426 0c2c 0100033C 		la	$3,nsl+45132
+ 1426      4CB06324 
+ 1427 0c34 21106200 		addu	$2,$3,$2
+ 1428 0c38 0000438C 		lw	$3,0($2)
+ 1429 0c3c 06000312 		beq	$16,$3,$L23
+ 1429      00000000 
+ 1430              	$LM144:
+ 1431              		.stabn 68,0,323,$LM144
+ 1432 0c44 0000043C 		la	$4,$LC7
+ 1432      10018424 
+ 1433 0c4c 2D280002 		move	$5,$16
+ 1434 0c50 0000000C 		jal	nslFatal__FPCce
+ 1434      00000000 
+ 1435              	$L23:
+ 1436              	$LM145:
+ 1437              		.stabn 68,0,324,$LM145
+ 1438 0c58 0400C28F 		lw	$2,4($fp)
+ 1439 0c5c 06004014 		bne	$2,$0,$L24
+ 1439      00000000 
+ 1440              	$LM146:
+ 1441              		.stabn 68,0,325,$LM146
+ 1442 0c64 0000043C 		la	$4,$LC7
+ 1442      10018424 
+ 1443 0c6c 2D280002 		move	$5,$16
+ 1444 0c70 0000000C 		jal	nslFatal__FPCce
+ 1444      00000000 
+ 1445              	$L24:
+ 1446              	$LBE18:
+ 1447              	$LM147:
+ 1448              		.stabn 68,0,326,$LM147
+ 1449              	$L19:
+ 1450 0c78 2DE8C003 		move	$sp,$fp
+ 1451 0c7c 3000BFDF 		ld	$31,48($sp)
+ 1452 0c80 2000BEDF 		ld	$fp,32($sp)
+ 1453 0c84 1000B0DF 		ld	$16,16($sp)
+ 1454 0c88 4000BD27 		addu	$sp,$sp,64
+ 1455 0c8c 0800E003 		j	$31
+ 1455      00000000 
+ 1456              		.end	_nslCheckEmitterIdValidity__FUi
+ 1457              	$LFE12:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 30
+
+
+ 1458              	.stabs "_nslCheckEmitterIdValidity__FUi:F22",36,0,314,_nslCheckEmitterIdValidity__FUi
+ 1459              	.stabs "checkId:P43",64,0,314,16
+ 1460              	.stabs "checkSlot:43",128,0,316,-64
+ 1461              	.stabs "upCheckId:43",128,0,317,-60
+ 1462              	.stabn 192,0,0,$LBB18
+ 1463              	.stabn 224,0,0,$LBE18
+ 1464              	$Lscope11:
+ 1465              	.stabs "",36,0,0,$Lscope11-_nslCheckEmitterIdValidity__FUi
+ 1466 0c94 00000000 		.p2align 3
+ 1467              		.weak	_nslInitialized__Fv
+ 1468              	$LFB13:
+ 1469              	$LM148:
+ 1470              		.stabn 68,0,309,$LM148
+ 1471              	.stabs "../ps2/nsl_ps2.h",132,0,0,$Ltext0
+ 1472              		.ent	_nslInitialized__Fv
+ 1473              	_nslInitialized__Fv:
+ 1474              		.frame	$fp,32,$31		# vars= 0, regs= 4/0, args= 0, extra= 0
+ 1475              		.mask	0xc0000000,-16
+ 1476              		.fmask	0x00000000,0
+ 1477 0c98 E0FFBD27 		subu	$sp,$sp,32
+ 1478              	$LCFI47:
+ 1479 0c9c 1000BFFF 		sd	$31,16($sp)
+ 1480              	$LCFI48:
+ 1481 0ca0 0000BEFF 		sd	$fp,0($sp)
+ 1482              	$LCFI49:
+ 1483 0ca4 2DF0A003 		move	$fp,$sp
+ 1484              	$LCFI50:
+ 1485              	$LM149:
+ 1486              		.stabn 68,0,309,$LM149
+ 1487              	$LBB19:
+ 1488              	$LM150:
+ 1489              		.stabn 68,0,310,$LM150
+ 1490 0ca8 0100023C 		lw	$2,nsl+61516
+ 1490      4CF0428C 
+ 1491 0cb0 01000324 		li	$3,1			# 0x1
+ 1492 0cb4 05004310 		beq	$2,$3,$L18
+ 1492      00000000 
+ 1493              	$LM151:
+ 1494              		.stabn 68,0,311,$LM151
+ 1495 0cbc 0000043C 		la	$4,$LC6
+ 1495      F8008424 
+ 1496 0cc4 0000000C 		jal	nslFatal__FPCce
+ 1496      00000000 
+ 1497              	$L18:
+ 1498              	$LBE19:
+ 1499              	$LM152:
+ 1500              		.stabn 68,0,312,$LM152
+ 1501              	$L17:
+ 1502 0ccc 2DE8C003 		move	$sp,$fp
+ 1503 0cd0 1000BFDF 		ld	$31,16($sp)
+ 1504 0cd4 0000BEDF 		ld	$fp,0($sp)
+ 1505 0cd8 2000BD27 		addu	$sp,$sp,32
+ 1506 0cdc 0800E003 		j	$31
+ 1506      00000000 
+ 1507              		.end	_nslInitialized__Fv
+ 1508              	$LFE13:
+ 1509              	.stabs "_nslInitialized__Fv:F22",36,0,309,_nslInitialized__Fv
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 31
+
+
+ 1510              	.stabn 192,0,0,$LBB19
+ 1511              	.stabn 224,0,0,$LBE19
+ 1512              	$Lscope12:
+ 1513              	.stabs "",36,0,0,$Lscope12-_nslInitialized__Fv
+ 1514 0ce4 00000000 		.p2align 3
+ 1515              		.weak	_nslCheckSoundIdValidity__FUi
+ 1516              	$LFB14:
+ 1517              	$LM153:
+ 1518              		.stabn 68,0,261,$LM153
+ 1519              	.stabs "../ps2/nsl_ps2.h",132,0,0,$Ltext0
+ 1520              		.ent	_nslCheckSoundIdValidity__FUi
+ 1521              	_nslCheckSoundIdValidity__FUi:
+ 1522              		.frame	$fp,64,$31		# vars= 16, regs= 6/0, args= 0, extra= 0
+ 1523              		.mask	0xc0010000,-16
+ 1524              		.fmask	0x00000000,0
+ 1525 0ce8 C0FFBD27 		subu	$sp,$sp,64
+ 1526              	$LCFI51:
+ 1527 0cec 3000BFFF 		sd	$31,48($sp)
+ 1528              	$LCFI52:
+ 1529 0cf0 2000BEFF 		sd	$fp,32($sp)
+ 1530              	$LCFI53:
+ 1531 0cf4 1000B0FF 		sd	$16,16($sp)
+ 1532              	$LCFI54:
+ 1533 0cf8 2DF0A003 		move	$fp,$sp
+ 1534              	$LCFI55:
+ 1535 0cfc 2D808000 		move	$16,$4
+ 1536              	$LM154:
+ 1537              		.stabn 68,0,261,$LM154
+ 1538              	$LBB20:
+ 1539              	$LM155:
+ 1540              		.stabn 68,0,264,$LM155
+ 1541 0d00 FF030232 		andi	$2,$16,0x3ff
+ 1542 0d04 0000C2AF 		sw	$2,0($fp)
+ 1543              	$LM156:
+ 1544              		.stabn 68,0,265,$LM156
+ 1545 0d08 FFFF023C 		li	$2,4294901760			# 0xffff0000
+ 1546 0d0c 00FC4234 		ori	$2,$2,0xfc00
+ 1547 0d10 24180202 		and	$3,$16,$2
+ 1548 0d14 0400C3AF 		sw	$3,4($fp)
+ 1549              	$LM157:
+ 1550              		.stabn 68,0,266,$LM157
+ 1551 0d18 06000016 		bne	$16,$0,$L6
+ 1551      00000000 
+ 1552              	$LM158:
+ 1553              		.stabn 68,0,267,$LM158
+ 1554 0d20 0000043C 		la	$4,$LC0
+ 1554      00008424 
+ 1555 0d28 2D280002 		move	$5,$16
+ 1556 0d2c 0000000C 		jal	nslFatal__FPCce
+ 1556      00000000 
+ 1557              	$L6:
+ 1558              	$LM159:
+ 1559              		.stabn 68,0,268,$LM159
+ 1560 0d34 0000C28F 		lw	$2,0($fp)
+ 1561 0d38 58000324 		li	$3,88			# 0x58
+ 1562 0d3c 18104300 		mult	$2,$2,$3
+ 1563 0d40 0000033C 		la	$3,nsl+22596
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 32
+
+
+ 1563      44586324 
+ 1564 0d48 21106200 		addu	$2,$3,$2
+ 1565 0d4c 0000438C 		lw	$3,0($2)
+ 1566 0d50 06006014 		bne	$3,$0,$L7
+ 1566      00000000 
+ 1567              	$LM160:
+ 1568              		.stabn 68,0,269,$LM160
+ 1569 0d58 0000043C 		la	$4,$LC0
+ 1569      00008424 
+ 1570 0d60 2D280002 		move	$5,$16
+ 1571 0d64 0000000C 		jal	nslFatal__FPCce
+ 1571      00000000 
+ 1572              	$L7:
+ 1573              	$LM161:
+ 1574              		.stabn 68,0,270,$LM161
+ 1575 0d6c 0000C28F 		lw	$2,0($fp)
+ 1576 0d70 0001432C 		sltu	$3,$2,256
+ 1577 0d74 06006014 		bne	$3,$0,$L8
+ 1577      00000000 
+ 1578              	$LM162:
+ 1579              		.stabn 68,0,271,$LM162
+ 1580 0d7c 0000043C 		la	$4,$LC0
+ 1580      00008424 
+ 1581 0d84 2D280002 		move	$5,$16
+ 1582 0d88 0000000C 		jal	nslFatal__FPCce
+ 1582      00000000 
+ 1583              	$L8:
+ 1584              	$LM163:
+ 1585              		.stabn 68,0,272,$LM163
+ 1586 0d90 0000C28F 		lw	$2,0($fp)
+ 1587 0d94 58000324 		li	$3,88			# 0x58
+ 1588 0d98 18104300 		mult	$2,$2,$3
+ 1589 0d9c 0000033C 		la	$3,nsl+22644
+ 1589      74586324 
+ 1590 0da4 21106200 		addu	$2,$3,$2
+ 1591 0da8 0000438C 		lw	$3,0($2)
+ 1592 0dac 06000312 		beq	$16,$3,$L9
+ 1592      00000000 
+ 1593              	$LM164:
+ 1594              		.stabn 68,0,273,$LM164
+ 1595 0db4 0000043C 		la	$4,$LC0
+ 1595      00008424 
+ 1596 0dbc 2D280002 		move	$5,$16
+ 1597 0dc0 0000000C 		jal	nslFatal__FPCce
+ 1597      00000000 
+ 1598              	$L9:
+ 1599              	$LM165:
+ 1600              		.stabn 68,0,274,$LM165
+ 1601 0dc8 0400C28F 		lw	$2,4($fp)
+ 1602 0dcc 06004014 		bne	$2,$0,$L10
+ 1602      00000000 
+ 1603              	$LM166:
+ 1604              		.stabn 68,0,275,$LM166
+ 1605 0dd4 0000043C 		la	$4,$LC0
+ 1605      00008424 
+ 1606 0ddc 2D280002 		move	$5,$16
+ 1607 0de0 0000000C 		jal	nslFatal__FPCce
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 33
+
+
+ 1607      00000000 
+ 1608              	$L10:
+ 1609              	$LBE20:
+ 1610              	$LM167:
+ 1611              		.stabn 68,0,277,$LM167
+ 1612              	$L5:
+ 1613 0de8 2DE8C003 		move	$sp,$fp
+ 1614 0dec 3000BFDF 		ld	$31,48($sp)
+ 1615 0df0 2000BEDF 		ld	$fp,32($sp)
+ 1616 0df4 1000B0DF 		ld	$16,16($sp)
+ 1617 0df8 4000BD27 		addu	$sp,$sp,64
+ 1618 0dfc 0800E003 		j	$31
+ 1618      00000000 
+ 1619              		.end	_nslCheckSoundIdValidity__FUi
+ 1620              	$LFE14:
+ 1621              	.stabs "_nslCheckSoundIdValidity__FUi:F22",36,0,261,_nslCheckSoundIdValidity__FUi
+ 1622              	.stabs "checkId:P42",64,0,261,16
+ 1623              	.stabs "checkSlot:42",128,0,264,-64
+ 1624              	.stabs "upCheckId:42",128,0,265,-60
+ 1625              	.stabn 192,0,0,$LBB20
+ 1626              	.stabn 224,0,0,$LBE20
+ 1627              	$Lscope13:
+ 1628              	.stabs "",36,0,0,$Lscope13-_nslCheckSoundIdValidity__FUi
+ 1629              		.rdata
+ 1630              	.stabs "NSL_PS2_SMALL_STRING_LENGTH:S29",38,0,15,NSL_PS2_SMALL_STRING_LENGTH
+ 1631 0125 000000   		.align	2
+ 1632              		.type	 NSL_PS2_SMALL_STRING_LENGTH,@object
+ 1633              		.size	 NSL_PS2_SMALL_STRING_LENGTH,4
+ 1634              	NSL_PS2_SMALL_STRING_LENGTH:
+ 1635 0128 FF000000 		.word	255
+ 1636              	
+ 1637              		.data
+ 1638              		.align	2
+ 1639              		.globl	_GLOBAL_$F$nslCreateEmitter__FRA2_Cf
+ 1640              	_GLOBAL_$F$nslCreateEmitter__FRA2_Cf:
+ 1641              	__FRAME_BEGIN__:
+ 1642 0000 10000000 		.4byte	$LECIE1-$LSCIE1
+ 1643              	$LSCIE1:
+ 1644 0004 00000000 		.4byte	0x0
+ 1645 0008 01       		.byte	0x1
+ 1646 0009 00       		.byte	0x0
+ 1647 000a 01       		.byte	0x1
+ 1648 000b 78       		.byte	0x78
+ 1649 000c 40       		.byte	0x40
+ 1650 000d 0C       		.byte	0xc
+ 1651 000e 1D       		.byte	0x1d
+ 1652 000f 00       		.byte	0x0
+ 1653 0010 09       		.byte	0x9
+ 1654 0011 40       		.byte	0x40
+ 1655 0012 1F       		.byte	0x1f
+ 1656 0013 00       		.align	2
+ 1657              	$LECIE1:
+ 1658 0014 2C000000 		.4byte	$LEFDE1-$LSFDE1
+ 1659              	$LSFDE1:
+ 1660 0018 18000000 		.4byte	$LSFDE1-__FRAME_BEGIN__
+ 1661 001c 00000000 		.4byte	$LFB1
+ 1662 0020 C4010000 		.4byte	$LFE1-$LFB1
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 34
+
+
+ 1663 0024 04       		.byte	0x4
+ 1664 0025 04000000 		.4byte	$LCFI0-$LFB1
+ 1665 0029 0E       		.byte	0xe
+ 1666 002a 30       		.byte	0x30
+ 1667 002b 04       		.byte	0x4
+ 1668 002c 04000000 		.4byte	$LCFI1-$LCFI0
+ 1669 0030 05       		.byte	0x5
+ 1670 0031 40       		.byte	0x40
+ 1671 0032 02       		.byte	0x2
+ 1672 0033 04       		.byte	0x4
+ 1673 0034 04000000 		.4byte	$LCFI2-$LCFI1
+ 1674 0038 9E       		.byte	0x9e
+ 1675 0039 04       		.byte	0x4
+ 1676 003a 04       		.byte	0x4
+ 1677 003b 04000000 		.4byte	$LCFI3-$LCFI2
+ 1678 003f 0C       		.byte	0xc
+ 1679 0040 1E       		.byte	0x1e
+ 1680 0041 30       		.byte	0x30
+ 1681 0042 0000     		.align	2
+ 1682              	$LEFDE1:
+ 1683 0044 2C000000 		.4byte	$LEFDE3-$LSFDE3
+ 1684              	$LSFDE3:
+ 1685 0048 48000000 		.4byte	$LSFDE3-__FRAME_BEGIN__
+ 1686 004c C8010000 		.4byte	$LFB2
+ 1687 0050 20020000 		.4byte	$LFE2-$LFB2
+ 1688 0054 04       		.byte	0x4
+ 1689 0055 04000000 		.4byte	$LCFI4-$LFB2
+ 1690 0059 0E       		.byte	0xe
+ 1691 005a 30       		.byte	0x30
+ 1692 005b 04       		.byte	0x4
+ 1693 005c 04000000 		.4byte	$LCFI5-$LCFI4
+ 1694 0060 05       		.byte	0x5
+ 1695 0061 40       		.byte	0x40
+ 1696 0062 02       		.byte	0x2
+ 1697 0063 04       		.byte	0x4
+ 1698 0064 04000000 		.4byte	$LCFI6-$LCFI5
+ 1699 0068 9E       		.byte	0x9e
+ 1700 0069 04       		.byte	0x4
+ 1701 006a 04       		.byte	0x4
+ 1702 006b 04000000 		.4byte	$LCFI7-$LCFI6
+ 1703 006f 0C       		.byte	0xc
+ 1704 0070 1E       		.byte	0x1e
+ 1705 0071 30       		.byte	0x30
+ 1706 0072 0000     		.align	2
+ 1707              	$LEFDE3:
+ 1708 0074 2C000000 		.4byte	$LEFDE5-$LSFDE5
+ 1709              	$LSFDE5:
+ 1710 0078 78000000 		.4byte	$LSFDE5-__FRAME_BEGIN__
+ 1711 007c E8030000 		.4byte	$LFB3
+ 1712 0080 18010000 		.4byte	$LFE3-$LFB3
+ 1713 0084 04       		.byte	0x4
+ 1714 0085 04000000 		.4byte	$LCFI8-$LFB3
+ 1715 0089 0E       		.byte	0xe
+ 1716 008a 30       		.byte	0x30
+ 1717 008b 04       		.byte	0x4
+ 1718 008c 04000000 		.4byte	$LCFI9-$LCFI8
+ 1719 0090 05       		.byte	0x5
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 35
+
+
+ 1720 0091 40       		.byte	0x40
+ 1721 0092 02       		.byte	0x2
+ 1722 0093 04       		.byte	0x4
+ 1723 0094 04000000 		.4byte	$LCFI10-$LCFI9
+ 1724 0098 9E       		.byte	0x9e
+ 1725 0099 04       		.byte	0x4
+ 1726 009a 04       		.byte	0x4
+ 1727 009b 04000000 		.4byte	$LCFI11-$LCFI10
+ 1728 009f 0C       		.byte	0xc
+ 1729 00a0 1E       		.byte	0x1e
+ 1730 00a1 30       		.byte	0x30
+ 1731 00a2 0000     		.align	2
+ 1732              	$LEFDE5:
+ 1733 00a4 2C000000 		.4byte	$LEFDE7-$LSFDE7
+ 1734              	$LSFDE7:
+ 1735 00a8 A8000000 		.4byte	$LSFDE7-__FRAME_BEGIN__
+ 1736 00ac 00050000 		.4byte	$LFB4
+ 1737 00b0 8C000000 		.4byte	$LFE4-$LFB4
+ 1738 00b4 04       		.byte	0x4
+ 1739 00b5 04000000 		.4byte	$LCFI12-$LFB4
+ 1740 00b9 0E       		.byte	0xe
+ 1741 00ba 30       		.byte	0x30
+ 1742 00bb 04       		.byte	0x4
+ 1743 00bc 04000000 		.4byte	$LCFI13-$LCFI12
+ 1744 00c0 05       		.byte	0x5
+ 1745 00c1 40       		.byte	0x40
+ 1746 00c2 02       		.byte	0x2
+ 1747 00c3 04       		.byte	0x4
+ 1748 00c4 04000000 		.4byte	$LCFI14-$LCFI13
+ 1749 00c8 9E       		.byte	0x9e
+ 1750 00c9 04       		.byte	0x4
+ 1751 00ca 04       		.byte	0x4
+ 1752 00cb 04000000 		.4byte	$LCFI15-$LCFI14
+ 1753 00cf 0C       		.byte	0xc
+ 1754 00d0 1E       		.byte	0x1e
+ 1755 00d1 30       		.byte	0x30
+ 1756 00d2 0000     		.align	2
+ 1757              	$LEFDE7:
+ 1758 00d4 2C000000 		.4byte	$LEFDE9-$LSFDE9
+ 1759              	$LSFDE9:
+ 1760 00d8 D8000000 		.4byte	$LSFDE9-__FRAME_BEGIN__
+ 1761 00dc 90050000 		.4byte	$LFB5
+ 1762 00e0 7C000000 		.4byte	$LFE5-$LFB5
+ 1763 00e4 04       		.byte	0x4
+ 1764 00e5 04000000 		.4byte	$LCFI16-$LFB5
+ 1765 00e9 0E       		.byte	0xe
+ 1766 00ea 30       		.byte	0x30
+ 1767 00eb 04       		.byte	0x4
+ 1768 00ec 04000000 		.4byte	$LCFI17-$LCFI16
+ 1769 00f0 05       		.byte	0x5
+ 1770 00f1 40       		.byte	0x40
+ 1771 00f2 02       		.byte	0x2
+ 1772 00f3 04       		.byte	0x4
+ 1773 00f4 04000000 		.4byte	$LCFI18-$LCFI17
+ 1774 00f8 9E       		.byte	0x9e
+ 1775 00f9 04       		.byte	0x4
+ 1776 00fa 04       		.byte	0x4
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 36
+
+
+ 1777 00fb 04000000 		.4byte	$LCFI19-$LCFI18
+ 1778 00ff 0C       		.byte	0xc
+ 1779 0100 1E       		.byte	0x1e
+ 1780 0101 30       		.byte	0x30
+ 1781 0102 0000     		.align	2
+ 1782              	$LEFDE9:
+ 1783 0104 2C000000 		.4byte	$LEFDE11-$LSFDE11
+ 1784              	$LSFDE11:
+ 1785 0108 08010000 		.4byte	$LSFDE11-__FRAME_BEGIN__
+ 1786 010c 10060000 		.4byte	$LFB6
+ 1787 0110 30010000 		.4byte	$LFE6-$LFB6
+ 1788 0114 04       		.byte	0x4
+ 1789 0115 04000000 		.4byte	$LCFI20-$LFB6
+ 1790 0119 0E       		.byte	0xe
+ 1791 011a 30       		.byte	0x30
+ 1792 011b 04       		.byte	0x4
+ 1793 011c 04000000 		.4byte	$LCFI21-$LCFI20
+ 1794 0120 05       		.byte	0x5
+ 1795 0121 40       		.byte	0x40
+ 1796 0122 02       		.byte	0x2
+ 1797 0123 04       		.byte	0x4
+ 1798 0124 04000000 		.4byte	$LCFI22-$LCFI21
+ 1799 0128 9E       		.byte	0x9e
+ 1800 0129 04       		.byte	0x4
+ 1801 012a 04       		.byte	0x4
+ 1802 012b 04000000 		.4byte	$LCFI23-$LCFI22
+ 1803 012f 0C       		.byte	0xc
+ 1804 0130 1E       		.byte	0x1e
+ 1805 0131 30       		.byte	0x30
+ 1806 0132 0000     		.align	2
+ 1807              	$LEFDE11:
+ 1808 0134 2C000000 		.4byte	$LEFDE13-$LSFDE13
+ 1809              	$LSFDE13:
+ 1810 0138 38010000 		.4byte	$LSFDE13-__FRAME_BEGIN__
+ 1811 013c 40070000 		.4byte	$LFB7
+ 1812 0140 34010000 		.4byte	$LFE7-$LFB7
+ 1813 0144 04       		.byte	0x4
+ 1814 0145 04000000 		.4byte	$LCFI24-$LFB7
+ 1815 0149 0E       		.byte	0xe
+ 1816 014a 30       		.byte	0x30
+ 1817 014b 04       		.byte	0x4
+ 1818 014c 04000000 		.4byte	$LCFI25-$LCFI24
+ 1819 0150 05       		.byte	0x5
+ 1820 0151 40       		.byte	0x40
+ 1821 0152 02       		.byte	0x2
+ 1822 0153 04       		.byte	0x4
+ 1823 0154 04000000 		.4byte	$LCFI26-$LCFI25
+ 1824 0158 9E       		.byte	0x9e
+ 1825 0159 04       		.byte	0x4
+ 1826 015a 04       		.byte	0x4
+ 1827 015b 04000000 		.4byte	$LCFI27-$LCFI26
+ 1828 015f 0C       		.byte	0xc
+ 1829 0160 1E       		.byte	0x1e
+ 1830 0161 30       		.byte	0x30
+ 1831 0162 0000     		.align	2
+ 1832              	$LEFDE13:
+ 1833 0164 24000000 		.4byte	$LEFDE15-$LSFDE15
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 37
+
+
+ 1834              	$LSFDE15:
+ 1835 0168 68010000 		.4byte	$LSFDE15-__FRAME_BEGIN__
+ 1836 016c 78080000 		.4byte	$LFB8
+ 1837 0170 9C000000 		.4byte	$LFE8-$LFB8
+ 1838 0174 04       		.byte	0x4
+ 1839 0175 04000000 		.4byte	$LCFI28-$LFB8
+ 1840 0179 0E       		.byte	0xe
+ 1841 017a 20       		.byte	0x20
+ 1842 017b 04       		.byte	0x4
+ 1843 017c 04000000 		.4byte	$LCFI29-$LCFI28
+ 1844 0180 9E       		.byte	0x9e
+ 1845 0181 02       		.byte	0x2
+ 1846 0182 04       		.byte	0x4
+ 1847 0183 04000000 		.4byte	$LCFI30-$LCFI29
+ 1848 0187 0C       		.byte	0xc
+ 1849 0188 1E       		.byte	0x1e
+ 1850 0189 20       		.byte	0x20
+ 1851 018a 0000     		.align	2
+ 1852              	$LEFDE15:
+ 1853 018c 34000000 		.4byte	$LEFDE17-$LSFDE17
+ 1854              	$LSFDE17:
+ 1855 0190 90010000 		.4byte	$LSFDE17-__FRAME_BEGIN__
+ 1856 0194 18090000 		.4byte	$LFB9
+ 1857 0198 A4010000 		.4byte	$LFE9-$LFB9
+ 1858 019c 04       		.byte	0x4
+ 1859 019d 04000000 		.4byte	$LCFI31-$LFB9
+ 1860 01a1 0E       		.byte	0xe
+ 1861 01a2 40       		.byte	0x40
+ 1862 01a3 04       		.byte	0x4
+ 1863 01a4 04000000 		.4byte	$LCFI32-$LCFI31
+ 1864 01a8 05       		.byte	0x5
+ 1865 01a9 40       		.byte	0x40
+ 1866 01aa 02       		.byte	0x2
+ 1867 01ab 04       		.byte	0x4
+ 1868 01ac 04000000 		.4byte	$LCFI33-$LCFI32
+ 1869 01b0 9E       		.byte	0x9e
+ 1870 01b1 04       		.byte	0x4
+ 1871 01b2 04       		.byte	0x4
+ 1872 01b3 04000000 		.4byte	$LCFI34-$LCFI33
+ 1873 01b7 90       		.byte	0x90
+ 1874 01b8 06       		.byte	0x6
+ 1875 01b9 04       		.byte	0x4
+ 1876 01ba 04000000 		.4byte	$LCFI35-$LCFI34
+ 1877 01be 0C       		.byte	0xc
+ 1878 01bf 1E       		.byte	0x1e
+ 1879 01c0 40       		.byte	0x40
+ 1880 01c1 000000   		.align	2
+ 1881              	$LEFDE17:
+ 1882 01c4 24000000 		.4byte	$LEFDE19-$LSFDE19
+ 1883              	$LSFDE19:
+ 1884 01c8 C8010000 		.4byte	$LSFDE19-__FRAME_BEGIN__
+ 1885 01cc C00A0000 		.4byte	$LFB10
+ 1886 01d0 A8000000 		.4byte	$LFE10-$LFB10
+ 1887 01d4 04       		.byte	0x4
+ 1888 01d5 04000000 		.4byte	$LCFI36-$LFB10
+ 1889 01d9 0E       		.byte	0xe
+ 1890 01da 20       		.byte	0x20
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 38
+
+
+ 1891 01db 04       		.byte	0x4
+ 1892 01dc 04000000 		.4byte	$LCFI37-$LCFI36
+ 1893 01e0 9E       		.byte	0x9e
+ 1894 01e1 02       		.byte	0x2
+ 1895 01e2 04       		.byte	0x4
+ 1896 01e3 04000000 		.4byte	$LCFI38-$LCFI37
+ 1897 01e7 0C       		.byte	0xc
+ 1898 01e8 1E       		.byte	0x1e
+ 1899 01e9 20       		.byte	0x20
+ 1900 01ea 0000     		.align	2
+ 1901              	$LEFDE19:
+ 1902 01ec 24000000 		.4byte	$LEFDE21-$LSFDE21
+ 1903              	$LSFDE21:
+ 1904 01f0 F0010000 		.4byte	$LSFDE21-__FRAME_BEGIN__
+ 1905 01f4 680B0000 		.4byte	$LFB11
+ 1906 01f8 34000000 		.4byte	$LFE11-$LFB11
+ 1907 01fc 04       		.byte	0x4
+ 1908 01fd 04000000 		.4byte	$LCFI39-$LFB11
+ 1909 0201 0E       		.byte	0xe
+ 1910 0202 10       		.byte	0x10
+ 1911 0203 04       		.byte	0x4
+ 1912 0204 04000000 		.4byte	$LCFI40-$LCFI39
+ 1913 0208 9E       		.byte	0x9e
+ 1914 0209 02       		.byte	0x2
+ 1915 020a 04       		.byte	0x4
+ 1916 020b 04000000 		.4byte	$LCFI41-$LCFI40
+ 1917 020f 0C       		.byte	0xc
+ 1918 0210 1E       		.byte	0x1e
+ 1919 0211 10       		.byte	0x10
+ 1920 0212 0000     		.align	2
+ 1921              	$LEFDE21:
+ 1922 0214 34000000 		.4byte	$LEFDE23-$LSFDE23
+ 1923              	$LSFDE23:
+ 1924 0218 18020000 		.4byte	$LSFDE23-__FRAME_BEGIN__
+ 1925 021c A00B0000 		.4byte	$LFB12
+ 1926 0220 F4000000 		.4byte	$LFE12-$LFB12
+ 1927 0224 04       		.byte	0x4
+ 1928 0225 04000000 		.4byte	$LCFI42-$LFB12
+ 1929 0229 0E       		.byte	0xe
+ 1930 022a 40       		.byte	0x40
+ 1931 022b 04       		.byte	0x4
+ 1932 022c 04000000 		.4byte	$LCFI43-$LCFI42
+ 1933 0230 05       		.byte	0x5
+ 1934 0231 40       		.byte	0x40
+ 1935 0232 02       		.byte	0x2
+ 1936 0233 04       		.byte	0x4
+ 1937 0234 04000000 		.4byte	$LCFI44-$LCFI43
+ 1938 0238 9E       		.byte	0x9e
+ 1939 0239 04       		.byte	0x4
+ 1940 023a 04       		.byte	0x4
+ 1941 023b 04000000 		.4byte	$LCFI45-$LCFI44
+ 1942 023f 90       		.byte	0x90
+ 1943 0240 06       		.byte	0x6
+ 1944 0241 04       		.byte	0x4
+ 1945 0242 04000000 		.4byte	$LCFI46-$LCFI45
+ 1946 0246 0C       		.byte	0xc
+ 1947 0247 1E       		.byte	0x1e
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 39
+
+
+ 1948 0248 40       		.byte	0x40
+ 1949 0249 000000   		.align	2
+ 1950              	$LEFDE23:
+ 1951 024c 2C000000 		.4byte	$LEFDE25-$LSFDE25
+ 1952              	$LSFDE25:
+ 1953 0250 50020000 		.4byte	$LSFDE25-__FRAME_BEGIN__
+ 1954 0254 980C0000 		.4byte	$LFB13
+ 1955 0258 4C000000 		.4byte	$LFE13-$LFB13
+ 1956 025c 04       		.byte	0x4
+ 1957 025d 04000000 		.4byte	$LCFI47-$LFB13
+ 1958 0261 0E       		.byte	0xe
+ 1959 0262 20       		.byte	0x20
+ 1960 0263 04       		.byte	0x4
+ 1961 0264 04000000 		.4byte	$LCFI48-$LCFI47
+ 1962 0268 05       		.byte	0x5
+ 1963 0269 40       		.byte	0x40
+ 1964 026a 02       		.byte	0x2
+ 1965 026b 04       		.byte	0x4
+ 1966 026c 04000000 		.4byte	$LCFI49-$LCFI48
+ 1967 0270 9E       		.byte	0x9e
+ 1968 0271 04       		.byte	0x4
+ 1969 0272 04       		.byte	0x4
+ 1970 0273 04000000 		.4byte	$LCFI50-$LCFI49
+ 1971 0277 0C       		.byte	0xc
+ 1972 0278 1E       		.byte	0x1e
+ 1973 0279 20       		.byte	0x20
+ 1974 027a 0000     		.align	2
+ 1975              	$LEFDE25:
+ 1976 027c 34000000 		.4byte	$LEFDE27-$LSFDE27
+ 1977              	$LSFDE27:
+ 1978 0280 80020000 		.4byte	$LSFDE27-__FRAME_BEGIN__
+ 1979 0284 E80C0000 		.4byte	$LFB14
+ 1980 0288 1C010000 		.4byte	$LFE14-$LFB14
+ 1981 028c 04       		.byte	0x4
+ 1982 028d 04000000 		.4byte	$LCFI51-$LFB14
+ 1983 0291 0E       		.byte	0xe
+ 1984 0292 40       		.byte	0x40
+ 1985 0293 04       		.byte	0x4
+ 1986 0294 04000000 		.4byte	$LCFI52-$LCFI51
+ 1987 0298 05       		.byte	0x5
+ 1988 0299 40       		.byte	0x40
+ 1989 029a 02       		.byte	0x2
+ 1990 029b 04       		.byte	0x4
+ 1991 029c 04000000 		.4byte	$LCFI53-$LCFI52
+ 1992 02a0 9E       		.byte	0x9e
+ 1993 02a1 04       		.byte	0x4
+ 1994 02a2 04       		.byte	0x4
+ 1995 02a3 04000000 		.4byte	$LCFI54-$LCFI53
+ 1996 02a7 90       		.byte	0x90
+ 1997 02a8 06       		.byte	0x6
+ 1998 02a9 04       		.byte	0x4
+ 1999 02aa 04000000 		.4byte	$LCFI55-$LCFI54
+ 2000 02ae 0C       		.byte	0xc
+ 2001 02af 1E       		.byte	0x1e
+ 2002 02b0 40       		.byte	0x40
+ 2003 02b1 000000   		.align	2
+ 2004              	$LEFDE27:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 40
+
+
+ 2005 02b4 00000000 		.4byte	0x0
+ 2006              		.align	0

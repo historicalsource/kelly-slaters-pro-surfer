@@ -1,0 +1,9 @@
+create PS2_EE_Bootable/ngl_ps2.lib
+addmod ./PS2_EE_Bootable/ngl_ate.obj
+addmod ./PS2_EE_Bootable/ngl_dma.obj
+addmod ./PS2_EE_Bootable/ngl_instbank.obj
+addmod ./PS2_EE_Bootable/ngl_ps2.obj
+addmod ./PS2_EE_Bootable/ngl_particle.obj
+addmod ./PS2_EE_Release/ngl_vu1.o
+save
+end

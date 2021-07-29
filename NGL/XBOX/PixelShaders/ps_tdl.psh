@@ -1,0 +1,14 @@
+#include "ngl_PixelShadersMacro.h"
+
+; map (opaque) + detail (add signed) + light map (blend).
+
+tex t0  ; base map
+tex t1  ; detail map
+tex t2  ; light map
+
+add r0.rgb, t0.rgb, t1_bias.rgb
+xmma discard.rgb, discard.rgb, r0.rgb, r0.rgb, 1-t2.a, t2.rgb, t2.a
++mov r0.a, t0.a
+mul r0, r0, v0
+
+XFC_NO_SPECULAR

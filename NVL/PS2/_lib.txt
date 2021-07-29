@@ -1,0 +1,6 @@
+create PS2_EE_Bootable/nvl_ps2.lib
+addmod ./PS2_EE_Bootable/nvl_ps2.obj
+addmod ./PS2_EE_Bootable/nvlMPEG_ps2.obj
+addmod ./PS2_EE_Bootable/nvlstream_ps2.obj
+save
+end

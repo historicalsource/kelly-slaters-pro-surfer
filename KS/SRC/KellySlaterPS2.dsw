@@ -1,0 +1,94 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "KellySlater"=.\KellySlater.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ks/src", JQFAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ngl_ps2
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nvl_ps2
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nsl_ps2
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ngl_ps2"=..\..\NGL\ps2\ngl_ps2_vsi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NGL/PS2", QSEAAAAA
+    ..\..\ngl\ps2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nsl_ps2"=..\..\NSL\PS2\NSL_ps2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NSL/PS2", HVOEAAAA
+    ..\..\NSL\PS2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nvl_ps2"=..\..\NVL\ps2\nvl_ps2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NVL/ps2", VEXBAAAA
+    ..\..\nvl\ps2
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NSL/PS2", HVOEAAAA
+    ..\..\NSL\PS2
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

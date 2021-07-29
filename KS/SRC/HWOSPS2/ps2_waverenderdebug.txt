@@ -1,0 +1,6 @@
+USEINFO(DrawPassDark, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawPassFoam, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawPassHighCore, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawPassHighSpot, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawPassLight, INT, 0, 1, 1, 1, YES)
+USEINFO(DrawPassTrans, INT, 0, 1, 1, 1, YES)

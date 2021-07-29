@@ -1,0 +1,32 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "nslSoundManager"=.\nslSoundManager.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {C74190B6-8589-11D1-B16A-00C0F0283628}
+    {F08DF954-8592-11D1-B16A-00C0F0283628}
+    {3B7C8860-D78F-101B-B9B5-04021C009402}
+}}}
+
+###############################################################################
+

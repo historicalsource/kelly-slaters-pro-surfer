@@ -1,0 +1,14 @@
+#include "ngl_PixelShadersMacro.h"
+
+; enviro (opaque) + light map (blend const).
+; final alpha = enviro.a + lightmap.a
+
+tex t0  ; enviro map
+tex t1  ; light map
+
+; enviro + light map
+xmma discard.rgb, discard.rgb, r0.rgb, t0.rgb, 1-t1.a, t1.rgb, t1.a
++add r0.a, ENVIROMAP_BM_CONST, t1.a
+mul r0, r0, v0
+
+XFC_NO_SPECULAR

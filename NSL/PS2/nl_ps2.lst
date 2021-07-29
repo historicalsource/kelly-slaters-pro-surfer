@@ -1,0 +1,1698 @@
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 1
+
+
+   1              		.file	1 "nl_ps2.cpp"
+   2              		#@stabs
+   3              	gcc2_compiled.:
+   4              	__gnu_compiled_cplusplus:
+   5              	.stabs "C:\\NSL\\WORKING\\ps2/",100,0,0,$Ltext0
+   6              	.stabs "nl_ps2.cpp",100,0,0,$Ltext0
+   7              		.text
+   8              	$Ltext0:
+   9              	.stabs "int:t1=r1;00000000000000000000000000000000020000000000;000000000000000000000000000000000177
+  10              	.stabs "char:t2=r2;0;127;",128,0,0,0
+  11              	.stabs "long int:t3=r1;00000000000000000000001000000000000000000000;0000000000000000000000077777777
+  12              	.stabs "unsigned int:t4=r1;00000000000000000000000000000000000000000000;000000000000000000000000000
+  13              	.stabs "long unsigned int:t5=r1;00000000000000000000000000000000000000000000;0000000000000000000000
+  14              	.stabs "long long int:t6=r1;00000000000000000000001000000000000000000000;00000000000000000000000777
+  15              	.stabs "long long unsigned int:t7=r1;00000000000000000000000000000000000000000000;00000000000000000
+  16              	.stabs "short int:t8=r8;-32768;32767;",128,0,0,0
+  17              	.stabs "short unsigned int:t9=r9;0;65535;",128,0,0,0
+  18              	.stabs "signed char:t10=r10;-128;127;",128,0,0,0
+  19              	.stabs "unsigned char:t11=r11;0;255;",128,0,0,0
+  20              	.stabs "__int128_t:t12=r1;02000000000000000000000000000000000000000000;0177777777777777777777777777
+  21              	.stabs "__uint128_t:t13=r1;00000000000000000000000000000000000000000000;037777777777777777777777777
+  22              	.stabs "float:t14=r1;4;0;",128,0,0,0
+  23              	.stabs "double:t15=r1;8;0;",128,0,0,0
+  24              	.stabs "long double:t16=r1;8;0;",128,0,0,0
+  25              	.stabs "complex int:t17=s8real:1,0,32;imag:1,32,32;;",128,0,0,0
+  26              	.stabs "complex float:t18=r18;4;0;",128,0,0,0
+  27              	.stabs "complex double:t19=r19;8;0;",128,0,0,0
+  28              	.stabs "complex long double:t20=r20;8;0;",128,0,0,0
+  29              	.stabs "bool:t21=@s32;-16;",128,0,0,0
+  30              	.stabs "void:t22=22",128,0,0,0
+  31              	.stabs "__wchar_t:t23=r1;00000000000000000000000000000000020000000000;00000000000000000000000000000
+  32              	.stabs "__vtbl_ptr_type:t24=s8__delta:8,0,16;__index:8,16,16;__pfn:25=*22,32,32;__delta2:8,32,16;;"
+  33              	.stabs "u_char:t26=11",128,0,25,0
+  34              	.stabs "u_short:t27=9",128,0,26,0
+  35              	.stabs "u_int:t28=4",128,0,27,0
+  36              	.stabs "u_long:t29=5",128,0,28,0
+  37              	.stabs "long128:t30=31=r1;02000000000000000000000000000000000000000000;0177777777777777777777777777
+  38              	.stabs "u_long128:t32=33=r1;00000000000000000000000000000000000000000000;03777777777777777777777777
+  39              	.stabs "ThreadParam:T34=s48status:1,0,32;entry:25,32,32;stack:25,64,32;stackSize:1,96,32;gpReg:25,1
+  40              	.stabs "ThreadParam:Tt34",128,0,153,0
+  41              	.stabs "SemaParam:Tt40=s24currentCount:1,0,32;maxCount:1,32,32;initCount:1,64,32;numWaitThreads:1,9
+  42              	.stabs "qword:t46=47=ar1;0;3;1",128,0,30,0
+  43              	.stabs "sceVu0IVECTOR:t48=49=ar1;0;3;1",128,0,31,0
+  44              	.stabs "sceVu0FVECTOR:t50=51=ar1;0;3;14",128,0,32,0
+  45              	.stabs "sceVu0FMATRIX:t52=53=ar1;0;3;54=ar1;0;3;14",128,0,33,0
+  46              	.stabs "nlUchar:t55=11",128,0,14,0
+  47              	.stabs "nlUint8:t56=11",128,0,15,0
+  48              	.stabs "nlUint16:t57=9",128,0,16,0
+  49              	.stabs "nlUint32:t58=4",128,0,17,0
+  50              	.stabs "nlUint64:t59=5",128,0,18,0
+  51              	.stabs "nlInt8:t60=10",128,0,19,0
+  52              	.stabs "nlInt16:t61=8",128,0,20,0
+  53              	.stabs "nlInt32:t62=1",128,0,21,0
+  54              	.stabs "nlInt64:t63=3",128,0,22,0
+  55              	.stabs "nlMatrix4x4:t64=65=ar1;0;3;54",128,0,31,0
+  56              	.stabs "nlVector4d:t66=54",128,0,32,0
+  57              	.stabs "nlVector3d:t67=68=ar1;0;2;14",128,0,33,0
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 2
+
+
+  58              		.globl	NL_ZERO_VECTOR4D
+  59              		.data
+  60              	.stabs "NL_ZERO_VECTOR4D:G66",32,0,16,0
+  61              		.align	4
+  62              		.type	 NL_ZERO_VECTOR4D,@object
+  63              		.size	 NL_ZERO_VECTOR4D,16
+  64              	NL_ZERO_VECTOR4D:
+  65 0000 00000000 		.word	0x00000000		# 0 (float)
+  66 0004 00000000 		.word	0x00000000		# 0 (float)
+  67 0008 00000000 		.word	0x00000000		# 0 (float)
+  68 000c 00000000 		.word	0x00000000		# 0 (float)
+  69              		.globl	NL_ZERO_VECTOR3D
+  70              	.stabs "NL_ZERO_VECTOR3D:G67",32,0,17,0
+  71              		.align	3
+  72              		.type	 NL_ZERO_VECTOR3D,@object
+  73              		.size	 NL_ZERO_VECTOR3D,12
+  74              	NL_ZERO_VECTOR3D:
+  75 0010 00000000 		.word	0x00000000		# 0 (float)
+  76 0014 00000000 		.word	0x00000000		# 0 (float)
+  77 0018 00000000 		.word	0x00000000		# 0 (float)
+  78              		.text
+  79              		.p2align 3
+  80              		.globl	nslSceVu0UnitMatrix__FPA3_f
+  81              	$LFB1:
+  82              	$LM1:
+  83              		.stabn 68,0,68,$LM1
+  84              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+  85              		.ent	nslSceVu0UnitMatrix__FPA3_f
+  86              	nslSceVu0UnitMatrix__FPA3_f:
+  87              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+  88              		.mask	0x40000000,-16
+  89              		.fmask	0x00000000,0
+  90 0000 E0FFBD27 		subu	$sp,$sp,32
+  91              	$LCFI0:
+  92 0004 1000BEFF 		sd	$fp,16($sp)
+  93              	$LCFI1:
+  94 0008 2DF0A003 		move	$fp,$sp
+  95              	$LCFI2:
+  96 000c 0000C4AF 		sw	$4,0($fp)
+  97              	$LM2:
+  98              		.stabn 68,0,68,$LM2
+  99              	$LBB2:
+ 100              	$LM3:
+ 101              		.stabn 68,0,79,$LM3
+ 102 0010 0000C28F 		lw	$2,0($fp)
+ 103              	 #APP
+ 104              		
+ 105 0014 2C01E04B 		vsub.xyzw	vf4,vf0,vf0 #vf4.xyzw=0;
+ 106 0018 2821204A 		vadd.w	vf4,vf4,vf0
+ 107 001c 3D23E54B 		vmr32.xyzw	vf5,vf4
+ 108 0020 3D2BE64B 		vmr32.xyzw	vf6,vf5
+ 109 0024 3D33E74B 		vmr32.xyzw	vf7,vf6
+ 110 0028 300044F8 		sqc2    vf4,0x30($2)
+ 111 002c 200045F8 		sqc2    vf5,0x20($2)
+ 112 0030 100046F8 		sqc2    vf6,0x10($2)
+ 113 0034 000047F8 		sqc2    vf7,0x0($2)
+ 114              		
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 3
+
+
+ 115              	 #NO_APP
+ 116              	$LBE2:
+ 117 0038 03000010 		b	$L5
+ 117      00000000 
+ 118 0040 01000010 		b	$L4
+ 118      00000000 
+ 119              		.p2align 2
+ 120              	$L5:
+ 121              	$LM4:
+ 122              		.stabn 68,0,80,$LM4
+ 123              	$L4:
+ 124 0048 2DE8C003 		move	$sp,$fp
+ 125 004c 1000BEDF 		ld	$fp,16($sp)
+ 126 0050 2000BD27 		addu	$sp,$sp,32
+ 127 0054 0800E003 		j	$31
+ 127      00000000 
+ 128              		.end	nslSceVu0UnitMatrix__FPA3_f
+ 129              	$LFE1:
+ 130              	.stabs "nslSceVu0UnitMatrix__FPA3_f:F22",36,0,68,nslSceVu0UnitMatrix__FPA3_f
+ 131              	.stabs "m0:p69=*54",160,0,68,-32
+ 132              	.stabn 192,0,0,$LBB2
+ 133              	.stabn 224,0,0,$LBE2
+ 134              	$Lscope0:
+ 135              	.stabs "",36,0,0,$Lscope0-nslSceVu0UnitMatrix__FPA3_f
+ 136 005c 00000000 		.p2align 3
+ 137              		.globl	nlIdentityMatrix__FPA3_f
+ 138              	$LFB2:
+ 139              	$LM5:
+ 140              		.stabn 68,0,220,$LM5
+ 141              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 142              		.ent	nlIdentityMatrix__FPA3_f
+ 143              	nlIdentityMatrix__FPA3_f:
+ 144              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 145              		.mask	0xc0000000,-16
+ 146              		.fmask	0x00000000,0
+ 147 0060 D0FFBD27 		subu	$sp,$sp,48
+ 148              	$LCFI3:
+ 149 0064 2000BFFF 		sd	$31,32($sp)
+ 150              	$LCFI4:
+ 151 0068 1000BEFF 		sd	$fp,16($sp)
+ 152              	$LCFI5:
+ 153 006c 2DF0A003 		move	$fp,$sp
+ 154              	$LCFI6:
+ 155 0070 0000C4AF 		sw	$4,0($fp)
+ 156              	$LM6:
+ 157              		.stabn 68,0,220,$LM6
+ 158              	$LBB3:
+ 159              	$LM7:
+ 160              		.stabn 68,0,221,$LM7
+ 161 0074 0000C48F 		lw	$4,0($fp)
+ 162 0078 0000000C 		jal	nslSceVu0UnitMatrix__FPA3_f
+ 162      00000000 
+ 163              	$LBE3:
+ 164              	$LM8:
+ 165              		.stabn 68,0,222,$LM8
+ 166              	$L10:
+ 167 0080 2DE8C003 		move	$sp,$fp
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 4
+
+
+ 168 0084 2000BFDF 		ld	$31,32($sp)
+ 169 0088 1000BEDF 		ld	$fp,16($sp)
+ 170 008c 3000BD27 		addu	$sp,$sp,48
+ 171 0090 0800E003 		j	$31
+ 171      00000000 
+ 172              		.end	nlIdentityMatrix__FPA3_f
+ 173              	$LFE2:
+ 174              	.stabs "nlIdentityMatrix__FPA3_f:F22",36,0,220,nlIdentityMatrix__FPA3_f
+ 175              	.stabs "matrix:p69",160,0,220,-48
+ 176              	.stabn 192,0,0,$LBB3
+ 177              	.stabn 224,0,0,$LBE3
+ 178              	$Lscope1:
+ 179              	.stabs "",36,0,0,$Lscope1-nlIdentityMatrix__FPA3_f
+ 180              		.p2align 3
+ 181              		.globl	nlMatrixMul__FPA3_fT0T0
+ 182              	$LFB3:
+ 183              	$LM9:
+ 184              		.stabn 68,0,229,$LM9
+ 185              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 186              		.ent	nlMatrixMul__FPA3_fT0T0
+ 187              	nlMatrixMul__FPA3_fT0T0:
+ 188              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 189              		.mask	0xc0000000,-16
+ 190              		.fmask	0x00000000,0
+ 191 0098 D0FFBD27 		subu	$sp,$sp,48
+ 192              	$LCFI7:
+ 193 009c 2000BFFF 		sd	$31,32($sp)
+ 194              	$LCFI8:
+ 195 00a0 1000BEFF 		sd	$fp,16($sp)
+ 196              	$LCFI9:
+ 197 00a4 2DF0A003 		move	$fp,$sp
+ 198              	$LCFI10:
+ 199 00a8 0000C4AF 		sw	$4,0($fp)
+ 200 00ac 0400C5AF 		sw	$5,4($fp)
+ 201 00b0 0800C6AF 		sw	$6,8($fp)
+ 202              	$LM10:
+ 203              		.stabn 68,0,229,$LM10
+ 204              	$LBB4:
+ 205              	$LM11:
+ 206              		.stabn 68,0,230,$LM11
+ 207 00b4 0000C48F 		lw	$4,0($fp)
+ 208 00b8 0400C58F 		lw	$5,4($fp)
+ 209 00bc 0800C68F 		lw	$6,8($fp)
+ 210 00c0 0000000C 		jal	sceVu0MulMatrix
+ 210      00000000 
+ 211              	$LBE4:
+ 212              	$LM12:
+ 213              		.stabn 68,0,231,$LM12
+ 214              	$L11:
+ 215 00c8 2DE8C003 		move	$sp,$fp
+ 216 00cc 2000BFDF 		ld	$31,32($sp)
+ 217 00d0 1000BEDF 		ld	$fp,16($sp)
+ 218 00d4 3000BD27 		addu	$sp,$sp,48
+ 219 00d8 0800E003 		j	$31
+ 219      00000000 
+ 220              		.end	nlMatrixMul__FPA3_fT0T0
+ 221              	$LFE3:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 5
+
+
+ 222              	.stabs "nlMatrixMul__FPA3_fT0T0:F22",36,0,229,nlMatrixMul__FPA3_fT0T0
+ 223              	.stabs "dst:p69",160,0,229,-48
+ 224              	.stabs "lhs:p69",160,0,229,-44
+ 225              	.stabs "rhs:p69",160,0,229,-40
+ 226              	.stabn 192,0,0,$LBB4
+ 227              	.stabn 224,0,0,$LBE4
+ 228              	$Lscope2:
+ 229              	.stabs "",36,0,0,$Lscope2-nlMatrixMul__FPA3_fT0T0
+ 230              		.p2align 3
+ 231              		.globl	nlDotProduct4d__FPfT0
+ 232              	$LFB4:
+ 233              	$LM13:
+ 234              		.stabn 68,0,238,$LM13
+ 235              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 236              		.ent	nlDotProduct4d__FPfT0
+ 237              	nlDotProduct4d__FPfT0:
+ 238              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 239              		.mask	0xc0000000,-16
+ 240              		.fmask	0x00000000,0
+ 241 00e0 D0FFBD27 		subu	$sp,$sp,48
+ 242              	$LCFI11:
+ 243 00e4 2000BFFF 		sd	$31,32($sp)
+ 244              	$LCFI12:
+ 245 00e8 1000BEFF 		sd	$fp,16($sp)
+ 246              	$LCFI13:
+ 247 00ec 2DF0A003 		move	$fp,$sp
+ 248              	$LCFI14:
+ 249 00f0 0000C4AF 		sw	$4,0($fp)
+ 250 00f4 0400C5AF 		sw	$5,4($fp)
+ 251              	$LM14:
+ 252              		.stabn 68,0,238,$LM14
+ 253              	$LBB5:
+ 254              	$LM15:
+ 255              		.stabn 68,0,239,$LM15
+ 256 00f8 0000C48F 		lw	$4,0($fp)
+ 257 00fc 0400C58F 		lw	$5,4($fp)
+ 258 0100 0000000C 		jal	sceVu0InnerProduct
+ 258      00000000 
+ 259 0108 46000046 		mov.s	$f1,$f0
+ 260 010c 06080046 		mov.s	$f0,$f1
+ 261 0110 01000010 		b	$L12
+ 261      00000000 
+ 262              	$LBE5:
+ 263              	$LM16:
+ 264              		.stabn 68,0,240,$LM16
+ 265              		.p2align 2
+ 266              	$L12:
+ 267 0118 2DE8C003 		move	$sp,$fp
+ 268 011c 2000BFDF 		ld	$31,32($sp)
+ 269 0120 1000BEDF 		ld	$fp,16($sp)
+ 270 0124 3000BD27 		addu	$sp,$sp,48
+ 271 0128 0800E003 		j	$31
+ 271      00000000 
+ 272              		.end	nlDotProduct4d__FPfT0
+ 273              	$LFE4:
+ 274              	.stabs "nlDotProduct4d__FPfT0:F14",36,0,238,nlDotProduct4d__FPfT0
+ 275              	.stabs "v0:p70=*14",160,0,238,-48
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 6
+
+
+ 276              	.stabs "v1:p70",160,0,238,-44
+ 277              	.stabn 192,0,0,$LBB5
+ 278              	.stabn 224,0,0,$LBE5
+ 279              	$Lscope3:
+ 280              	.stabs "",36,0,0,$Lscope3-nlDotProduct4d__FPfT0
+ 281              		.p2align 3
+ 282              		.globl	nlDotProduct3d__FPfT0
+ 283              	$LFB5:
+ 284              	$LM17:
+ 285              		.stabn 68,0,246,$LM17
+ 286              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 287              		.ent	nlDotProduct3d__FPfT0
+ 288              	nlDotProduct3d__FPfT0:
+ 289              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 290              		.mask	0x40000000,-16
+ 291              		.fmask	0x00000000,0
+ 292 0130 E0FFBD27 		subu	$sp,$sp,32
+ 293              	$LCFI15:
+ 294 0134 1000BEFF 		sd	$fp,16($sp)
+ 295              	$LCFI16:
+ 296 0138 2DF0A003 		move	$fp,$sp
+ 297              	$LCFI17:
+ 298 013c 0000C4AF 		sw	$4,0($fp)
+ 299 0140 0400C5AF 		sw	$5,4($fp)
+ 300              	$LM18:
+ 301              		.stabn 68,0,246,$LM18
+ 302              	$LBB6:
+ 303              	$LM19:
+ 304              		.stabn 68,0,247,$LM19
+ 305 0144 0000C28F 		lw	$2,0($fp)
+ 306 0148 0400C38F 		lw	$3,4($fp)
+ 307 014c 000040C4 		l.s	$f0,0($2)
+ 308 0150 000062C4 		l.s	$f2,0($3)
+ 309 0154 42000246 		mul.s	$f1,$f0,$f2
+ 310 0158 0000C38F 		lw	$3,0($fp)
+ 311 015c 04006224 		addu	$2,$3,4
+ 312 0160 0400C48F 		lw	$4,4($fp)
+ 313 0164 04008324 		addu	$3,$4,4
+ 314 0168 000040C4 		l.s	$f0,0($2)
+ 315 016c 000062C4 		l.s	$f2,0($3)
+ 316 0170 02000246 		mul.s	$f0,$f0,$f2
+ 317 0174 40080046 		add.s	$f1,$f1,$f0
+ 318 0178 0000C38F 		lw	$3,0($fp)
+ 319 017c 08006224 		addu	$2,$3,8
+ 320 0180 0400C48F 		lw	$4,4($fp)
+ 321 0184 08008324 		addu	$3,$4,8
+ 322 0188 000040C4 		l.s	$f0,0($2)
+ 323 018c 000062C4 		l.s	$f2,0($3)
+ 324 0190 02000246 		mul.s	$f0,$f0,$f2
+ 325 0194 40080046 		add.s	$f1,$f1,$f0
+ 326 0198 06080046 		mov.s	$f0,$f1
+ 327 019c 01000010 		b	$L13
+ 327      00000000 
+ 328              	$LBE6:
+ 329              	$LM20:
+ 330              		.stabn 68,0,248,$LM20
+ 331              		.p2align 2
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 7
+
+
+ 332              	$L13:
+ 333 01a4 2DE8C003 		move	$sp,$fp
+ 334 01a8 1000BEDF 		ld	$fp,16($sp)
+ 335 01ac 2000BD27 		addu	$sp,$sp,32
+ 336 01b0 0800E003 		j	$31
+ 336      00000000 
+ 337              		.end	nlDotProduct3d__FPfT0
+ 338              	$LFE5:
+ 339              	.stabs "nlDotProduct3d__FPfT0:F14",36,0,246,nlDotProduct3d__FPfT0
+ 340              	.stabs "v0:p70",160,0,246,-32
+ 341              	.stabs "v1:p70",160,0,246,-28
+ 342              	.stabn 192,0,0,$LBB6
+ 343              	.stabn 224,0,0,$LBE6
+ 344              	$Lscope4:
+ 345              	.stabs "",36,0,0,$Lscope4-nlDotProduct3d__FPfT0
+ 346              		.p2align 3
+ 347              		.globl	nlCrossProduct4d__FPfT0T0
+ 348              	$LFB6:
+ 349              	$LM21:
+ 350              		.stabn 68,0,255,$LM21
+ 351              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 352              		.ent	nlCrossProduct4d__FPfT0T0
+ 353              	nlCrossProduct4d__FPfT0T0:
+ 354              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 355              		.mask	0xc0000000,-16
+ 356              		.fmask	0x00000000,0
+ 357 01b8 D0FFBD27 		subu	$sp,$sp,48
+ 358              	$LCFI18:
+ 359 01bc 2000BFFF 		sd	$31,32($sp)
+ 360              	$LCFI19:
+ 361 01c0 1000BEFF 		sd	$fp,16($sp)
+ 362              	$LCFI20:
+ 363 01c4 2DF0A003 		move	$fp,$sp
+ 364              	$LCFI21:
+ 365 01c8 0000C4AF 		sw	$4,0($fp)
+ 366 01cc 0400C5AF 		sw	$5,4($fp)
+ 367 01d0 0800C6AF 		sw	$6,8($fp)
+ 368              	$LM22:
+ 369              		.stabn 68,0,255,$LM22
+ 370              	$LBB7:
+ 371              	$LM23:
+ 372              		.stabn 68,0,256,$LM23
+ 373 01d4 0000C48F 		lw	$4,0($fp)
+ 374 01d8 0400C58F 		lw	$5,4($fp)
+ 375 01dc 0800C68F 		lw	$6,8($fp)
+ 376 01e0 0000000C 		jal	sceVu0OuterProduct
+ 376      00000000 
+ 377              	$LBE7:
+ 378              	$LM24:
+ 379              		.stabn 68,0,257,$LM24
+ 380              	$L14:
+ 381 01e8 2DE8C003 		move	$sp,$fp
+ 382 01ec 2000BFDF 		ld	$31,32($sp)
+ 383 01f0 1000BEDF 		ld	$fp,16($sp)
+ 384 01f4 3000BD27 		addu	$sp,$sp,48
+ 385 01f8 0800E003 		j	$31
+ 385      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 8
+
+
+ 386              		.end	nlCrossProduct4d__FPfT0T0
+ 387              	$LFE6:
+ 388              	.stabs "nlCrossProduct4d__FPfT0T0:F22",36,0,255,nlCrossProduct4d__FPfT0T0
+ 389              	.stabs "dst:p70",160,0,255,-48
+ 390              	.stabs "lhs:p70",160,0,255,-44
+ 391              	.stabs "rhs:p70",160,0,255,-40
+ 392              	.stabn 192,0,0,$LBB7
+ 393              	.stabn 224,0,0,$LBE7
+ 394              	$Lscope5:
+ 395              	.stabs "",36,0,0,$Lscope5-nlCrossProduct4d__FPfT0T0
+ 396              		.p2align 3
+ 397              		.globl	nlCrossProduct3d__FPfT0T0
+ 398              	$LFB7:
+ 399              	$LM25:
+ 400              		.stabn 68,0,263,$LM25
+ 401              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 402              		.ent	nlCrossProduct3d__FPfT0T0
+ 403              	nlCrossProduct3d__FPfT0T0:
+ 404              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 405              		.mask	0x40000000,-16
+ 406              		.fmask	0x00000000,0
+ 407 0200 E0FFBD27 		subu	$sp,$sp,32
+ 408              	$LCFI22:
+ 409 0204 1000BEFF 		sd	$fp,16($sp)
+ 410              	$LCFI23:
+ 411 0208 2DF0A003 		move	$fp,$sp
+ 412              	$LCFI24:
+ 413 020c 0000C4AF 		sw	$4,0($fp)
+ 414 0210 0400C5AF 		sw	$5,4($fp)
+ 415 0214 0800C6AF 		sw	$6,8($fp)
+ 416              	$LM26:
+ 417              		.stabn 68,0,263,$LM26
+ 418              	$LBB8:
+ 419              	$LM27:
+ 420              		.stabn 68,0,264,$LM27
+ 421 0218 0000C28F 		lw	$2,0($fp)
+ 422 021c 0400C48F 		lw	$4,4($fp)
+ 423 0220 04008324 		addu	$3,$4,4
+ 424 0224 0800C58F 		lw	$5,8($fp)
+ 425 0228 0800A424 		addu	$4,$5,8
+ 426 022c 000060C4 		l.s	$f0,0($3)
+ 427 0230 000081C4 		l.s	$f1,0($4)
+ 428 0234 02000146 		mul.s	$f0,$f0,$f1
+ 429 0238 0400C48F 		lw	$4,4($fp)
+ 430 023c 08008324 		addu	$3,$4,8
+ 431 0240 0800C58F 		lw	$5,8($fp)
+ 432 0244 0400A424 		addu	$4,$5,4
+ 433 0248 000061C4 		l.s	$f1,0($3)
+ 434 024c 000082C4 		l.s	$f2,0($4)
+ 435 0250 42080246 		mul.s	$f1,$f1,$f2
+ 436 0254 01000146 		sub.s	$f0,$f0,$f1
+ 437 0258 000040E4 		s.s	$f0,0($2)
+ 438              	$LM28:
+ 439              		.stabn 68,0,265,$LM28
+ 440 025c 0000C38F 		lw	$3,0($fp)
+ 441 0260 04006224 		addu	$2,$3,4
+ 442 0264 0400C48F 		lw	$4,4($fp)
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 9
+
+
+ 443 0268 08008324 		addu	$3,$4,8
+ 444 026c 0800C48F 		lw	$4,8($fp)
+ 445 0270 000060C4 		l.s	$f0,0($3)
+ 446 0274 000081C4 		l.s	$f1,0($4)
+ 447 0278 02000146 		mul.s	$f0,$f0,$f1
+ 448 027c 0400C38F 		lw	$3,4($fp)
+ 449 0280 0800C58F 		lw	$5,8($fp)
+ 450 0284 0800A424 		addu	$4,$5,8
+ 451 0288 000061C4 		l.s	$f1,0($3)
+ 452 028c 000082C4 		l.s	$f2,0($4)
+ 453 0290 42080246 		mul.s	$f1,$f1,$f2
+ 454 0294 01000146 		sub.s	$f0,$f0,$f1
+ 455 0298 000040E4 		s.s	$f0,0($2)
+ 456              	$LM29:
+ 457              		.stabn 68,0,266,$LM29
+ 458 029c 0000C38F 		lw	$3,0($fp)
+ 459 02a0 08006224 		addu	$2,$3,8
+ 460 02a4 0400C38F 		lw	$3,4($fp)
+ 461 02a8 0800C58F 		lw	$5,8($fp)
+ 462 02ac 0400A424 		addu	$4,$5,4
+ 463 02b0 000060C4 		l.s	$f0,0($3)
+ 464 02b4 000081C4 		l.s	$f1,0($4)
+ 465 02b8 02000146 		mul.s	$f0,$f0,$f1
+ 466 02bc 0400C48F 		lw	$4,4($fp)
+ 467 02c0 04008324 		addu	$3,$4,4
+ 468 02c4 0800C48F 		lw	$4,8($fp)
+ 469 02c8 000061C4 		l.s	$f1,0($3)
+ 470 02cc 000082C4 		l.s	$f2,0($4)
+ 471 02d0 42080246 		mul.s	$f1,$f1,$f2
+ 472 02d4 01000146 		sub.s	$f0,$f0,$f1
+ 473 02d8 000040E4 		s.s	$f0,0($2)
+ 474              	$LBE8:
+ 475              	$LM30:
+ 476              		.stabn 68,0,267,$LM30
+ 477              	$L15:
+ 478 02dc 2DE8C003 		move	$sp,$fp
+ 479 02e0 1000BEDF 		ld	$fp,16($sp)
+ 480 02e4 2000BD27 		addu	$sp,$sp,32
+ 481 02e8 0800E003 		j	$31
+ 481      00000000 
+ 482              		.end	nlCrossProduct3d__FPfT0T0
+ 483              	$LFE7:
+ 484              	.stabs "nlCrossProduct3d__FPfT0T0:F22",36,0,263,nlCrossProduct3d__FPfT0T0
+ 485              	.stabs "dst:p70",160,0,263,-32
+ 486              	.stabs "lhs:p70",160,0,263,-28
+ 487              	.stabs "rhs:p70",160,0,263,-24
+ 488              	.stabn 192,0,0,$LBB8
+ 489              	.stabn 224,0,0,$LBE8
+ 490              	$Lscope6:
+ 491              	.stabs "",36,0,0,$Lscope6-nlCrossProduct3d__FPfT0T0
+ 492              		.p2align 3
+ 493              		.globl	nlTransformVector__FPfPA3_fT0
+ 494              	$LFB8:
+ 495              	$LM31:
+ 496              		.stabn 68,0,273,$LM31
+ 497              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 498              		.ent	nlTransformVector__FPfPA3_fT0
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 10
+
+
+ 499              	nlTransformVector__FPfPA3_fT0:
+ 500              		.frame	$fp,48,$31		# vars= 16, regs= 4/0, args= 0, extra= 0
+ 501              		.mask	0xc0000000,-16
+ 502              		.fmask	0x00000000,0
+ 503 02f0 D0FFBD27 		subu	$sp,$sp,48
+ 504              	$LCFI25:
+ 505 02f4 2000BFFF 		sd	$31,32($sp)
+ 506              	$LCFI26:
+ 507 02f8 1000BEFF 		sd	$fp,16($sp)
+ 508              	$LCFI27:
+ 509 02fc 2DF0A003 		move	$fp,$sp
+ 510              	$LCFI28:
+ 511 0300 0000C4AF 		sw	$4,0($fp)
+ 512 0304 0400C5AF 		sw	$5,4($fp)
+ 513 0308 0800C6AF 		sw	$6,8($fp)
+ 514              	$LM32:
+ 515              		.stabn 68,0,273,$LM32
+ 516              	$LBB9:
+ 517              	$LM33:
+ 518              		.stabn 68,0,274,$LM33
+ 519 030c 0000C48F 		lw	$4,0($fp)
+ 520 0310 0400C58F 		lw	$5,4($fp)
+ 521 0314 0800C68F 		lw	$6,8($fp)
+ 522 0318 0000000C 		jal	sceVu0ApplyMatrix
+ 522      00000000 
+ 523              	$LBE9:
+ 524              	$LM34:
+ 525              		.stabn 68,0,275,$LM34
+ 526              	$L16:
+ 527 0320 2DE8C003 		move	$sp,$fp
+ 528 0324 2000BFDF 		ld	$31,32($sp)
+ 529 0328 1000BEDF 		ld	$fp,16($sp)
+ 530 032c 3000BD27 		addu	$sp,$sp,48
+ 531 0330 0800E003 		j	$31
+ 531      00000000 
+ 532              		.end	nlTransformVector__FPfPA3_fT0
+ 533              	$LFE8:
+ 534              	.stabs "nlTransformVector__FPfPA3_fT0:F22",36,0,273,nlTransformVector__FPfPA3_fT0
+ 535              	.stabs "dst:p70",160,0,273,-48
+ 536              	.stabs "m:p69",160,0,273,-44
+ 537              	.stabs "in:p70",160,0,273,-40
+ 538              	.stabn 192,0,0,$LBB9
+ 539              	.stabn 224,0,0,$LBE9
+ 540              	$Lscope7:
+ 541              	.stabs "",36,0,0,$Lscope7-nlTransformVector__FPfPA3_fT0
+ 542              		.p2align 3
+ 543              		.globl	nlAddVect3d__FRA2_fRA2_CfT1
+ 544              	$LFB9:
+ 545              	$LM35:
+ 546              		.stabn 68,0,278,$LM35
+ 547              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 548              		.ent	nlAddVect3d__FRA2_fRA2_CfT1
+ 549              	nlAddVect3d__FRA2_fRA2_CfT1:
+ 550              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 551              		.mask	0x40000000,-16
+ 552              		.fmask	0x00000000,0
+ 553 0338 E0FFBD27 		subu	$sp,$sp,32
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 11
+
+
+ 554              	$LCFI29:
+ 555 033c 1000BEFF 		sd	$fp,16($sp)
+ 556              	$LCFI30:
+ 557 0340 2DF0A003 		move	$fp,$sp
+ 558              	$LCFI31:
+ 559 0344 0000C4AF 		sw	$4,0($fp)
+ 560 0348 0400C5AF 		sw	$5,4($fp)
+ 561 034c 0800C6AF 		sw	$6,8($fp)
+ 562              	$LM36:
+ 563              		.stabn 68,0,278,$LM36
+ 564              	$LBB10:
+ 565              	$LM37:
+ 566              		.stabn 68,0,279,$LM37
+ 567 0350 0000C28F 		lw	$2,0($fp)
+ 568 0354 0400C38F 		lw	$3,4($fp)
+ 569 0358 0800C48F 		lw	$4,8($fp)
+ 570 035c 000060C4 		l.s	$f0,0($3)
+ 571 0360 000081C4 		l.s	$f1,0($4)
+ 572 0364 00000146 		add.s	$f0,$f0,$f1
+ 573 0368 000040E4 		s.s	$f0,0($2)
+ 574              	$LM38:
+ 575              		.stabn 68,0,280,$LM38
+ 576 036c 0000C38F 		lw	$3,0($fp)
+ 577 0370 04006224 		addu	$2,$3,4
+ 578 0374 0400C48F 		lw	$4,4($fp)
+ 579 0378 04008324 		addu	$3,$4,4
+ 580 037c 0800C58F 		lw	$5,8($fp)
+ 581 0380 0400A424 		addu	$4,$5,4
+ 582 0384 000060C4 		l.s	$f0,0($3)
+ 583 0388 000081C4 		l.s	$f1,0($4)
+ 584 038c 00000146 		add.s	$f0,$f0,$f1
+ 585 0390 000040E4 		s.s	$f0,0($2)
+ 586              	$LM39:
+ 587              		.stabn 68,0,281,$LM39
+ 588 0394 0000C38F 		lw	$3,0($fp)
+ 589 0398 08006224 		addu	$2,$3,8
+ 590 039c 0400C48F 		lw	$4,4($fp)
+ 591 03a0 08008324 		addu	$3,$4,8
+ 592 03a4 0800C58F 		lw	$5,8($fp)
+ 593 03a8 0800A424 		addu	$4,$5,8
+ 594 03ac 000060C4 		l.s	$f0,0($3)
+ 595 03b0 000081C4 		l.s	$f1,0($4)
+ 596 03b4 00000146 		add.s	$f0,$f0,$f1
+ 597 03b8 000040E4 		s.s	$f0,0($2)
+ 598              	$LBE10:
+ 599              	$LM40:
+ 600              		.stabn 68,0,282,$LM40
+ 601              	$L17:
+ 602 03bc 2DE8C003 		move	$sp,$fp
+ 603 03c0 1000BEDF 		ld	$fp,16($sp)
+ 604 03c4 2000BD27 		addu	$sp,$sp,32
+ 605 03c8 0800E003 		j	$31
+ 605      00000000 
+ 606              		.end	nlAddVect3d__FRA2_fRA2_CfT1
+ 607              	$LFE9:
+ 608              	.stabs "nlAddVect3d__FRA2_fRA2_CfT1:F22",36,0,278,nlAddVect3d__FRA2_fRA2_CfT1
+ 609              	.stabs "result:p71=&67",160,0,278,-32
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 12
+
+
+ 610              	.stabs "n1:p72=&68",160,0,278,-28
+ 611              	.stabs "n2:p72",160,0,278,-24
+ 612              	.stabn 192,0,0,$LBB10
+ 613              	.stabn 224,0,0,$LBE10
+ 614              	$Lscope8:
+ 615              	.stabs "",36,0,0,$Lscope8-nlAddVect3d__FRA2_fRA2_CfT1
+ 616              		.p2align 3
+ 617              		.globl	nlSubVect3d__FRA2_fRA2_CfT1
+ 618              	$LFB10:
+ 619              	$LM41:
+ 620              		.stabn 68,0,285,$LM41
+ 621              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 622              		.ent	nlSubVect3d__FRA2_fRA2_CfT1
+ 623              	nlSubVect3d__FRA2_fRA2_CfT1:
+ 624              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 625              		.mask	0x40000000,-16
+ 626              		.fmask	0x00000000,0
+ 627 03d0 E0FFBD27 		subu	$sp,$sp,32
+ 628              	$LCFI32:
+ 629 03d4 1000BEFF 		sd	$fp,16($sp)
+ 630              	$LCFI33:
+ 631 03d8 2DF0A003 		move	$fp,$sp
+ 632              	$LCFI34:
+ 633 03dc 0000C4AF 		sw	$4,0($fp)
+ 634 03e0 0400C5AF 		sw	$5,4($fp)
+ 635 03e4 0800C6AF 		sw	$6,8($fp)
+ 636              	$LM42:
+ 637              		.stabn 68,0,285,$LM42
+ 638              	$LBB11:
+ 639              	$LM43:
+ 640              		.stabn 68,0,286,$LM43
+ 641 03e8 0000C28F 		lw	$2,0($fp)
+ 642 03ec 0400C38F 		lw	$3,4($fp)
+ 643 03f0 0800C48F 		lw	$4,8($fp)
+ 644 03f4 000060C4 		l.s	$f0,0($3)
+ 645 03f8 000081C4 		l.s	$f1,0($4)
+ 646 03fc 01000146 		sub.s	$f0,$f0,$f1
+ 647 0400 000040E4 		s.s	$f0,0($2)
+ 648              	$LM44:
+ 649              		.stabn 68,0,287,$LM44
+ 650 0404 0000C38F 		lw	$3,0($fp)
+ 651 0408 04006224 		addu	$2,$3,4
+ 652 040c 0400C48F 		lw	$4,4($fp)
+ 653 0410 04008324 		addu	$3,$4,4
+ 654 0414 0800C58F 		lw	$5,8($fp)
+ 655 0418 0400A424 		addu	$4,$5,4
+ 656 041c 000060C4 		l.s	$f0,0($3)
+ 657 0420 000081C4 		l.s	$f1,0($4)
+ 658 0424 01000146 		sub.s	$f0,$f0,$f1
+ 659 0428 000040E4 		s.s	$f0,0($2)
+ 660              	$LM45:
+ 661              		.stabn 68,0,288,$LM45
+ 662 042c 0000C38F 		lw	$3,0($fp)
+ 663 0430 08006224 		addu	$2,$3,8
+ 664 0434 0400C48F 		lw	$4,4($fp)
+ 665 0438 08008324 		addu	$3,$4,8
+ 666 043c 0800C58F 		lw	$5,8($fp)
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 13
+
+
+ 667 0440 0800A424 		addu	$4,$5,8
+ 668 0444 000060C4 		l.s	$f0,0($3)
+ 669 0448 000081C4 		l.s	$f1,0($4)
+ 670 044c 01000146 		sub.s	$f0,$f0,$f1
+ 671 0450 000040E4 		s.s	$f0,0($2)
+ 672              	$LBE11:
+ 673              	$LM46:
+ 674              		.stabn 68,0,289,$LM46
+ 675              	$L18:
+ 676 0454 2DE8C003 		move	$sp,$fp
+ 677 0458 1000BEDF 		ld	$fp,16($sp)
+ 678 045c 2000BD27 		addu	$sp,$sp,32
+ 679 0460 0800E003 		j	$31
+ 679      00000000 
+ 680              		.end	nlSubVect3d__FRA2_fRA2_CfT1
+ 681              	$LFE10:
+ 682              	.stabs "nlSubVect3d__FRA2_fRA2_CfT1:F22",36,0,285,nlSubVect3d__FRA2_fRA2_CfT1
+ 683              	.stabs "result:p71",160,0,285,-32
+ 684              	.stabs "n1:p72",160,0,285,-28
+ 685              	.stabs "n2:p72",160,0,285,-24
+ 686              	.stabn 192,0,0,$LBB11
+ 687              	.stabn 224,0,0,$LBE11
+ 688              	$Lscope9:
+ 689              	.stabs "",36,0,0,$Lscope9-nlSubVect3d__FRA2_fRA2_CfT1
+ 690              		.p2align 3
+ 691              		.globl	nlScaleVect3d__FRA2_fRA2_Cff
+ 692              	$LFB11:
+ 693              	$LM47:
+ 694              		.stabn 68,0,292,$LM47
+ 695              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 696              		.ent	nlScaleVect3d__FRA2_fRA2_Cff
+ 697              	nlScaleVect3d__FRA2_fRA2_Cff:
+ 698              		.frame	$fp,32,$31		# vars= 16, regs= 2/0, args= 0, extra= 0
+ 699              		.mask	0x40000000,-16
+ 700              		.fmask	0x00000000,0
+ 701 0468 E0FFBD27 		subu	$sp,$sp,32
+ 702              	$LCFI35:
+ 703 046c 1000BEFF 		sd	$fp,16($sp)
+ 704              	$LCFI36:
+ 705 0470 2DF0A003 		move	$fp,$sp
+ 706              	$LCFI37:
+ 707 0474 0000C4AF 		sw	$4,0($fp)
+ 708 0478 0400C5AF 		sw	$5,4($fp)
+ 709 047c 0800CCE7 		s.s	$f12,8($fp)
+ 710              	$LM48:
+ 711              		.stabn 68,0,292,$LM48
+ 712              	$LBB12:
+ 713              	$LM49:
+ 714              		.stabn 68,0,293,$LM49
+ 715 0480 0000C28F 		lw	$2,0($fp)
+ 716 0484 0400C38F 		lw	$3,4($fp)
+ 717 0488 000060C4 		l.s	$f0,0($3)
+ 718 048c 0800C1C7 		l.s	$f1,8($fp)
+ 719 0490 02000146 		mul.s	$f0,$f0,$f1
+ 720 0494 000040E4 		s.s	$f0,0($2)
+ 721              	$LM50:
+ 722              		.stabn 68,0,294,$LM50
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 14
+
+
+ 723 0498 0000C38F 		lw	$3,0($fp)
+ 724 049c 04006224 		addu	$2,$3,4
+ 725 04a0 0400C48F 		lw	$4,4($fp)
+ 726 04a4 04008324 		addu	$3,$4,4
+ 727 04a8 000060C4 		l.s	$f0,0($3)
+ 728 04ac 0800C1C7 		l.s	$f1,8($fp)
+ 729 04b0 02000146 		mul.s	$f0,$f0,$f1
+ 730 04b4 000040E4 		s.s	$f0,0($2)
+ 731              	$LM51:
+ 732              		.stabn 68,0,295,$LM51
+ 733 04b8 0000C38F 		lw	$3,0($fp)
+ 734 04bc 08006224 		addu	$2,$3,8
+ 735 04c0 0400C48F 		lw	$4,4($fp)
+ 736 04c4 08008324 		addu	$3,$4,8
+ 737 04c8 000060C4 		l.s	$f0,0($3)
+ 738 04cc 0800C1C7 		l.s	$f1,8($fp)
+ 739 04d0 02000146 		mul.s	$f0,$f0,$f1
+ 740 04d4 000040E4 		s.s	$f0,0($2)
+ 741              	$LBE12:
+ 742              	$LM52:
+ 743              		.stabn 68,0,296,$LM52
+ 744              	$L19:
+ 745 04d8 2DE8C003 		move	$sp,$fp
+ 746 04dc 1000BEDF 		ld	$fp,16($sp)
+ 747 04e0 2000BD27 		addu	$sp,$sp,32
+ 748 04e4 0800E003 		j	$31
+ 748      00000000 
+ 749              		.end	nlScaleVect3d__FRA2_fRA2_Cff
+ 750              	$LFE11:
+ 751              	.stabs "nlScaleVect3d__FRA2_fRA2_Cff:F22",36,0,292,nlScaleVect3d__FRA2_fRA2_Cff
+ 752              	.stabs "result:p71",160,0,292,-32
+ 753              	.stabs "vec:p72",160,0,292,-28
+ 754              	.stabs "fact:p14",160,0,292,-24
+ 755              	.stabn 192,0,0,$LBB12
+ 756              	.stabn 224,0,0,$LBE12
+ 757              	$Lscope10:
+ 758              	.stabs "",36,0,0,$Lscope10-nlScaleVect3d__FRA2_fRA2_Cff
+ 759 04ec 00000000 		.p2align 3
+ 760              		.globl	nlDistancePointSegment__FRA2_CfT0T0RA2_f
+ 761              	$LFB12:
+ 762              	$LM53:
+ 763              		.stabn 68,0,302,$LM53
+ 764              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 765              		.ent	nlDistancePointSegment__FRA2_CfT0T0RA2_f
+ 766              	nlDistancePointSegment__FRA2_CfT0T0RA2_f:
+ 767              		.frame	$fp,144,$31		# vars= 112, regs= 4/0, args= 0, extra= 0
+ 768              		.mask	0xc0000000,-16
+ 769              		.fmask	0x00000000,0
+ 770 04f0 70FFBD27 		subu	$sp,$sp,144
+ 771              	$LCFI38:
+ 772 04f4 8000BFFF 		sd	$31,128($sp)
+ 773              	$LCFI39:
+ 774 04f8 7000BEFF 		sd	$fp,112($sp)
+ 775              	$LCFI40:
+ 776 04fc 2DF0A003 		move	$fp,$sp
+ 777              	$LCFI41:
+ 778 0500 0000C4AF 		sw	$4,0($fp)
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 15
+
+
+ 779 0504 0400C5AF 		sw	$5,4($fp)
+ 780 0508 0800C6AF 		sw	$6,8($fp)
+ 781 050c 0C00C7AF 		sw	$7,12($fp)
+ 782              	$LM54:
+ 783              		.stabn 68,0,302,$LM54
+ 784              	$LBB13:
+ 785              	$LM55:
+ 786              		.stabn 68,0,304,$LM55
+ 787 0510 1000C227 		addu	$2,$fp,16
+ 788 0514 2D204000 		move	$4,$2
+ 789 0518 0800C58F 		lw	$5,8($fp)
+ 790 051c 0400C68F 		lw	$6,4($fp)
+ 791 0520 F400000C 		jal	nlSubVect3d__FRA2_fRA2_CfT1
+ 791      00000000 
+ 792              	$LM56:
+ 793              		.stabn 68,0,306,$LM56
+ 794 0528 1000C227 		addu	$2,$fp,16
+ 795 052c 1000C327 		addu	$3,$fp,16
+ 796 0530 2D204000 		move	$4,$2
+ 797 0534 2D286000 		move	$5,$3
+ 798 0538 4C00000C 		jal	nlDotProduct3d__FPfT0
+ 798      00000000 
+ 799 0540 2000C0E7 		s.s	$f0,32($fp)
+ 800              	$LM57:
+ 801              		.stabn 68,0,307,$LM57
+ 802 0544 2000C0C7 		l.s	$f0,32($fp)
+ 803 0548 00088044 		mtc1	$0,$f1
+ 804 054c 34080046 		c.lt.s	$f1,$f0
+ 805 0550 05000045 		bc1f	$L21
+ 805      00000000 
+ 806              	$LM58:
+ 807              		.stabn 68,0,308,$LM58
+ 808 0558 2000CCC7 		l.s	$f12,32($fp)
+ 809 055c 0000000C 		jal	sqrtf
+ 809      00000000 
+ 810 0564 2000C0E7 		s.s	$f0,32($fp)
+ 811              	$L21:
+ 812              	$LM59:
+ 813              		.stabn 68,0,311,$LM59
+ 814 0568 2000C0C7 		l.s	$f0,32($fp)
+ 815 056c 00088044 		mtc1	$0,$f1
+ 816 0570 34080046 		c.lt.s	$f1,$f0
+ 817 0574 0C000045 		bc1f	$L22
+ 817      00000000 
+ 818              	$LM60:
+ 819              		.stabn 68,0,313,$LM60
+ 820 057c 1000C227 		addu	$2,$fp,16
+ 821 0580 1000C327 		addu	$3,$fp,16
+ 822 0584 803F013C 		li.s	$f0,1.00000000000000000000e0
+ 822      00008144 
+ 823 058c 2000C1C7 		l.s	$f1,32($fp)
+ 824 0590 03000146 		div.s	$f0,$f0,$f1
+ 825 0594 2D204000 		move	$4,$2
+ 826 0598 2D286000 		move	$5,$3
+ 827 059c 06030046 		mov.s	$f12,$f0
+ 828 05a0 1A01000C 		jal	nlScaleVect3d__FRA2_fRA2_Cff
+ 828      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 16
+
+
+ 829              	$L22:
+ 830              	$LM61:
+ 831              		.stabn 68,0,317,$LM61
+ 832 05a8 3000C227 		addu	$2,$fp,48
+ 833 05ac 2D204000 		move	$4,$2
+ 834 05b0 0000C58F 		lw	$5,0($fp)
+ 835 05b4 0400C68F 		lw	$6,4($fp)
+ 836 05b8 F400000C 		jal	nlSubVect3d__FRA2_fRA2_CfT1
+ 836      00000000 
+ 837              	$LM62:
+ 838              		.stabn 68,0,319,$LM62
+ 839 05c0 3000C227 		addu	$2,$fp,48
+ 840 05c4 1000C327 		addu	$3,$fp,16
+ 841 05c8 2D204000 		move	$4,$2
+ 842 05cc 2D286000 		move	$5,$3
+ 843 05d0 4C00000C 		jal	nlDotProduct3d__FPfT0
+ 843      00000000 
+ 844 05d8 4000C0E7 		s.s	$f0,64($fp)
+ 845              	$LM63:
+ 846              		.stabn 68,0,320,$LM63
+ 847 05dc 4000C0C7 		l.s	$f0,64($fp)
+ 848 05e0 00088044 		mtc1	$0,$f1
+ 849 05e4 34000146 		c.lt.s	$f0,$f1
+ 850 05e8 04000045 		bc1f	$L23
+ 850      00000000 
+ 851              	$LM64:
+ 852              		.stabn 68,0,321,$LM64
+ 853 05f0 4000C0AF 		sw	$0,64($fp)
+ 854 05f4 08000010 		b	$L24
+ 854      00000000 
+ 855              		.p2align 2
+ 856              	$L23:
+ 857              	$LM65:
+ 858              		.stabn 68,0,322,$LM65
+ 859 05fc 4000C0C7 		l.s	$f0,64($fp)
+ 860 0600 2000C1C7 		l.s	$f1,32($fp)
+ 861 0604 34080046 		c.lt.s	$f1,$f0
+ 862 0608 03000045 		bc1f	$L24
+ 862      00000000 
+ 863              	$LM66:
+ 864              		.stabn 68,0,323,$LM66
+ 865 0610 2000C0C7 		l.s	$f0,32($fp)
+ 866 0614 4000C0E7 		s.s	$f0,64($fp)
+ 867              	$L25:
+ 868              	$L24:
+ 869              	$LM67:
+ 870              		.stabn 68,0,325,$LM67
+ 871 0618 1000C227 		addu	$2,$fp,16
+ 872 061c 0C00C48F 		lw	$4,12($fp)
+ 873 0620 2D284000 		move	$5,$2
+ 874 0624 4000CCC7 		l.s	$f12,64($fp)
+ 875 0628 1A01000C 		jal	nlScaleVect3d__FRA2_fRA2_Cff
+ 875      00000000 
+ 876              	$LM68:
+ 877              		.stabn 68,0,326,$LM68
+ 878 0630 0C00C48F 		lw	$4,12($fp)
+ 879 0634 0400C58F 		lw	$5,4($fp)
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 17
+
+
+ 880 0638 0C00C68F 		lw	$6,12($fp)
+ 881 063c CE00000C 		jal	nlAddVect3d__FRA2_fRA2_CfT1
+ 881      00000000 
+ 882              	$LM69:
+ 883              		.stabn 68,0,329,$LM69
+ 884 0644 5000C227 		addu	$2,$fp,80
+ 885 0648 2D204000 		move	$4,$2
+ 886 064c 0C00C58F 		lw	$5,12($fp)
+ 887 0650 0000C68F 		lw	$6,0($fp)
+ 888 0654 F400000C 		jal	nlSubVect3d__FRA2_fRA2_CfT1
+ 888      00000000 
+ 889              	$LM70:
+ 890              		.stabn 68,0,330,$LM70
+ 891 065c 5000C227 		addu	$2,$fp,80
+ 892 0660 5000C327 		addu	$3,$fp,80
+ 893 0664 2D204000 		move	$4,$2
+ 894 0668 2D286000 		move	$5,$3
+ 895 066c 4C00000C 		jal	nlDotProduct3d__FPfT0
+ 895      00000000 
+ 896 0674 6000C0E7 		s.s	$f0,96($fp)
+ 897              	$LM71:
+ 898              		.stabn 68,0,331,$LM71
+ 899 0678 6000C0C7 		l.s	$f0,96($fp)
+ 900 067c 00088044 		mtc1	$0,$f1
+ 901 0680 34080046 		c.lt.s	$f1,$f0
+ 902 0684 05000045 		bc1f	$L26
+ 902      00000000 
+ 903              	$LM72:
+ 904              		.stabn 68,0,332,$LM72
+ 905 068c 6000CCC7 		l.s	$f12,96($fp)
+ 906 0690 0000000C 		jal	sqrtf
+ 906      00000000 
+ 907 0698 6000C0E7 		s.s	$f0,96($fp)
+ 908              	$L26:
+ 909              	$LM73:
+ 910              		.stabn 68,0,334,$LM73
+ 911 069c 6000C1C7 		l.s	$f1,96($fp)
+ 912 06a0 06080046 		mov.s	$f0,$f1
+ 913 06a4 01000010 		b	$L20
+ 913      00000000 
+ 914              	$LBE13:
+ 915              	$LM74:
+ 916              		.stabn 68,0,335,$LM74
+ 917              		.p2align 2
+ 918              	$L20:
+ 919 06ac 2DE8C003 		move	$sp,$fp
+ 920 06b0 8000BFDF 		ld	$31,128($sp)
+ 921 06b4 7000BEDF 		ld	$fp,112($sp)
+ 922 06b8 9000BD27 		addu	$sp,$sp,144
+ 923 06bc 0800E003 		j	$31
+ 923      00000000 
+ 924              		.end	nlDistancePointSegment__FRA2_CfT0T0RA2_f
+ 925              	$LFE12:
+ 926              	.stabs "nlDistancePointSegment__FRA2_CfT0T0RA2_f:F14",36,0,302,nlDistancePointSegment__FRA2_CfT0T0R
+ 927              	.stabs "p:p72",160,0,302,-144
+ 928              	.stabs "n1:p72",160,0,302,-140
+ 929              	.stabs "n2:p72",160,0,302,-136
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 18
+
+
+ 930              	.stabs "hit_point:p71",160,0,302,-132
+ 931              	.stabs "n:67",128,0,303,-128
+ 932              	.stabs "n_len:14",128,0,306,-112
+ 933              	.stabs "c1:67",128,0,316,-96
+ 934              	.stabs "ofs:14",128,0,319,-80
+ 935              	.stabs "temp_vec:67",128,0,328,-64
+ 936              	.stabs "ret_val:14",128,0,330,-48
+ 937              	.stabn 192,0,0,$LBB13
+ 938              	.stabn 224,0,0,$LBE13
+ 939              	$Lscope11:
+ 940              	.stabs "",36,0,0,$Lscope11-nlDistancePointSegment__FRA2_CfT0T0RA2_f
+ 941 06c4 00000000 		.p2align 3
+ 942              		.weak	sceVu0OuterProduct
+ 943              	$LFB13:
+ 944              	$LM75:
+ 945              		.stabn 68,0,203,$LM75
+ 946              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 947              		.ent	sceVu0OuterProduct
+ 948              	sceVu0OuterProduct:
+ 949              		.frame	$fp,16,$31		# vars= 0, regs= 2/0, args= 0, extra= 0
+ 950              		.mask	0x40000000,-16
+ 951              		.fmask	0x00000000,0
+ 952 06c8 F0FFBD27 		subu	$sp,$sp,16
+ 953              	$LCFI42:
+ 954 06cc 0000BEFF 		sd	$fp,0($sp)
+ 955              	$LCFI43:
+ 956 06d0 2DF0A003 		move	$fp,$sp
+ 957              	$LCFI44:
+ 958 06d4 2D108000 		move	$2,$4
+ 959 06d8 2D18A000 		move	$3,$5
+ 960 06dc 2D20C000 		move	$4,$6
+ 961              	$LM76:
+ 962              		.stabn 68,0,203,$LM76
+ 963              	$LBB14:
+ 964              	$LM77:
+ 965              		.stabn 68,0,212,$LM77
+ 966              	 #APP
+ 967              		
+ 968 06e0 000064D8 		lqc2    vf4,0x0($3)
+ 969 06e4 000085D8 		lqc2    vf5,0x0($4)
+ 970 06e8 FE22C54B 		vopmula.xyz	ACC,vf4,vf5
+ 971 06ec AE29C44B 		vopmsub.xyz	vf6,vf5,vf4
+ 972 06f0 AC31264A 		vsub.w vf6,vf6,vf6		#vf6.xyz=0;
+ 973 06f4 000046F8 		sqc2    vf6,0x0($2)
+ 974              		
+ 975              	 #NO_APP
+ 976              	$LBE14:
+ 977              	$LM78:
+ 978              		.stabn 68,0,213,$LM78
+ 979              	$L9:
+ 980 06f8 2DE8C003 		move	$sp,$fp
+ 981 06fc 0000BEDF 		ld	$fp,0($sp)
+ 982 0700 1000BD27 		addu	$sp,$sp,16
+ 983 0704 0800E003 		j	$31
+ 983      00000000 
+ 984              		.end	sceVu0OuterProduct
+ 985              	$LFE13:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 19
+
+
+ 986              	.stabs "sceVu0OuterProduct:F22",36,0,203,sceVu0OuterProduct
+ 987              	.stabs "v0:P70",64,0,203,2
+ 988              	.stabs "v1:P70",64,0,203,3
+ 989              	.stabs "v2:P70",64,0,203,4
+ 990              	.stabn 192,0,0,$LBB14
+ 991              	.stabn 224,0,0,$LBE14
+ 992              	$Lscope12:
+ 993              	.stabs "",36,0,0,$Lscope12-sceVu0OuterProduct
+ 994 070c 00000000 		.p2align 3
+ 995              		.weak	sceVu0InnerProduct
+ 996              	$LFB14:
+ 997              	$LM79:
+ 998              		.stabn 68,0,176,$LM79
+ 999              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 1000              		.ent	sceVu0InnerProduct
+ 1001              	sceVu0InnerProduct:
+ 1002              		.frame	$fp,16,$31		# vars= 0, regs= 2/0, args= 0, extra= 0
+ 1003              		.mask	0x40000000,-16
+ 1004              		.fmask	0x00000000,0
+ 1005 0710 F0FFBD27 		subu	$sp,$sp,16
+ 1006              	$LCFI45:
+ 1007 0714 0000BEFF 		sd	$fp,0($sp)
+ 1008              	$LCFI46:
+ 1009 0718 2DF0A003 		move	$fp,$sp
+ 1010              	$LCFI47:
+ 1011 071c 2D188000 		move	$3,$4
+ 1012 0720 2D20A000 		move	$4,$5
+ 1013              	$LM80:
+ 1014              		.stabn 68,0,176,$LM80
+ 1015              	$LBB15:
+ 1016              	$LM81:
+ 1017              		.stabn 68,0,187,$LM81
+ 1018              	 #APP
+ 1019              		
+ 1020 0724 000064D8 	    lqc2    vf4,0x0($3)
+ 1021 0728 000085D8 	    lqc2    vf5,0x0($4)
+ 1022 072c 6A21C54B 	    vmul.xyz vf5,vf4,vf5
+ 1023 0730 4129054B 	    vaddy.x vf5,vf5,vf5
+ 1024 0734 4229054B 	    vaddz.x vf5,vf5,vf5
+ 1025 0738 00282248 	    qmfc2   $2 ,vf5
+ 1026 073c 00088244 	    mtc1    $2,$f1
+ 1027              	    
+ 1028              	 #NO_APP
+ 1029              	$LM82:
+ 1030              		.stabn 68,0,188,$LM82
+ 1031 0740 06080046 		mov.s	$f0,$f1
+ 1032 0744 01000010 		b	$L8
+ 1032      00000000 
+ 1033              	$LBE15:
+ 1034              	$LM83:
+ 1035              		.stabn 68,0,189,$LM83
+ 1036              	$L8:
+ 1037 074c 2DE8C003 		move	$sp,$fp
+ 1038 0750 0000BEDF 		ld	$fp,0($sp)
+ 1039 0754 1000BD27 		addu	$sp,$sp,16
+ 1040 0758 0800E003 		j	$31
+ 1040      00000000 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 20
+
+
+ 1041              		.end	sceVu0InnerProduct
+ 1042              	$LFE14:
+ 1043              	.stabs "sceVu0InnerProduct:F14",36,0,176,sceVu0InnerProduct
+ 1044              	.stabs "v0:P70",64,0,176,3
+ 1045              	.stabs "v1:P70",64,0,176,4
+ 1046              	.stabs "ret:r14",64,0,177,39
+ 1047              	.stabn 192,0,0,$LBB15
+ 1048              	.stabn 224,0,0,$LBE15
+ 1049              	$Lscope13:
+ 1050              	.stabs "",36,0,0,$Lscope13-sceVu0InnerProduct
+ 1051              		.p2align 3
+ 1052              		.weak	sceVu0MulMatrix
+ 1053              	$LFB15:
+ 1054              	$LM84:
+ 1055              		.stabn 68,0,102,$LM84
+ 1056              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 1057              		.ent	sceVu0MulMatrix
+ 1058              	sceVu0MulMatrix:
+ 1059              		.frame	$fp,16,$31		# vars= 0, regs= 2/0, args= 0, extra= 0
+ 1060              		.mask	0x40000000,-16
+ 1061              		.fmask	0x00000000,0
+ 1062 0760 F0FFBD27 		subu	$sp,$sp,16
+ 1063              	$LCFI48:
+ 1064 0764 0000BEFF 		sd	$fp,0($sp)
+ 1065              	$LCFI49:
+ 1066 0768 2DF0A003 		move	$fp,$sp
+ 1067              	$LCFI50:
+ 1068 076c 2D108000 		move	$2,$4
+ 1069 0770 2D18A000 		move	$3,$5
+ 1070 0774 2D20C000 		move	$4,$6
+ 1071              	$LM85:
+ 1072              		.stabn 68,0,102,$LM85
+ 1073              	$LBB16:
+ 1074              	$LM86:
+ 1075              		.stabn 68,0,138,$LM86
+ 1076              	 #APP
+ 1077 0778 000061D8 		lqc2    vf1,0x0($3)  
+ 1078 077c 100062D8 	lqc2    vf2,0x10($3) 
+ 1079 0780 200063D8 	lqc2    vf3,0x20($3) 
+ 1080 0784 300064D8 	lqc2    vf4,0x30($3) 
+ 1081 0788 000085D8 	lqc2    vf5,0x0($4) 
+ 1082 078c 100086D8 	lqc2    vf6,0x10($4) 
+ 1083 0790 200087D8 	lqc2    vf7,0x20($4) 
+ 1084 0794 300088D8 	lqc2    vf8,0x30($4) 
+ 1085 0798 BC09E54B 	vmulax.xyzw	ACC,   vf1,vf5 
+ 1086 079c BD10E54B 	vmadday.xyzw	ACC,   vf2,vf5 
+ 1087 07a0 BE18E54B 	vmaddaz.xyzw	ACC,   vf3,vf5 
+ 1088 07a4 4B22E54B 	vmaddw.xyzw	vf9,   vf4,vf5 
+ 1089 07a8 BC09E64B 	vmulax.xyzw	ACC,   vf1,vf6 
+ 1090 07ac BD10E64B 	vmadday.xyzw	ACC,   vf2,vf6 
+ 1091 07b0 BE18E64B 	vmaddaz.xyzw	ACC,   vf3,vf6 
+ 1092 07b4 8B22E64B 	vmaddw.xyzw	vf10,  vf4,vf6 
+ 1093 07b8 BC09E74B 	vmulax.xyzw	ACC,   vf1,vf7 
+ 1094 07bc BD10E74B 	vmadday.xyzw	ACC,   vf2,vf7 
+ 1095 07c0 BE18E74B 	vmaddaz.xyzw	ACC,   vf3,vf7 
+ 1096 07c4 CB22E74B 	vmaddw.xyzw	vf11,  vf4,vf7 
+ 1097 07c8 BC09E84B 	vmulax.xyzw	ACC,   vf1,vf8 
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 21
+
+
+ 1098 07cc BD10E84B 	vmadday.xyzw	ACC,   vf2,vf8 
+ 1099 07d0 BE18E84B 	vmaddaz.xyzw	ACC,   vf3,vf8 
+ 1100 07d4 0B23E84B 	vmaddw.xyzw	vf12,  vf4,vf8 
+ 1101 07d8 000049F8 	sqc2    vf9,0x0($2) 
+ 1102 07dc 10004AF8 	sqc2    vf10,0x10($2) 
+ 1103 07e0 20004BF8 	sqc2    vf11,0x20($2) 
+ 1104 07e4 30004CF8 	sqc2    vf12,0x30($2) 
+ 1105              	
+ 1106              	 #NO_APP
+ 1107              	$LBE16:
+ 1108 07e8 03000010 		b	$L7
+ 1108      00000000 
+ 1109 07f0 01000010 		b	$L6
+ 1109      00000000 
+ 1110              		.p2align 2
+ 1111              	$L7:
+ 1112              	$LM87:
+ 1113              		.stabn 68,0,160,$LM87
+ 1114              	$L6:
+ 1115 07f8 2DE8C003 		move	$sp,$fp
+ 1116 07fc 0000BEDF 		ld	$fp,0($sp)
+ 1117 0800 1000BD27 		addu	$sp,$sp,16
+ 1118 0804 0800E003 		j	$31
+ 1118      00000000 
+ 1119              		.end	sceVu0MulMatrix
+ 1120              	$LFE15:
+ 1121              	.stabs "sceVu0MulMatrix:F22",36,0,102,sceVu0MulMatrix
+ 1122              	.stabs "m0:P69",64,0,102,2
+ 1123              	.stabs "m1:P69",64,0,102,3
+ 1124              	.stabs "m2:P69",64,0,102,4
+ 1125              	.stabn 192,0,0,$LBB16
+ 1126              	.stabn 224,0,0,$LBE16
+ 1127              	$Lscope14:
+ 1128              	.stabs "",36,0,0,$Lscope14-sceVu0MulMatrix
+ 1129 080c 00000000 		.p2align 3
+ 1130              		.weak	sceVu0ApplyMatrix
+ 1131              	$LFB16:
+ 1132              	$LM88:
+ 1133              		.stabn 68,0,41,$LM88
+ 1134              	.stabs "nl_ps2.cpp",132,0,0,$Ltext0
+ 1135              		.ent	sceVu0ApplyMatrix
+ 1136              	sceVu0ApplyMatrix:
+ 1137              		.frame	$fp,16,$31		# vars= 0, regs= 2/0, args= 0, extra= 0
+ 1138              		.mask	0x40000000,-16
+ 1139              		.fmask	0x00000000,0
+ 1140 0810 F0FFBD27 		subu	$sp,$sp,16
+ 1141              	$LCFI51:
+ 1142 0814 0000BEFF 		sd	$fp,0($sp)
+ 1143              	$LCFI52:
+ 1144 0818 2DF0A003 		move	$fp,$sp
+ 1145              	$LCFI53:
+ 1146 081c 2D108000 		move	$2,$4
+ 1147 0820 2D18A000 		move	$3,$5
+ 1148 0824 2D20C000 		move	$4,$6
+ 1149              	$LM89:
+ 1150              		.stabn 68,0,41,$LM89
+ 1151              	$LBB17:
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 22
+
+
+ 1152              	$LM90:
+ 1153              		.stabn 68,0,53,$LM90
+ 1154              	 #APP
+ 1155 0828 000064D8 		lqc2    vf4,0x0($3)  
+ 1156 082c 100065D8 	 lqc2    vf5,0x10($3) 
+ 1157 0830 200066D8 	 lqc2    vf6,0x20($3) 
+ 1158 0834 300067D8 	 lqc2    vf7,0x30($3) 
+ 1159 0838 000088D8 	 lqc2    vf8,0x0($4)  
+ 1160 083c BC21E84B 	 vmulax.xyzw	ACC,   vf4,vf8  
+ 1161 0840 BD28E84B 	 vmadday.xyzw	ACC,   vf5,vf8  
+ 1162 0844 BE30E84B 	 vmaddaz.xyzw	ACC,   vf6,vf8  
+ 1163 0848 4B3AE84B 	 vmaddw.xyzw	vf9,vf7,vf8     
+ 1164 084c 000049F8 	 sqc2    vf9,0x0($2)          
+ 1165              	 
+ 1166              	 #NO_APP
+ 1167              	$LBE17:
+ 1168 0850 03000010 		b	$L3
+ 1168      00000000 
+ 1169 0858 01000010 		b	$L2
+ 1169      00000000 
+ 1170              		.p2align 2
+ 1171              	$L3:
+ 1172              	$LM91:
+ 1173              		.stabn 68,0,54,$LM91
+ 1174              	$L2:
+ 1175 0860 2DE8C003 		move	$sp,$fp
+ 1176 0864 0000BEDF 		ld	$fp,0($sp)
+ 1177 0868 1000BD27 		addu	$sp,$sp,16
+ 1178 086c 0800E003 		j	$31
+ 1178      00000000 
+ 1179              		.end	sceVu0ApplyMatrix
+ 1180              	$LFE16:
+ 1181              	.stabs "sceVu0ApplyMatrix:F22",36,0,41,sceVu0ApplyMatrix
+ 1182              	.stabs "v0:P70",64,0,41,2
+ 1183              	.stabs "m0:P69",64,0,41,3
+ 1184              	.stabs "v1:P70",64,0,41,4
+ 1185              	.stabn 192,0,0,$LBB17
+ 1186              	.stabn 224,0,0,$LBE17
+ 1187              	$Lscope15:
+ 1188              	.stabs "",36,0,0,$Lscope15-sceVu0ApplyMatrix
+ 1189              	
+ 1190              		.data
+ 1191              		.align	2
+ 1192              		.globl	_GLOBAL_$F$NL_ZERO_VECTOR4D
+ 1193              	_GLOBAL_$F$NL_ZERO_VECTOR4D:
+ 1194              	__FRAME_BEGIN__:
+ 1195 001c 10000000 		.4byte	$LECIE1-$LSCIE1
+ 1196              	$LSCIE1:
+ 1197 0020 00000000 		.4byte	0x0
+ 1198 0024 01       		.byte	0x1
+ 1199 0025 00       		.byte	0x0
+ 1200 0026 01       		.byte	0x1
+ 1201 0027 78       		.byte	0x78
+ 1202 0028 40       		.byte	0x40
+ 1203 0029 0C       		.byte	0xc
+ 1204 002a 1D       		.byte	0x1d
+ 1205 002b 00       		.byte	0x0
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 23
+
+
+ 1206 002c 09       		.byte	0x9
+ 1207 002d 40       		.byte	0x40
+ 1208 002e 1F       		.byte	0x1f
+ 1209 002f 00       		.align	2
+ 1210              	$LECIE1:
+ 1211 0030 24000000 		.4byte	$LEFDE1-$LSFDE1
+ 1212              	$LSFDE1:
+ 1213 0034 18000000 		.4byte	$LSFDE1-__FRAME_BEGIN__
+ 1214 0038 00000000 		.4byte	$LFB1
+ 1215 003c 5C000000 		.4byte	$LFE1-$LFB1
+ 1216 0040 04       		.byte	0x4
+ 1217 0041 04000000 		.4byte	$LCFI0-$LFB1
+ 1218 0045 0E       		.byte	0xe
+ 1219 0046 20       		.byte	0x20
+ 1220 0047 04       		.byte	0x4
+ 1221 0048 04000000 		.4byte	$LCFI1-$LCFI0
+ 1222 004c 9E       		.byte	0x9e
+ 1223 004d 02       		.byte	0x2
+ 1224 004e 04       		.byte	0x4
+ 1225 004f 04000000 		.4byte	$LCFI2-$LCFI1
+ 1226 0053 0C       		.byte	0xc
+ 1227 0054 1E       		.byte	0x1e
+ 1228 0055 20       		.byte	0x20
+ 1229 0056 0000     		.align	2
+ 1230              	$LEFDE1:
+ 1231 0058 2C000000 		.4byte	$LEFDE3-$LSFDE3
+ 1232              	$LSFDE3:
+ 1233 005c 40000000 		.4byte	$LSFDE3-__FRAME_BEGIN__
+ 1234 0060 60000000 		.4byte	$LFB2
+ 1235 0064 38000000 		.4byte	$LFE2-$LFB2
+ 1236 0068 04       		.byte	0x4
+ 1237 0069 04000000 		.4byte	$LCFI3-$LFB2
+ 1238 006d 0E       		.byte	0xe
+ 1239 006e 30       		.byte	0x30
+ 1240 006f 04       		.byte	0x4
+ 1241 0070 04000000 		.4byte	$LCFI4-$LCFI3
+ 1242 0074 05       		.byte	0x5
+ 1243 0075 40       		.byte	0x40
+ 1244 0076 02       		.byte	0x2
+ 1245 0077 04       		.byte	0x4
+ 1246 0078 04000000 		.4byte	$LCFI5-$LCFI4
+ 1247 007c 9E       		.byte	0x9e
+ 1248 007d 04       		.byte	0x4
+ 1249 007e 04       		.byte	0x4
+ 1250 007f 04000000 		.4byte	$LCFI6-$LCFI5
+ 1251 0083 0C       		.byte	0xc
+ 1252 0084 1E       		.byte	0x1e
+ 1253 0085 30       		.byte	0x30
+ 1254 0086 0000     		.align	2
+ 1255              	$LEFDE3:
+ 1256 0088 2C000000 		.4byte	$LEFDE5-$LSFDE5
+ 1257              	$LSFDE5:
+ 1258 008c 70000000 		.4byte	$LSFDE5-__FRAME_BEGIN__
+ 1259 0090 98000000 		.4byte	$LFB3
+ 1260 0094 48000000 		.4byte	$LFE3-$LFB3
+ 1261 0098 04       		.byte	0x4
+ 1262 0099 04000000 		.4byte	$LCFI7-$LFB3
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 24
+
+
+ 1263 009d 0E       		.byte	0xe
+ 1264 009e 30       		.byte	0x30
+ 1265 009f 04       		.byte	0x4
+ 1266 00a0 04000000 		.4byte	$LCFI8-$LCFI7
+ 1267 00a4 05       		.byte	0x5
+ 1268 00a5 40       		.byte	0x40
+ 1269 00a6 02       		.byte	0x2
+ 1270 00a7 04       		.byte	0x4
+ 1271 00a8 04000000 		.4byte	$LCFI9-$LCFI8
+ 1272 00ac 9E       		.byte	0x9e
+ 1273 00ad 04       		.byte	0x4
+ 1274 00ae 04       		.byte	0x4
+ 1275 00af 04000000 		.4byte	$LCFI10-$LCFI9
+ 1276 00b3 0C       		.byte	0xc
+ 1277 00b4 1E       		.byte	0x1e
+ 1278 00b5 30       		.byte	0x30
+ 1279 00b6 0000     		.align	2
+ 1280              	$LEFDE5:
+ 1281 00b8 2C000000 		.4byte	$LEFDE7-$LSFDE7
+ 1282              	$LSFDE7:
+ 1283 00bc A0000000 		.4byte	$LSFDE7-__FRAME_BEGIN__
+ 1284 00c0 E0000000 		.4byte	$LFB4
+ 1285 00c4 50000000 		.4byte	$LFE4-$LFB4
+ 1286 00c8 04       		.byte	0x4
+ 1287 00c9 04000000 		.4byte	$LCFI11-$LFB4
+ 1288 00cd 0E       		.byte	0xe
+ 1289 00ce 30       		.byte	0x30
+ 1290 00cf 04       		.byte	0x4
+ 1291 00d0 04000000 		.4byte	$LCFI12-$LCFI11
+ 1292 00d4 05       		.byte	0x5
+ 1293 00d5 40       		.byte	0x40
+ 1294 00d6 02       		.byte	0x2
+ 1295 00d7 04       		.byte	0x4
+ 1296 00d8 04000000 		.4byte	$LCFI13-$LCFI12
+ 1297 00dc 9E       		.byte	0x9e
+ 1298 00dd 04       		.byte	0x4
+ 1299 00de 04       		.byte	0x4
+ 1300 00df 04000000 		.4byte	$LCFI14-$LCFI13
+ 1301 00e3 0C       		.byte	0xc
+ 1302 00e4 1E       		.byte	0x1e
+ 1303 00e5 30       		.byte	0x30
+ 1304 00e6 0000     		.align	2
+ 1305              	$LEFDE7:
+ 1306 00e8 24000000 		.4byte	$LEFDE9-$LSFDE9
+ 1307              	$LSFDE9:
+ 1308 00ec D0000000 		.4byte	$LSFDE9-__FRAME_BEGIN__
+ 1309 00f0 30010000 		.4byte	$LFB5
+ 1310 00f4 88000000 		.4byte	$LFE5-$LFB5
+ 1311 00f8 04       		.byte	0x4
+ 1312 00f9 04000000 		.4byte	$LCFI15-$LFB5
+ 1313 00fd 0E       		.byte	0xe
+ 1314 00fe 20       		.byte	0x20
+ 1315 00ff 04       		.byte	0x4
+ 1316 0100 04000000 		.4byte	$LCFI16-$LCFI15
+ 1317 0104 9E       		.byte	0x9e
+ 1318 0105 02       		.byte	0x2
+ 1319 0106 04       		.byte	0x4
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 25
+
+
+ 1320 0107 04000000 		.4byte	$LCFI17-$LCFI16
+ 1321 010b 0C       		.byte	0xc
+ 1322 010c 1E       		.byte	0x1e
+ 1323 010d 20       		.byte	0x20
+ 1324 010e 0000     		.align	2
+ 1325              	$LEFDE9:
+ 1326 0110 2C000000 		.4byte	$LEFDE11-$LSFDE11
+ 1327              	$LSFDE11:
+ 1328 0114 F8000000 		.4byte	$LSFDE11-__FRAME_BEGIN__
+ 1329 0118 B8010000 		.4byte	$LFB6
+ 1330 011c 48000000 		.4byte	$LFE6-$LFB6
+ 1331 0120 04       		.byte	0x4
+ 1332 0121 04000000 		.4byte	$LCFI18-$LFB6
+ 1333 0125 0E       		.byte	0xe
+ 1334 0126 30       		.byte	0x30
+ 1335 0127 04       		.byte	0x4
+ 1336 0128 04000000 		.4byte	$LCFI19-$LCFI18
+ 1337 012c 05       		.byte	0x5
+ 1338 012d 40       		.byte	0x40
+ 1339 012e 02       		.byte	0x2
+ 1340 012f 04       		.byte	0x4
+ 1341 0130 04000000 		.4byte	$LCFI20-$LCFI19
+ 1342 0134 9E       		.byte	0x9e
+ 1343 0135 04       		.byte	0x4
+ 1344 0136 04       		.byte	0x4
+ 1345 0137 04000000 		.4byte	$LCFI21-$LCFI20
+ 1346 013b 0C       		.byte	0xc
+ 1347 013c 1E       		.byte	0x1e
+ 1348 013d 30       		.byte	0x30
+ 1349 013e 0000     		.align	2
+ 1350              	$LEFDE11:
+ 1351 0140 24000000 		.4byte	$LEFDE13-$LSFDE13
+ 1352              	$LSFDE13:
+ 1353 0144 28010000 		.4byte	$LSFDE13-__FRAME_BEGIN__
+ 1354 0148 00020000 		.4byte	$LFB7
+ 1355 014c F0000000 		.4byte	$LFE7-$LFB7
+ 1356 0150 04       		.byte	0x4
+ 1357 0151 04000000 		.4byte	$LCFI22-$LFB7
+ 1358 0155 0E       		.byte	0xe
+ 1359 0156 20       		.byte	0x20
+ 1360 0157 04       		.byte	0x4
+ 1361 0158 04000000 		.4byte	$LCFI23-$LCFI22
+ 1362 015c 9E       		.byte	0x9e
+ 1363 015d 02       		.byte	0x2
+ 1364 015e 04       		.byte	0x4
+ 1365 015f 04000000 		.4byte	$LCFI24-$LCFI23
+ 1366 0163 0C       		.byte	0xc
+ 1367 0164 1E       		.byte	0x1e
+ 1368 0165 20       		.byte	0x20
+ 1369 0166 0000     		.align	2
+ 1370              	$LEFDE13:
+ 1371 0168 2C000000 		.4byte	$LEFDE15-$LSFDE15
+ 1372              	$LSFDE15:
+ 1373 016c 50010000 		.4byte	$LSFDE15-__FRAME_BEGIN__
+ 1374 0170 F0020000 		.4byte	$LFB8
+ 1375 0174 48000000 		.4byte	$LFE8-$LFB8
+ 1376 0178 04       		.byte	0x4
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 26
+
+
+ 1377 0179 04000000 		.4byte	$LCFI25-$LFB8
+ 1378 017d 0E       		.byte	0xe
+ 1379 017e 30       		.byte	0x30
+ 1380 017f 04       		.byte	0x4
+ 1381 0180 04000000 		.4byte	$LCFI26-$LCFI25
+ 1382 0184 05       		.byte	0x5
+ 1383 0185 40       		.byte	0x40
+ 1384 0186 02       		.byte	0x2
+ 1385 0187 04       		.byte	0x4
+ 1386 0188 04000000 		.4byte	$LCFI27-$LCFI26
+ 1387 018c 9E       		.byte	0x9e
+ 1388 018d 04       		.byte	0x4
+ 1389 018e 04       		.byte	0x4
+ 1390 018f 04000000 		.4byte	$LCFI28-$LCFI27
+ 1391 0193 0C       		.byte	0xc
+ 1392 0194 1E       		.byte	0x1e
+ 1393 0195 30       		.byte	0x30
+ 1394 0196 0000     		.align	2
+ 1395              	$LEFDE15:
+ 1396 0198 24000000 		.4byte	$LEFDE17-$LSFDE17
+ 1397              	$LSFDE17:
+ 1398 019c 80010000 		.4byte	$LSFDE17-__FRAME_BEGIN__
+ 1399 01a0 38030000 		.4byte	$LFB9
+ 1400 01a4 98000000 		.4byte	$LFE9-$LFB9
+ 1401 01a8 04       		.byte	0x4
+ 1402 01a9 04000000 		.4byte	$LCFI29-$LFB9
+ 1403 01ad 0E       		.byte	0xe
+ 1404 01ae 20       		.byte	0x20
+ 1405 01af 04       		.byte	0x4
+ 1406 01b0 04000000 		.4byte	$LCFI30-$LCFI29
+ 1407 01b4 9E       		.byte	0x9e
+ 1408 01b5 02       		.byte	0x2
+ 1409 01b6 04       		.byte	0x4
+ 1410 01b7 04000000 		.4byte	$LCFI31-$LCFI30
+ 1411 01bb 0C       		.byte	0xc
+ 1412 01bc 1E       		.byte	0x1e
+ 1413 01bd 20       		.byte	0x20
+ 1414 01be 0000     		.align	2
+ 1415              	$LEFDE17:
+ 1416 01c0 24000000 		.4byte	$LEFDE19-$LSFDE19
+ 1417              	$LSFDE19:
+ 1418 01c4 A8010000 		.4byte	$LSFDE19-__FRAME_BEGIN__
+ 1419 01c8 D0030000 		.4byte	$LFB10
+ 1420 01cc 98000000 		.4byte	$LFE10-$LFB10
+ 1421 01d0 04       		.byte	0x4
+ 1422 01d1 04000000 		.4byte	$LCFI32-$LFB10
+ 1423 01d5 0E       		.byte	0xe
+ 1424 01d6 20       		.byte	0x20
+ 1425 01d7 04       		.byte	0x4
+ 1426 01d8 04000000 		.4byte	$LCFI33-$LCFI32
+ 1427 01dc 9E       		.byte	0x9e
+ 1428 01dd 02       		.byte	0x2
+ 1429 01de 04       		.byte	0x4
+ 1430 01df 04000000 		.4byte	$LCFI34-$LCFI33
+ 1431 01e3 0C       		.byte	0xc
+ 1432 01e4 1E       		.byte	0x1e
+ 1433 01e5 20       		.byte	0x20
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 27
+
+
+ 1434 01e6 0000     		.align	2
+ 1435              	$LEFDE19:
+ 1436 01e8 24000000 		.4byte	$LEFDE21-$LSFDE21
+ 1437              	$LSFDE21:
+ 1438 01ec D0010000 		.4byte	$LSFDE21-__FRAME_BEGIN__
+ 1439 01f0 68040000 		.4byte	$LFB11
+ 1440 01f4 84000000 		.4byte	$LFE11-$LFB11
+ 1441 01f8 04       		.byte	0x4
+ 1442 01f9 04000000 		.4byte	$LCFI35-$LFB11
+ 1443 01fd 0E       		.byte	0xe
+ 1444 01fe 20       		.byte	0x20
+ 1445 01ff 04       		.byte	0x4
+ 1446 0200 04000000 		.4byte	$LCFI36-$LCFI35
+ 1447 0204 9E       		.byte	0x9e
+ 1448 0205 02       		.byte	0x2
+ 1449 0206 04       		.byte	0x4
+ 1450 0207 04000000 		.4byte	$LCFI37-$LCFI36
+ 1451 020b 0C       		.byte	0xc
+ 1452 020c 1E       		.byte	0x1e
+ 1453 020d 20       		.byte	0x20
+ 1454 020e 0000     		.align	2
+ 1455              	$LEFDE21:
+ 1456 0210 2C000000 		.4byte	$LEFDE23-$LSFDE23
+ 1457              	$LSFDE23:
+ 1458 0214 F8010000 		.4byte	$LSFDE23-__FRAME_BEGIN__
+ 1459 0218 F0040000 		.4byte	$LFB12
+ 1460 021c D4010000 		.4byte	$LFE12-$LFB12
+ 1461 0220 04       		.byte	0x4
+ 1462 0221 04000000 		.4byte	$LCFI38-$LFB12
+ 1463 0225 0E       		.byte	0xe
+ 1464 0226 9001     		.byte	0x90,0x1
+ 1465 0228 04       		.byte	0x4
+ 1466 0229 04000000 		.4byte	$LCFI39-$LCFI38
+ 1467 022d 05       		.byte	0x5
+ 1468 022e 40       		.byte	0x40
+ 1469 022f 02       		.byte	0x2
+ 1470 0230 04       		.byte	0x4
+ 1471 0231 04000000 		.4byte	$LCFI40-$LCFI39
+ 1472 0235 9E       		.byte	0x9e
+ 1473 0236 04       		.byte	0x4
+ 1474 0237 04       		.byte	0x4
+ 1475 0238 04000000 		.4byte	$LCFI41-$LCFI40
+ 1476 023c 0C       		.byte	0xc
+ 1477 023d 1E       		.byte	0x1e
+ 1478 023e 9001     		.byte	0x90,0x1
+ 1479              		.align	2
+ 1480              	$LEFDE23:
+ 1481 0240 24000000 		.4byte	$LEFDE25-$LSFDE25
+ 1482              	$LSFDE25:
+ 1483 0244 28020000 		.4byte	$LSFDE25-__FRAME_BEGIN__
+ 1484 0248 C8060000 		.4byte	$LFB13
+ 1485 024c 44000000 		.4byte	$LFE13-$LFB13
+ 1486 0250 04       		.byte	0x4
+ 1487 0251 04000000 		.4byte	$LCFI42-$LFB13
+ 1488 0255 0E       		.byte	0xe
+ 1489 0256 10       		.byte	0x10
+ 1490 0257 04       		.byte	0x4
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 28
+
+
+ 1491 0258 04000000 		.4byte	$LCFI43-$LCFI42
+ 1492 025c 9E       		.byte	0x9e
+ 1493 025d 02       		.byte	0x2
+ 1494 025e 04       		.byte	0x4
+ 1495 025f 04000000 		.4byte	$LCFI44-$LCFI43
+ 1496 0263 0C       		.byte	0xc
+ 1497 0264 1E       		.byte	0x1e
+ 1498 0265 10       		.byte	0x10
+ 1499 0266 0000     		.align	2
+ 1500              	$LEFDE25:
+ 1501 0268 24000000 		.4byte	$LEFDE27-$LSFDE27
+ 1502              	$LSFDE27:
+ 1503 026c 50020000 		.4byte	$LSFDE27-__FRAME_BEGIN__
+ 1504 0270 10070000 		.4byte	$LFB14
+ 1505 0274 50000000 		.4byte	$LFE14-$LFB14
+ 1506 0278 04       		.byte	0x4
+ 1507 0279 04000000 		.4byte	$LCFI45-$LFB14
+ 1508 027d 0E       		.byte	0xe
+ 1509 027e 10       		.byte	0x10
+ 1510 027f 04       		.byte	0x4
+ 1511 0280 04000000 		.4byte	$LCFI46-$LCFI45
+ 1512 0284 9E       		.byte	0x9e
+ 1513 0285 02       		.byte	0x2
+ 1514 0286 04       		.byte	0x4
+ 1515 0287 04000000 		.4byte	$LCFI47-$LCFI46
+ 1516 028b 0C       		.byte	0xc
+ 1517 028c 1E       		.byte	0x1e
+ 1518 028d 10       		.byte	0x10
+ 1519 028e 0000     		.align	2
+ 1520              	$LEFDE27:
+ 1521 0290 24000000 		.4byte	$LEFDE29-$LSFDE29
+ 1522              	$LSFDE29:
+ 1523 0294 78020000 		.4byte	$LSFDE29-__FRAME_BEGIN__
+ 1524 0298 60070000 		.4byte	$LFB15
+ 1525 029c AC000000 		.4byte	$LFE15-$LFB15
+ 1526 02a0 04       		.byte	0x4
+ 1527 02a1 04000000 		.4byte	$LCFI48-$LFB15
+ 1528 02a5 0E       		.byte	0xe
+ 1529 02a6 10       		.byte	0x10
+ 1530 02a7 04       		.byte	0x4
+ 1531 02a8 04000000 		.4byte	$LCFI49-$LCFI48
+ 1532 02ac 9E       		.byte	0x9e
+ 1533 02ad 02       		.byte	0x2
+ 1534 02ae 04       		.byte	0x4
+ 1535 02af 04000000 		.4byte	$LCFI50-$LCFI49
+ 1536 02b3 0C       		.byte	0xc
+ 1537 02b4 1E       		.byte	0x1e
+ 1538 02b5 10       		.byte	0x10
+ 1539 02b6 0000     		.align	2
+ 1540              	$LEFDE29:
+ 1541 02b8 24000000 		.4byte	$LEFDE31-$LSFDE31
+ 1542              	$LSFDE31:
+ 1543 02bc A0020000 		.4byte	$LSFDE31-__FRAME_BEGIN__
+ 1544 02c0 10080000 		.4byte	$LFB16
+ 1545 02c4 64000000 		.4byte	$LFE16-$LFB16
+ 1546 02c8 04       		.byte	0x4
+ 1547 02c9 04000000 		.4byte	$LCFI51-$LFB16
+GAS LISTING C:\DOCUME~1\Schmidt\LOCALS~1\Temp\ccKmaaaa.s 			page 29
+
+
+ 1548 02cd 0E       		.byte	0xe
+ 1549 02ce 10       		.byte	0x10
+ 1550 02cf 04       		.byte	0x4
+ 1551 02d0 04000000 		.4byte	$LCFI52-$LCFI51
+ 1552 02d4 9E       		.byte	0x9e
+ 1553 02d5 02       		.byte	0x2
+ 1554 02d6 04       		.byte	0x4
+ 1555 02d7 04000000 		.4byte	$LCFI53-$LCFI52
+ 1556 02db 0C       		.byte	0xc
+ 1557 02dc 1E       		.byte	0x1e
+ 1558 02dd 10       		.byte	0x10
+ 1559 02de 0000     		.align	2
+ 1560              	$LEFDE31:
+ 1561 02e0 00000000 		.4byte	0x0
+ 1562              		.align	0

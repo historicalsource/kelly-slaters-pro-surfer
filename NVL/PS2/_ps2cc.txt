@@ -1,0 +1,16 @@
+-fno-exceptions
+-fdevstudio
+-g
+-G0
+-DBUILD_BOOTABLE
+-DSN_TARGET_PS2
+-DPROJECT_KELLYSLATER
+-w
+-O2
+-I.
+-I"C:\Program Files\Microsoft Xbox SDK\Include"
+-IC:\mssdk\include
+-IC:\usr\local\sce\common\include
+-IC:\usr\local\sce\ee\include
+-c C:\NVL\ps2\nvlstream_ps2.cpp
+-o PS2_EE_Bootable\nvlstream_ps2.obj

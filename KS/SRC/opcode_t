@@ -1,0 +1,52 @@
+                       // FUNCTION                ARGUMENT TYPES ALLOWED
+ENUMMAC(OP_ADD,"ADD")  // Add                     NULL,NUM
+ENUMMAC(OP_AND,"AND")  // Binary AND              NULL,NUM
+ENUMMAC(OP_BF ,"BF ")  // Branch if false         PCR
+ENUMMAC(OP_BRA,"BRA")  // Branch                  PCR
+ENUMMAC(OP_BSL,"BSL")  // Call library function   LFR
+ENUMMAC(OP_BSR,"BSR")  // Branch to subroutine    SFR
+ENUMMAC(OP_BST,"BST")  // Spawn sub-thread        SFR
+ENUMMAC(OP_BTH,"BTH")  // Spawn parallel thread   SFR
+ENUMMAC(OP_DEC,"DEC")  // Decrement               NULL
+ENUMMAC(OP_DIV,"DIV")  // Divide                  NULL,NUM,NUMR
+ENUMMAC(OP_DUP,"DUP")  // Copy top of stack       NULL,SPR,POPO,SDR
+ENUMMAC(OP_EQ ,"EQ ")  // Equal                   NULL,NUM
+ENUMMAC(OP_GE ,"GE ")  // Greater or equal        NULL,NUM,NUMR
+ENUMMAC(OP_GT ,"GT ")  // Greater                 NULL,NUM,NUMR
+ENUMMAC(OP_INC,"INC")  // Increment               NULL
+ENUMMAC(OP_KIL,"KIL")  // Kill thread             NULL,SFR
+ENUMMAC(OP_LE ,"LE ")  // Less or equal           NULL,NUM,NUMR
+ENUMMAC(OP_LND,"LND")  // Logical AND             NULL,NUM
+ENUMMAC(OP_LNT,"LNT")  // Logical NOT             NULL
+ENUMMAC(OP_LOR,"LOR")  // Logical OR              NULL,NUM
+ENUMMAC(OP_LT ,"LT ")  // Less                    NULL,NUM,NUMR
+ENUMMAC(OP_MOD,"MOD")  // Mod                     NULL,NUM,NUMR
+ENUMMAC(OP_MUL,"MUL")  // Multiply                NULL,NUM
+ENUMMAC(OP_NE ,"NE ")  // Not equal               NULL,NUM
+ENUMMAC(OP_NEG,"NEG")  // Negate                  NULL
+ENUMMAC(OP_NOP,"NOP")  // No operation            NULL
+ENUMMAC(OP_NOT,"NOT")  // Binary NOT              NULL
+ENUMMAC(OP_OR ,"OR ")  // Binary OR               NULL,NUM
+ENUMMAC(OP_POP,"POP")  // Pop from stack          NULL,SPR,POPO,SDR
+ENUMMAC(OP_PSH,"PSH")  // Push onto stack         NUM,SPR,POPO,SDR,CLV
+ENUMMAC(OP_RET,"RET")  // Return from subroutine  NULL
+ENUMMAC(OP_SHL,"SHL")  // Shift left              NULL,NUM,NUMR
+ENUMMAC(OP_SHR,"SHR")  // Shift right             NULL,NUM,NUMR
+ENUMMAC(OP_SPA,"SPA")  // Add to Stack Pointer    WORD
+ENUMMAC(OP_SUB,"SUB")  // Subtract                NULL,NUM,NUMR
+ENUMMAC(OP_XOR,"XOR")  // Exclusive OR            NULL,NUM
+
+// opcodes for STR
+ENUMMAC(OP_STR_EQ,"EQ ")
+ENUMMAC(OP_STR_NE,"NE ")
+
+ENUMMAC(OP_PCR_SYM,"PCR_SYM")  // dummy opcode labels a code address (PC value) for symbolic PCR references
+ENUMMAC(OP_SPR_SYM,"SPR_SYM")  // dummy opcode marks the introduction of a new symbol to the stack
+
+// opcodes for SIGNAL
+ENUMMAC(OP_SIG_LND,"LND")
+ENUMMAC(OP_SIG_LOR,"LOR")
+ENUMMAC(OP_ECB,"ECB")  // create event callback
+ENUMMAC(OP_SCB,"SCB")  // create static event callback (no object instance pointer)
+ENUMMAC(OP_ECO,"ECO")  // create one-shot event callback
+ENUMMAC(OP_SCO,"SCO")  // create static one-shot event callback (no object instance pointer)

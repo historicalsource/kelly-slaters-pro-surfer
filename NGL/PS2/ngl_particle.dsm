@@ -1,0 +1,452 @@
+.include "vumacros.h"
+
+/*----------------------------------------------------------------------------------------------------------------------
+    Global function definitions.
+----------------------------------------------------------------------------------------------------------------------*/
+.global nglLoadParticleMicrocode
+
+.global nglParticleBaseAddr
+.global nglParticleEndAddr
+
+.global nglDebugParticleBreakAddr
+.global nglParticleAddr
+             
+/*----------------------------------------------------------------------------------------------------------------------
+    Start of microcode.
+----------------------------------------------------------------------------------------------------------------------*/
+.align 4                                
+nglLoadParticleMicrocode:
+DmaRet *                                   
+.align 4                                       
+MPG 0, *
+nglParticleBaseAddr:
+
+/*----------------------------------------------------------------------------------------------------------------------
+    Global variable defines.
+----------------------------------------------------------------------------------------------------------------------*/
+define(`regdef', `ifdef(`$1',`undefine(`$1')',`') define(`foo',``$'`1'')pushdef($1,`ifelse($#,0,$2,$2'foo`)')'undefine(`foo'))
+
+/*----------------------------------------------------------------------------------------------------------------------
+    nglParticle
+----------------------------------------------------------------------------------------------------------------------*/
+regdef(`Int1',`VI01')                   // General purpose Int
+regdef(`Int2',`VI02')                   // General purpose Int
+
+regdef(`SPtr',`VI03')					// Location of input data
+regdef(`DPtr',`VI04')					// Location of Output data
+regdef(`NumP',`VI05')					
+regdef(`PCnt',`VI07')					
+regdef(`BuffCnt',`VI08')             
+regdef(`Cont',`VI09') 
+regdef(`Bugger',`VI10')					// Location of Output data            
+regdef(`XYZ3Bit',`VI11')
+
+regdef(`Matrix1',`VF01')                // WorldToView Matrix
+regdef(`Matrix2',`VF02')  
+regdef(`Matrix3',`VF03')  
+regdef(`Matrix4',`VF04') 
+
+regdef(`Float1',`VF05x')                // General purpose float
+regdef(`Float2',`VF06x')                // General purpose float
+regdef(`Float3',`VF07x')                // General purpose float
+
+regdef(`Pos',`VF08')					// Position
+regdef(`Size',`VF09')                   // Size
+regdef(`Sizex',`VF09x')                 // Size
+regdef(`Sizey',`VF09y')                 // Size
+regdef(`Area',`VF09z')					// Max area
+regdef(`Col',`VF10')					// Color
+
+
+regdef(`Tslice',`VF11w')                // Fixed point Vert
+regdef(`Page',`VF13x')                  // Fixed point Vert
+regdef(`Life',`VF14x')                  // Fixed point Vert
+regdef(`Ctime',`VF15x')					
+regdef(`Dura',`VF16x')                  // Fixed point Vert
+regdef(`Force',`VF17')                  // Fixed point Vert
+regdef(`Vel',`VF18')                    // Fixed point Vert
+regdef(`Interp',`VF19x')					
+regdef(`Vert1',`VF20')                  // Output Vert
+regdef(`Vert2',`VF21')                  // Output Vert
+regdef(`Vert3',`VF22')					// Temp spot
+regdef(`Vert4',`VF23')                  
+regdef(`Vert5',`VF12')                  
+regdef(`FPCnt',`VF24x')					// Random Seed
+regdef(`Aspect',`VF24y')				// Aspect Ratio
+regdef(`Rban0',`VF25')					// Random 
+regdef(`Rban1',`VF26')					// Random 
+regdef(`Rban2',`VF27')					// Random 
+regdef(`SRlife',`VF28x')				// Random 
+regdef(`Slife',`VF29x')					// Random 
+regdef(`Seed',`VF30x')					// Random 
+regdef(`Svel',`VF31')					// Random 
+
+
+define(`gPartKckPtr',`50')                  
+define(`gPartKckOff',`7')         
+
+#define InputParticleNum 0
+#define InputParticleScol 1
+#define InputParticleRcol 2
+#define InputParticleEcol 3
+#define InputParticleSsize 4 
+#define InputParticleRsize 5 
+#define InputParticleEsize 6 
+#define InputParticleLife 7 
+#define InputParticleRlife 8 
+#define InputParticleDura 9 
+#define InputParticleAspect 10 
+#define InputParticleSeed 11
+#define InputParticleCtime 12
+#define InputParticleSpos 13
+#define InputParticleRpos1 14
+#define InputParticleRpos2 15
+#define InputParticleSvel 16
+#define InputParticleRvel1 17
+#define InputParticleRvel2 18
+#define InputParticleRvel3 19
+#define InputParticleForce 20
+#define InputParticleArea 21
+#define InputParticleWV1 22
+#define InputParticleWV2 23
+#define InputParticleWV3 24
+#define InputParticleWV4 25
+#define InputParticleVS1 26
+#define InputParticleVS2 27
+#define InputParticleVS3 28
+#define InputParticleVS4 29
+#define InputParticleVC1 30
+#define InputParticleVC2 31
+#define InputParticleVC3 32
+#define InputParticleVC4 33
+
+nglDebugParticleBreakAddr:
+		NOP[D]									NOP
+		NOP										NOP
+
+nglParticleAddr:
+		NOP										NOP
+        NOP                                     XITOP Int1
+		NOP										IADDIU SPtr, Int1, 0			// Queue up the input data     
+		NOP										IADDIU DPtr, Int1, gPartKckPtr   // Output Data Pointer
+		NOP										IADDIU Int1, DPtr, gPartKckOff  // Giftag 2
+		
+		NOP										LQ Vert1, 0(DPtr)		// Giftag
+		NOP										NOP
+// Init
+		NOP										ILW.x PCnt, InputParticleNum(SPtr)x
+		NOP										LQ.x Ctime, InputParticleCtime(SPtr)
+		NOP										LQ.x Dura,   InputParticleDura(SPtr)          // Dura
+		NOP										SQ Vert1,  0(Int1)    // Copy the Giftag to 2nd buffer
+		NOP										MFIR.x FPCnt, PCnt               // Convert to Float
+		NOP										NOP
+		NOP										LQ.x Seed, InputParticleSeed(SPtr) // Seed
+		NOP										LQ   Svel, InputParticleSvel(SPtr)     // Svel
+		ITOF0.x FPCnt, FPCnt					NOP
+		NOP										NOP
+		NOP										RINIT R, Seed
+		NOP										NOP
+		NOP										DIV Q, Dura, FPCnt 
+		NOP										IADD BuffCnt, VI00, VI00
+		FTOI0.x Float2, Dura					NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										MTIR Cont, Float2
+		NOP										NOP
+		ADDq.x Float1, VF00x, Q					NOP
+		NOP										LQ.z Area, InputParticleArea(SPtr)
+		NOP										LQ.y Aspect, InputParticleAspect(SPtr)
+		NOP										NOP
+		MULx.w Tslice, VF00w, Float1			NOP
+
+		// Pre Process Input
+		NOP										LQ Vert1,  InputParticleScol(SPtr)         // Col
+		NOP										LQ Vert2,  InputParticleRcol(SPtr)         // Rcol
+		NOP										LQ Vert3,  InputParticleEcol(SPtr)		   // Ecol
+		NOP										NOP
+		ITOF0 Vert1, Vert1						NOP
+		ITOF0 Vert2, Vert2						NOP
+		ITOF0 Vert3, Vert3						NOP
+		NOP										NOP
+		NOP										SQ Vert1, 1(SPtr)
+		NOP										SQ Vert2, 2(SPtr)
+		NOP										SQ Vert3, 3(SPtr)
+
+		// Update UVs for Giftag 1
+		NOP										LQ Vert1,  1(DPtr)         
+		NOP										LQ Vert2,  4(DPtr)         
+		NOP										NOP
+		NOP										NOP
+		FTOI4 Vert1, Vert1						NOP
+		FTOI4 Vert2, Vert2						NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										SQ Vert1, 1(DPtr)
+		NOP										SQ Vert2, 4(DPtr)
+
+		// Update UVs for Giftag 2
+		NOP										LQ Vert1,  8(DPtr)         // Col
+		NOP										LQ Vert2, 11(DPtr)         // Rcol
+		NOP										NOP
+		NOP										NOP
+		FTOI4 Vert1, Vert1						NOP
+		FTOI4 Vert2, Vert2						NOP
+		NOP										LQ.x SRlife, InputParticleRlife(SPtr)       // Rlife
+		NOP										LQ.x Slife, InputParticleLife(SPtr)        // Life		
+		NOP										SQ Vert1,  8(DPtr)
+		NOP										SQ Vert2, 11(DPtr)
+
+		NOP										LOI 1.0
+
+		NOP										RNEXT.x Rban0, R
+		NOP										RNEXT.y Rban0, R
+		NOP										RNEXT.z Rban0, R
+		NOP										RNEXT.w Rban0, R
+
+		NOP										RNEXT.x Rban1, R
+		NOP										RNEXT.y Rban1, R
+		NOP										RNEXT.z Rban1, R
+		SUBi Rban0, Rban0, I					RNEXT.w Rban1, R
+
+		NOP										RNEXT.x Rban2, R
+		NOP										RNEXT.y Rban2, R
+		NOP										RNEXT.z Rban2, R
+		SUBi Rban1, Rban1, I					RNEXT.w Rban2, R
+
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		SUBi Rban2, Rban2, I					NOP
+
+PartLoop: 
+		// Figure out Particle Lifetime
+		MULAx.x ACC, SRlife, Rban0(x)			IBLEZ PCnt, PartEnd
+		MADDw.x Life, Slife, VF00w				LOI 1.0
+		SUBi.x FPCnt, FPCnt, I					RNEXT.x Rban1, R
+		NOP										RNEXT.y Rban1, R
+		NOP										LQ Vert1,  InputParticleRcol(SPtr)         // Rcol
+		MULAw.x ACC, Ctime, VF00w				DIV Q, VF00w, Life
+		MSUBw.x Page, FPCnt, Tslice				LQ Col,  InputParticleScol(SPtr)
+		MULAy.x ACC, Life, Rban0(y)				RNEXT.z Rban1, R
+		MADDw.x Float1, Ctime, VF00w			RNEXT.w Rban1, R
+		MULAz ACC, Vert1,  Rban0(z)				LQ Vert1, InputParticleRvel1(SPtr)     // Rvel1
+		MADDw Col, Col, VF00w					XITOP Int1
+		NOP										IADDI  Int2, BuffCnt, 0		
+		MULq.x Float1, Float1, Q				IADDIU DPtr, Int1, gPartKckPtr
+		MULq.x Interp, Page, Q					IADDIU BuffCnt, VI00, 0
+		SUBi Rban1, Rban1, I					LQ Vert2, InputParticleRvel2(SPtr)     // Rvel2
+		NOP										IBNE Int2, VI00, PartBuff
+		FTOI0.x Float2, Float1					LQ Vert3, InputParticleRvel3(SPtr)     // Rvel3
+
+
+		NOP										IADDIU BuffCnt, VI00, 1
+		NOP										IADDIU DPtr, DPtr, gPartKckOff
+
+PartBuff:
+		NOP										NOP
+		MULAx ACC, Vert1, Rban1(x)				RNEXT.x Rban0, R
+		MADDAy ACC, Vert2, Rban1(y)				LQ Vert1, InputParticleRpos1(SPtr)      // Rpos1
+		MADDAz ACC, Vert3, Rban1(z)				LQ Vert2, InputParticleRpos2(SPtr)	   // Rpos2
+		ITOF0.x Float2, Float2					RNEXT.y Rban0, R
+		MADDw Vel, Svel, VF00w					LQ Pos, InputParticleSpos(SPtr)         // Spos
+		MULAw ACC, Vert1, Rban1(w)				LQ.x Float3, InputParticleRsize(SPtr)	   // Rsize 
+		MADDAx ACC, Vert2, Rban2(x)				LQ.x Sizex, InputParticleSsize(SPtr)
+		SUB.x Float1, Float1, Float2			RNEXT.z Rban0, R
+		MADDw Pos, Pos, VF00w					RNEXT.x Rban2, R
+		MULAy.x	ACC, Float3, Rban2(y)			IBGEZ Cont, Partage
+		MADDw.x Sizex, Sizex, VF00w				RNEXT.y Rban2, R
+
+
+		ADD.x Interp, VF00x, Float1				NOP
+		MULx.x Page, Life, Float1				NOP
+
+
+Partage:
+		SUBi Rban0, Rban0, I					NOP
+		NOP										LQ.x Float3, InputParticleEsize(SPtr)   // Esize
+		ADDi.x Float1, Interp, I				NOP                      
+		// -- Particle Position --
+		MUL.x Float2, Page, Page				LQ Force,InputParticleForce(SPtr)       // T^2
+		MULAx ACC,Vel,Page						NOP
+		SUB.x Float3, Float3, Sizex				NOP
+		FTOI0.x Float1, Float1					LQ Matrix3,InputParticleWV3(SPtr)
+		MADDAx ACC, Force, Float2				LQ Vert1,  3(SPtr)    // Ecol
+		MADDw Pos, Pos, VF00w					LQ Matrix1,InputParticleWV1(SPtr)
+		MULAx.x ACC, Float3, Interp				LQ Matrix2,InputParticleWV2(SPtr)	
+		MADDw.x Sizex, Sizex, VF00w				MTIR Int1, Float1  
+		SUB Vert5, Vert1, Col					LQ Matrix4,InputParticleWV4(SPtr)	
+		MULAx ACC, Matrix1, Pos(x)				MTIR Int1, Float1	
+		MADDAy ACC, Matrix2, Pos(y)				NOP     
+		MADDAz ACC, Matrix3, Pos(z)				ISUBIU Int1, Int1, 1
+		MADDw Pos, Matrix4, VF00w				ISUBIU PCnt, PCnt, 1
+		SUBi Rban2, Rban2, I					RNEXT.x Seed, R
+		ADDx.y Sizey, VF00y, Sizex 				NOP
+		MULy.x Sizex, Sizex, Aspect				NOP
+		NOP										NOP
+		NOP										RINIT R, Seed
+		NOP										LOI 0.0
+
+		// Create Verts
+		ADD.xy Vert1, Pos, Size					IBNE Int1, VI00, PartLoop
+		ADDi.zw Vert1, Pos, I					LQ Matrix1,InputParticleVC1(SPtr)
+		SUB.xy Vert2, Pos, Size					LQ Matrix2,InputParticleVC2(SPtr)
+		ADDi.zw Vert2, Pos, I					LQ Matrix3,InputParticleVC3(SPtr)
+		NOP										LQ Matrix4,InputParticleVC4(SPtr)
+
+		// --- View 2 Clip transform ---
+        MULAx ACC, Matrix1, Vert1(x)            NOP            
+        MADDAy ACC, Matrix2, Vert1(y)           NOP          
+        MADDAz ACC, Matrix3, Vert1(z)           NOP            
+        MADDw Vert3, Matrix4, VF00w             NOP
+        MULAx ACC, Matrix1, Vert2(x)            LQ Matrix1,InputParticleVS1(SPtr)            
+        MADDAy ACC, Matrix2, Vert2(y)           LQ Matrix2,InputParticleVS2(SPtr)          
+        MADDAz ACC, Matrix3, Vert2(z)           LQ Matrix3,InputParticleVS3(SPtr)            
+        MADDw Vert4, Matrix4, VF00w             LQ Matrix4,InputParticleVS4(SPtr)
+
+		// --- View 2 Screen transform ---
+        MULAx ACC, Matrix1, Vert1(x)            NOP
+        MADDAy ACC, Matrix2, Vert1(y)           NOP
+        MADDAz ACC, Matrix3, Vert1(z)           NOP
+        MADDw Vert1, Matrix4, VF00w             NOP
+        MULAx ACC, Matrix1, Vert2(x)            NOP
+        MADDAy ACC, Matrix2, Vert2(y)           NOP
+        MADDAz ACC, Matrix3, Vert2(z)           NOP
+        MADDw Vert2, Matrix4, VF00w             DIV Q, VF00w, Vert1(w)
+        CLIPw.xyz Vert3(xyz), Vert3(w)			NOP
+		CLIPw.xyz Vert4(xyz), Vert4(w)			NOP
+		NOP								        NOP
+		MULAx ACC, Vert5, Interp				NOP
+		MADDw Col, Col, VF00w					NOP
+		NOP								        FCAND Int1, 0xfff
+
+		MULq.xyz Vert1, Vert1, Q				IADDIU XYZ3Bit, VI00, 0
+        MULq.xyz Vert2, Vert2, Q                NOP
+
+        FTOI0 Col, Col                          NOP
+        NOP                                     NOP
+
+		FTOI4.xy Vert3, Vert1					NOP
+		FTOI4.xy Vert4, Vert2					NOP
+		FTOI0.z Vert3, Vert1					NOP
+		FTOI0.z Vert4, Vert2					NOP
+
+        NOP										IBEQ Int1, VI00, PassTest
+		NOP										NOP
+
+		NOP										IADDIU XYZ3Bit, VI00, 0x7fff        // set 0x8000 mask
+		NOP										IADDIU XYZ3Bit, XYZ3Bit, 1
+
+		NOP										NOP
+		NOP										B PassFill // Not drawing this particle, skip the screen size test
+		NOP										NOP
+
+
+PassTest:
+
+		// Particle screen size test (not optimized)
+		SUB.xy Vert5, Vert2, Vert1				NOP	// Vert5 = Vert2 - Vert1
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		MULy.x Float1, Vert5(x), Vert5(y)		NOP // Float1 = Vert5.x * Vert5.y
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		ABS.x Float2, Float1					NOP // Float2 = |Float1|
+		ADDz.x Float1, VF00x, Area				NOP // Float1 = MaxArea
+
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		NOP										DIV Q, Float1, Float2
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		NOP 									NOP
+		ADDq.x Float1, VF00x, Q					NOP	// Float1 = Q (MaxArea / PartArea)
+
+		FTOI0.x Float2, Float1					NOP
+		NOP										MTIR Int1, Float2
+
+		NOP										NOP
+		NOP										IBNE Int1, VI00, PassFill
+		NOP										NOP
+
+		NOP										SQRT Q, Float1
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		ADDq.x Float1, VF00x, Q					NOP	// Float1 = SQRT (Float1)
+
+		NOP										LOI .5
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		MULi.xy Vert4, Vert5, I					NOP
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		ADD.xy Vert4, Vert4, Vert1				NOP	// Vert4 = center of sprite
+		MULx.xy Vert3, Vert5, Float1			NOP
+		MULi.xy Vert3, Vert3, I					NOP
+		ADD.xy Vert2, Vert4, Vert3				NOP
+		SUB.xy Vert1, Vert4, Vert3				NOP
+
+		NOP										NOP
+		NOP										NOP
+		NOP										NOP
+		FTOI4.xy Vert3, Vert1					NOP
+		FTOI4.xy Vert4, Vert2					NOP
+		FTOI0.z Vert3, Vert1					NOP
+		FTOI0.z Vert4, Vert2					NOP
+
+PassFill:
+
+		NOP										ISW.w XYZ3Bit, 3(DPtr)
+		NOP										ISW.w XYZ3Bit, 6(DPtr)
+
+		NOP										SQ Col, 2(DPtr)
+		NOP										SQ Col, 5(DPtr)
+		NOP										SQ.xyz Vert3, 3(DPtr)
+        NOP                                     SQ.xyz Vert4, 6(DPtr)            
+
+		NOP										B PartLoop
+		NOP                                     XGKICK DPtr
+
+PartEnd:
+
+// Dummy kick at the end to flush/stall properly	
+        NOP                                     XITOP Int1
+		NOP										IADDI  Int2, BuffCnt, 0		
+		NOP										IADDIU DPtr, Int1, gPartKckPtr
+		NOP										IADDIU BuffCnt, VI00, 0
+		NOP										NOP
+		NOP										IBNE Int2, VI00, PartBuff2
+		NOP										NOP
+
+		NOP										IADDIU BuffCnt, VI00, 1
+		NOP										IADDIU DPtr, DPtr, gPartKckOff
+
+PartBuff2:
+	    NOP                                     IADDIU Int1, VI00, 0x7fff
+        NOP                                     IADDIU Int1, Int1, 1
+		NOP										ISW.x Int1, 0(DPtr)
+        NOP                                     NOP
+        NOP                                     NOP
+        NOP                                     NOP
+		NOP                                     XGKICK DPtr
+		NOP                                     XGKICK DPtr
+
+        NOP[E]                                  NOP   
+        NOP                                     NOP
+
+nglParticleEndAddr:                  
+.EndMPG
+.EndDmaData
+                                                       

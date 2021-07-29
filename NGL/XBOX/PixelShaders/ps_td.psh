@@ -1,0 +1,12 @@
+#include "ngl_PixelShadersMacro.h"
+
+; map (opaque) + detail map (add signed).
+
+tex t0  ; base map
+tex t1  ; detail map
+
+add r0.rgb, t0.rgb, t1_bias.rgb
++mov r0.a, t0.a
+mul r0, r0, v0
+
+XFC_NO_SPECULAR

@@ -1,0 +1,1 @@
+ /c /nologo /FD /W0 /FI PS2_in_VC.h /I . /I C:\usr\local\sce\ee\include /I C:\usr\local\sce\ee\gcc\ee\include /I C:\usr\local\sce\ee\gcc\lib\gcc-lib\ee\2.9-ee-991111\include /I ..\..\nvl\ps2 /I ks /I ..\..\ngl\ps2 /I ..\..\ngl\common /I ..\..\nsl /D BUILD_BOOTABLE /D SN_TARGET_PS2 /D __PS2_EE__ /D ARCH_ENGINE /D PROJECT_PS2 /D PS2

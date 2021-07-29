@@ -1,0 +1,13 @@
+-xassembler-with-cpp
+-I.
+-I..\..\nvl\ps2
+-Iks
+-I..\..\ngl\ps2
+-I..\..\ngl\common
+-I..\..\nsl
+-I"C:\Program Files\Microsoft Xbox SDK\Include"
+-IC:\mssdk\include
+-IC:\usr\local\sce\common\include
+-IC:\usr\local\sce\ee\include
+-c C:\KS\SRC\crt0.sony.s
+-o PS2_EE_Bootable\crt0.sony.obj

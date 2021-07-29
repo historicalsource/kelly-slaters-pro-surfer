@@ -1,0 +1,79 @@
+// Wave markers:  Positions specified in terms of grid units in the Max mesh
+//
+//		USEINFO(x, z, name, color)
+//
+//		x = count along the face starting from open side of the wave (from 0)
+//		z = count from front to back of wave (from 0)
+//		name = for debug purposes
+//		color = for visual purposes (turn on DrawMarkers in Wave Geometry Menu)
+//
+// WARNING:  These depend on all wave meshes being the same size and roughly the
+//		same shape in Max.
+//
+
+//   The following nine markers are for Jem to spawn floating objects,
+//   they must be the first nine markers.  Do not change order or put any markers
+//   before them.  The penalty is death!!!!!
+
+USEINFO(10.25, 9, FloatSpawn1, PINK)
+USEINFO(10.44, 9, FloatSpawn2, PINK)
+USEINFO(10.63, 9, FloatSpawn3, PINK)
+USEINFO(10.82, 9, FloatSpawn4, PINK)
+USEINFO(11.01, 9, FloatSpawn5, PINK)
+USEINFO(11.2, 9, FloatSpawn6, PINK)
+USEINFO(11.39, 9, FloatSpawn7, PINK)
+USEINFO(11.58, 9, FloatSpawn8, PINK)
+USEINFO(11.77, 9, FloatSpawn9, PINK)
+USEINFO(11.96, 9, FloatSpawn10, PINK)
+
+// end float spawn markers
+
+
+USEINFO(0, 2.5, CurlStartTube, RED)
+USEINFO(14, 4.5, CurlStartShoulder, RED)
+USEINFO(8, 3.5, Break, BLUE)
+USEINFO(4, 10, GrindStart2, PURPLE)
+USEINFO(3, 10, GrindStart1, PURPLE)
+USEINFO(0, 9, LipMark0, PURPLE)
+USEINFO(4, 9, LipMark4, PURPLE)
+USEINFO(6, 9, LipMark6, PURPLE)
+USEINFO(7, 9, LipMark7, PURPLE)
+USEINFO(8, 9, LipMark8, PURPLE)
+USEINFO(8.5, 9, LipMark8p5, PURPLE)
+USEINFO(9, 9, LipMark9, PURPLE)
+USEINFO(10, 9, LipMark10, PURPLE)
+USEINFO(11, 9, LipMark11, PURPLE)
+USEINFO(10.75, 9, SurgeEnd, RED)
+USEINFO(11.1, 9, LipMark11p1, PURPLE)
+USEINFO(11.45, 9, LipMark11p45, GREEN)
+USEINFO(11.8, 9, LipMark11p8, PURPLE)
+USEINFO(12, 9, LipMark12, PURPLE)
+USEINFO(13, 9, LipMark13, PURPLE)
+USEINFO(0, 2.3, InFrontOfWave, GRAY)
+USEINFO(11.6, 1.1, SurferSpawn, ORANGE)	// z of exactly 0 causes bugs
+USEINFO(11.8, 0.1, SurferSpawn2, ORANGE)	// z of exactly 0 causes bugs
+USEINFO(10.5, 2.0, SurferBigWaveSpawn, ORANGE)
+USEINFO(10.8, 2.0, SurferBigWaveSpawn2, ORANGE)
+USEINFO(0, 9, EmitterStartCrashX, GREEN)
+USEINFO(7, 9, EmitterStartLipX, WHITE)
+USEINFO(10, 9, EmitterStartCrestX, PINK)
+USEINFO(11.5, 9, EmitterEndX, WHITE)
+USEINFO(10, 6, HandDrag, YELLOW)
+USEINFO(4.6, 9, LipCrash, ORANGE)
+USEINFO(3, 3, TubeFoamStartX, GREEN)
+USEINFO(7, 8, TubeFoamEndX, GREEN)
+USEINFO(11.0, 1.75, FaceTrickZ, GREEN)
+USEINFO(1, 9, ProfileSide0, ORANGE)
+USEINFO(13, 9, ProfileSide1, ORANGE)
+USEINFO(10, 9, ProfileTop, ORANGE)
+USEINFO(3, 3, XCrash, GREEN)
+USEINFO(7, 2.2, TubeBottom, PINK)
+USEINFO(10, 1.0, TubeMinZ, RED)
+USEINFO(10, 5.5, TubeMaxZ, RED)
+USEINFO(9.2, 4.0, SpawnEnd, PINK)
+USEINFO(11.0, 4.0, SplitscreenSpawnEnd, PINK)
+USEINFO(8.6, 4.0, TubeGapStart, RED)
+USEINFO(4.0, 4.0, TubeGapEnd, RED)
+USEINFO(8, 3, UVOrigin, BLACK)
+USEINFO(1.5, 1.25, BottomLeft, WHITE)
+USEINFO(13.5, 13, TopRight, WHITE)

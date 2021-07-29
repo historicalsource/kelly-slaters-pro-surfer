@@ -1,0 +1,14 @@
+#include "ngl_PixelShadersMacro.h"
+
+tex t0  ; foam map
+tex t1  ; specular map
+
+; modulate by vertex colors
+mul t0, t0, v0
+mul t1, t1, v1
+
+; perform the alpha blending here, then set alpha to 1
+xmma discard.rgb, discard.rgb, r0.rgb, t0.a, t0.rgb, t1.a, t1.rgb
++mov r0.a, 1-zero.a
+
+XFC_NO_SPECULAR

@@ -1,0 +1,5 @@
+#include "ngl_PixelShadersMacro.h"
+
+mov r0, v0
+
+XFC_NO_SPECULAR

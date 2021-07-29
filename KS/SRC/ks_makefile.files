@@ -1,0 +1,240 @@
+# all of the files for the makefile
+
+HWOS_DIR = hwosps2
+VSIM_DIR = vsim
+
+ENTITY_OBJS = \
+            damage_interface.o \
+            hard_attrib_interface.o \
+            link_interface.o \
+            owner_interface.o \
+            physical_interface.o \
+			render_interface.o \
+            skeleton_interface.o \
+            slave_interface.o \
+            soft_attrib_interface.o \
+            character.o \
+            conglom.o \
+            manip_obj.o \
+            switch_obj.o \
+            bone.o \
+            entity.o \
+            entity2.o \
+            entity_maker.o
+
+ENTITY_SRC = \
+	$(ENTITY_OBJS:.o=.cpp)
+
+
+HWOS_OBJS = \
+			$(HWOS_DIR)/ps2_alloc.o \
+			$(HWOS_DIR)/ps2_audio.o \
+			$(HWOS_DIR)/ps2_devopts.o \
+			$(HWOS_DIR)/ps2_errmsg.o \
+			$(HWOS_DIR)/ps2_file.o \
+			$(HWOS_DIR)/ps2_input.o \
+			$(HWOS_DIR)/ps2_movieplayer.o \
+			$(HWOS_DIR)/ps2_rasterize.o \
+			$(HWOS_DIR)/ps2_storage.o \
+			$(HWOS_DIR)/ps2_texturemgr.o \
+			$(HWOS_DIR)/ps2_timer.o
+
+HWOS_SRC = \
+	$(HWOS_OBJS:.o=.cpp)
+
+
+
+MISC_OBJS  = \
+            brain_turret.o \
+            brainstem_turret.o \
+            brainstem_slugger.o \
+            brainstem_shooter.o \
+            brain.o \
+            brainstem.o \
+			dread_net.o \
+            anim_flavor.o \
+            anim_user.o \
+            entity_anim.o \
+            po_anim.o \
+            scene_anim.o \
+            signal_anim.o \
+            anim_maker.o \
+            beam.o \
+            controller.o \
+            crate.o \
+            file_finder.o \
+            game.o \
+            game2.o \
+            game3.o \
+            gamefile.o \
+            gun.o \
+            handheld_item.o \
+            highlight.o \
+            interface.o \
+            item.o \
+            marker.o \
+            mic.o \
+            optionsfile.o \
+            pda.o \
+            pda_fe_main.o \
+            popup.o \
+            scanner.o \
+            sky.o \
+            soundgrp.o \
+            thrown_item.o \
+            trigger.o \
+            turret.o \
+            warning.o \
+            wds.o \
+            wds2.o \
+            wds3.o \
+            wds4.o \
+            widget_entity.o \
+            widget_movie.o \
+            widget_script.o \
+            billboard.o \
+            camera.o \
+            debug_render.o \
+            dropshadow.o \
+            element.o \
+            fxman.o \
+            geomgr.o \
+            light.o \
+            lightmgr.o \
+            msgboard.o \
+            particle.o \
+            particlecleaner.o \
+            pmesh.o \
+            pmesh2.o \
+            visrep.o \
+            actuator.o \
+            capsule.o \
+            cface.o \
+            colgeom.o \
+            collide.o \
+            fcs.o \
+            generator.o \
+            joint.o \
+            mcs.o \
+            portal.o \
+            region.o \
+            terrain.o \
+            terrain2.o \
+            localize.o \
+            profcounters.o \
+            proftimers.o \
+            serialin.o \
+            spidey_consolecmds.o \
+            spidey_consolevars.o \
+            tool_dialogs.o \
+            vectorx.o \
+            guidance_sys.o \
+            attrib.o \
+            app.o \
+			ps2main.o
+
+MISC_SRC = \
+	$(MISC_OBJS:.o=.cpp)
+
+
+PFE_OBJS = \
+            pfe.o \
+            pfe_element.o \
+            pfe_element_3d.o \
+            pfe_element_image.o \
+            pfe_element_script.o \
+            pfe_element_sound.o \
+            pfe_page.o \
+            pfe_queue.o \
+            pfe_script.o
+
+PFE_SRC = \
+	$(PFE_OBJS:.o=.cpp)
+
+
+SCRIPT_OBJS = \
+            script_lib.o \
+            script_lib_anim.o \
+            script_lib_beam.o \
+            script_lib_entity.o \
+            script_lib_entity2.o \
+            script_lib_entity_widget.o \
+            script_lib_gun.o \
+            script_lib_item.o \
+            script_lib_scanner.o \
+            script_lib_scene_anim.o \
+            script_lib_signal.o \
+            script_lib_sound_inst.o \
+            script_lib_sound_stream.o \
+            script_lib_switch.o \
+            script_lib_trigger.o \
+            script_lib_vector3d.o \
+            script_lib_widget.o \
+            script_register.o
+
+SCRIPT_SRC = \
+	$(SCRIPT_OBJS:.o=.cpp)
+
+
+SPIDERMAN_OBJS = \
+			spiderman_combo_data.o \
+			spiderman_anims.o \
+			spiderman_sounds.o \
+            spiderman_controller_logic.o \
+            spiderman_controller.o \
+            spiderman_camera.o \
+            spiderman_controller_physics.o \
+            spiderman_common.o \
+            spiderman_script_lib.o \
+            spiderman_web.o
+
+SPIDERMAN_SRC = \
+	$(SPIDERMAN_OBJS:.o=.cpp)
+
+
+VSIM_OBJS = \
+			$(VSIM_DIR)/pstring.o \
+			$(VSIM_DIR)/console.o \
+			$(VSIM_DIR)/consoleCmds.o \
+			$(VSIM_DIR)/consoleVars.o \
+			$(VSIM_DIR)/chunkfile.o \
+			$(VSIM_DIR)/filespec.o \
+			$(VSIM_DIR)/fstreamx.o \
+			$(VSIM_DIR)/textfile.o \
+			$(VSIM_DIR)/aggvertbuf.o \
+			$(VSIM_DIR)/bitplane.o \
+			$(VSIM_DIR)/color.o \
+			$(VSIM_DIR)/fogmgr.o \
+			$(VSIM_DIR)/frame_info.o \
+			$(VSIM_DIR)/material.o \
+			$(VSIM_DIR)/text_font.o \
+			$(VSIM_DIR)/widget.o \
+			$(VSIM_DIR)/osassert.o \
+			$(VSIM_DIR)/inputmgr.o \
+			$(VSIM_DIR)/algebra.o \
+			$(VSIM_DIR)/geometry.o \
+			$(VSIM_DIR)/hull.o \
+			$(VSIM_DIR)/plane.o \
+			$(VSIM_DIR)/po.o \
+			$(VSIM_DIR)/debug.o \
+			$(VSIM_DIR)/errorcontext.o \
+			$(VSIM_DIR)/eventmgr.o \
+			$(VSIM_DIR)/membudget.o \
+			$(VSIM_DIR)/memtrack.o \
+			$(VSIM_DIR)/path.o \
+			$(VSIM_DIR)/profiler.o \
+			$(VSIM_DIR)/signal.o \
+			$(VSIM_DIR)/singleton.o \
+			$(VSIM_DIR)/stringx.o \
+			$(VSIM_DIR)/opcodes.o \
+			$(VSIM_DIR)/script_library_class.o \
+			$(VSIM_DIR)/script_object.o \
+			$(VSIM_DIR)/so_data_block.o \
+			$(VSIM_DIR)/vm_executable.o \
+			$(VSIM_DIR)/vm_stack.o \
+			$(VSIM_DIR)/vm_symbol.o \
+			$(VSIM_DIR)/vm_thread.o
+
+VSIM_SRC = \
+	$(VSIM_OBJS:.o=.cpp)
+

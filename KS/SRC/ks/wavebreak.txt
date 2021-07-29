@@ -1,0 +1,7 @@
+// USEINFO(Curl, 6, Profile)	// saving a little space by commenting out unused break (dc 03/20/02)
+USEINFO(Rush, 6, Push)
+USEINFO(BigRush, 6, Push)
+USEINFO(Surge, 6, Pulse)
+USEINFO(BigSurge, 6, Pulse)
+USEINFO(Tongue, 6, Profile)
+USEINFO(BigTongue, 6, Profile)

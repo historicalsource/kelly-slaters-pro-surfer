@@ -1,0 +1,2 @@
+USEINFO(DrawClearColor, 0, YES)
+USEINFO(SaveVRAMTex, 0, YES)

@@ -1,0 +1,1282 @@
+files_ai.o: files_ai.cpp ai_constants.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h ai_constants.h pstring.h ai_interface.cpp ai_interface.h \
+  entity_interface.h ostimer.h hwosps2/ps2_timer.h /sm/src/hwmath.h \
+  /usr/local/sce/ee/include/libpc.h ai_locomotion.h path.h color.h chunkfile.h \
+  ai_polypath.h ai_polypath_heap.h ai_polypath_cell.h portal.h algebra.h \
+  sphere.h pmesh.h vert.h maxskinbones.h wedge.h meshrefs.h txtcoord.h face.h \
+  faceflags.h material.h hwrasterize.h hwosps2/ps2_rasterize.h \
+  /sm/src/txtcoord.h /sm/src/color.h hwosps2/ps2_texturemgr.h \
+  /sm/src/singleton.h /sm/src/refptr.h /sm/src/osassert.h /sm/src/types.h \
+  hwosps2/ps2_graphics.h /sm/src/algebra.h hwosps2/krender.h \
+  /sm/src/pstring.h /usr/local/sce/ee/include/libgraph.h \
+  /usr/local/sce/ee/include/eeregs.h /usr/local/sce/ee/include/eekernel.h \
+  /usr/local/sce/ee/include/eetypes.h /usr/local/sce/ee/include/eestruct.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h map_e.h visrep.h po.h renderflav.h ../sgi_stl/algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_cue.h anim.h anim_flavor.h anim_flavors.h \
+  damage_interface.h attribute_template.h ai_threat.h ai_senses.h \
+  ai_communication.h ai_locomotion_heli.h ai_locomotion_fly.h \
+  ai_locomotion_walk.h ai_locomotion_winged.h ai_locomotion_direct.h \
+  ai_goals.h simple_classes.h ai_goals_combat.h ai_goals_heli.h \
+  ai_goals_shocker.h ai_goals_vulture.h ai_aim.h ai_voice.h \
+  ai_fear_constants.h entity.h frame_info.h entflavor.h script_object.h \
+  vm_symbol_list.h vm_symbol.h vm_executable.h script_library_class.h \
+  so_data_block.h fast_vector.h signals.h hwosps2/krender.h anim_ids.h bone.h \
+  link_interface.h entity_signals.h random.h wds.h generator.h mobject.h \
+  conglom.h entity_anim.h po_anim.h linear_anim.h signal_anim.h rect.h camera.h \
+  mic.h constants.h scene_anim.h capsule.h colgeom.h physics.h render_data.h \
+  terrain.h cface.h light.h /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h \
+  hyperplane.h hull.h plane.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h entity_maker.h \
+  entityflags.h handheld_item.h item.h beam.h beam_signals.h item_signals.h \
+  matfac.h gun.h thrown_item.h grenade_signals.h file_finder.h debug_render.h \
+  sound_interface.h sound_group.h hwaudio.h hwosps2/ps2_audio.h \
+  hwosps2/gas_iop.h time_interface.h collide.h profiler.h osdevopts.h \
+  hwosps2/ps2_devopts.h /sm/src/devoptflags.h /sm/src/devoptstrs.h \
+  /sm/src/devoptints.h physical_interface.h guidance_sys.h \
+  animation_interface.h scanner.h scanner_signals.h spiderman_ai_goals.h \
+  spiderman_controller.h controller.h spiderman_common.h spiderman_anims.h \
+  spiderman_anims_mac.h spiderman_sounds.h spiderman_sounds_mac.h \
+  ai_goals_mac.h polytube.h b_spline.h ai_actions.cpp ai_actions.h \
+  hard_attrib_interface.h entity_hard_attribs.h character_hard_attribs.h \
+  ai_actions_heli.cpp ai_actions_heli.h ai_actions_shocker.cpp \
+  ai_actions_shocker.h script_access.h ai_actions_vulture.cpp \
+  ai_actions_vulture.h ai_actions_combat.cpp ai_actions_combat.h ai_goals.cpp \
+  switch_obj.h switch_obj_signals.h ai_goals_heli.cpp ai_goals_shocker.cpp \
+  ai_goals_vulture.cpp ai_goals_combat.cpp ai_locomotion.cpp \
+  ai_locomotion_direct.cpp ai_locomotion_walk.cpp ai_locomotion_fly.cpp \
+  ai_locomotion_heli.cpp ai_locomotion_winged.cpp ai_senses.cpp ai_cue.cpp \
+  ai_communication.cpp ai_voice.cpp ai_aim.cpp ai_script_lib.cpp \
+  script_lib_entity.h vm_stack.h vm_thread.h app.h global_signals.h game.h \
+  game_info_vars.h interface.h widget.h aggvertbuf.h ai_polypath.cpp \
+  ai_polypath_cell.cpp
+files_hwosps2.o: files_hwosps2.cpp hwosps2/ps2_alloc.cpp /sm/src/global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  /sm/src/types.h /sm/src/project.h \
+  /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h /sm/src/archalloc.h \
+  /sm/src/stl_adapter.h /sm/src/warnlvl.h /sm/src/osassert.h \
+  /usr/local/sce/ee/gcc/ee/include/assert.h /sm/src/oserrmsg.h \
+  /sm/src/hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h \
+  /sm/src/hwmath.h /sm/src/hwosps2/ps2_math.h \
+  /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc \
+  /sm/src/errorcontext.h /sm/src/singleton.h /sm/src/graph.h \
+  /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h /sm/src/instance.h \
+  /sm/src/osalloc.h /sm/src/hwosps2/ps2_alloc.h hwosps2/ps2_alloc.h \
+  /sm/src/osdevopts.h /sm/src/hwosps2/ps2_devopts.h /sm/src/algebra.h \
+  /sm/src/devoptflags.h /sm/src/devoptstrs.h /sm/src/devoptints.h \
+  hwosps2/ps2_audio.cpp /usr/local/sce/ee/gcc/include/g++-2/algorithm \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/sifrpc.h /sm/src/ostimer.h \
+  /sm/src/hwosps2/ps2_timer.h /sm/src/hwmath.h \
+  /usr/local/sce/ee/include/libpc.h hwosps2/ps2_audio.h /sm/src/singleton.h \
+  /sm/src/pstring.h hwosps2/gas_iop.h hwosps2/ps2_file.h \
+  hwosps2/ps2_devopts.h /sm/src/osfile.h hwosps2/krender.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eestruct.h hwosps2/ps2_devopts.cpp \
+  /sm/src/projconst.h /sm/src/oserrmsg.h /sm/src/osalloc.h \
+  hwosps2/ps2_errmsg.cpp /sm/src/errorcontext.h /sm/src/app.h \
+  /sm/src/signals.h /sm/src/fast_vector.h /sm/src/script_object.h \
+  /sm/src/vm_symbol_list.h /sm/src/vm_symbol.h /sm/src/vm_executable.h \
+  /sm/src/script_library_class.h /sm/src/so_data_block.h \
+  /sm/src/global_signals.h /sm/src/game_info.h hwosps2/ps2_file.cpp \
+  /usr/local/sce/ee/include/sifdev.h \
+  /usr/local/sce/common/include/libcdvd.h hwosps2/ps2_graphics.cpp \
+  hwosps2/ps2_graphics.h hwosps2/ps2_input.cpp hwosps2/ps2_input.h \
+  /sm/src/inputmgr.h hwosps2/ps2_types.h /usr/local/sce/ee/include/libpad.h \
+  /sm/src/joystick.h hwosps2/ps2_rasterize.cpp hwosps2/ps2_rasterize.h \
+  /sm/src/txtcoord.h /sm/src/meshrefs.h /sm/src/color.h \
+  hwosps2/ps2_texturemgr.h /sm/src/refptr.h /sm/src/types.h \
+  /usr/local/sce/ee/include/libdma.h /sm/src/maxskinbones.h \
+  /usr/local/sce/ee/include/libvifpk.h /usr/local/sce/ee/include/devfont.h \
+  /usr/local/sce/ee/include/libgifpk.h hwosps2/ps2_storage.cpp \
+  /sm/src/osstorage.h /sm/src/hwosps2/ps2_storage.h \
+  hwosps2/ps2_texturemgr.cpp /sm/src/project.h /sm/src/bitplane.h \
+  /sm/src/vertwork.h /sm/src/hwosps2/krender.h hwosps2/ps2_timer.cpp \
+  hwosps2/ps2_math.cpp hwosps2/ps2_math.h hwosps2/ps2_movieplayer.cpp \
+  hwosps2/ps2_movieplayer.h ps2main.cpp game.h constants.h game_info_vars.h \
+  random.h profiler.h hwosps2/ps2_input.h po.h chunkfile.h
+files_anim.o: files_anim.cpp anim_flavor.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h anim_flavor.h chunkfile.h anim_flavors.h anim_user.cpp \
+  linear_anim.h anim.h ostimer.h hwosps2/ps2_timer.h /sm/src/hwmath.h \
+  /usr/local/sce/ee/include/libpc.h refptr.h algebra.h entity_anim.cpp \
+  entity_anim.h po_anim.h po.h signal_anim.h entflavor.h entity.h frame_info.h \
+  visrep.h color.h renderflav.h script_object.h vm_symbol_list.h vm_symbol.h \
+  vm_executable.h script_library_class.h so_data_block.h fast_vector.h \
+  signals.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h anim_ids.h bone.h link_interface.h \
+  entity_interface.h entity_signals.h wds.h generator.h mobject.h conglom.h \
+  rect.h camera.h mic.h constants.h scene_anim.h path.h capsule.h colgeom.h \
+  physics.h render_data.h terrain.h pmesh.h vert.h maxskinbones.h wedge.h \
+  meshrefs.h txtcoord.h face.h faceflags.h material.h hwrasterize.h \
+  hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/color.h \
+  hwosps2/ps2_texturemgr.h /sm/src/singleton.h /sm/src/refptr.h \
+  /sm/src/types.h hwosps2/ps2_graphics.h /sm/src/algebra.h hwosps2/krender.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h map_e.h cface.h light.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h hull.h plane.h portal.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h osdevopts.h \
+  hwosps2/ps2_devopts.h /sm/src/devoptflags.h /sm/src/devoptstrs.h \
+  /sm/src/devoptints.h profiler.h po_anim.cpp scene_anim.cpp controller.h \
+  item.h beam.h beam_signals.h item_signals.h app.h global_signals.h game.h \
+  game_info_vars.h physical_interface.h guidance_sys.h random.h ai_interface.h \
+  ai_locomotion.h ai_polypath.h ai_polypath_heap.h ai_polypath_cell.h \
+  ../sgi_stl/algo.h /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h damage_interface.h \
+  attribute_template.h ai_threat.h signal_anim.cpp marker.h particle.h \
+  anim_maker.cpp anim_maker.h entity_maker.h widget_entity.h widget.h \
+  aggvertbuf.h matfac.h /usr/local/sce/ee/gcc/include/g++-2/cstdarg
+files_entity.o: files_entity.cpp time_interface.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h time_interface.h ostimer.h hwosps2/ps2_timer.h \
+  /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h entity_interface.h \
+  pstring.h sound_interface.cpp sound_interface.h sound_group.h random.h \
+  hwaudio.h hwosps2/ps2_audio.h /sm/src/algebra.h /sm/src/singleton.h \
+  /sm/src/pstring.h hwosps2/gas_iop.h entity.h frame_info.h entflavor.h \
+  chunkfile.h po.h visrep.h color.h renderflav.h script_object.h \
+  vm_symbol_list.h vm_symbol.h vm_executable.h script_library_class.h \
+  so_data_block.h fast_vector.h anim.h anim_flavor.h anim_flavors.h refptr.h \
+  signals.h hwosps2/krender.h /usr/local/sce/ee/include/libgraph.h \
+  /usr/local/sce/ee/include/eeregs.h /usr/local/sce/ee/include/eekernel.h \
+  /usr/local/sce/ee/include/eetypes.h /usr/local/sce/ee/include/eestruct.h \
+  anim_ids.h bone.h link_interface.h entity_signals.h damage_interface.cpp \
+  damage_interface.h attribute_template.h wds.h generator.h mobject.h conglom.h \
+  entity_anim.h po_anim.h linear_anim.h signal_anim.h rect.h camera.h mic.h \
+  constants.h scene_anim.h path.h capsule.h colgeom.h physics.h render_data.h \
+  terrain.h pmesh.h vert.h maxskinbones.h wedge.h meshrefs.h txtcoord.h face.h \
+  faceflags.h material.h hwrasterize.h hwosps2/ps2_rasterize.h \
+  /sm/src/txtcoord.h /sm/src/color.h hwosps2/ps2_texturemgr.h \
+  /sm/src/refptr.h /sm/src/types.h hwosps2/ps2_graphics.h hwosps2/krender.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h map_e.h cface.h light.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h hull.h plane.h portal.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h collide.h handheld_item.h \
+  item.h beam.h beam_signals.h item_signals.h simple_classes.h matfac.h app.h \
+  global_signals.h game.h game_info_vars.h msgboard.h \
+  hard_attrib_interface.cpp hard_attrib_interface.h entity_hard_attribs.h \
+  character_hard_attribs.h link_interface.cpp owner_interface.cpp \
+  owner_interface.h slave_interface.h physical_interface.cpp \
+  physical_interface.h guidance_sys.h bsp_collide.h joint.h profiler.h \
+  console.h widget.h osdevopts.h hwosps2/ps2_devopts.h /sm/src/devoptflags.h \
+  /sm/src/devoptstrs.h /sm/src/devoptints.h aggvertbuf.h keyboard.h inputmgr.h \
+  render_interface.cpp render_interface.h skeleton_interface.cpp \
+  skeleton_interface.h slave_interface.cpp soft_attrib_interface.cpp \
+  soft_attrib_interface.h entity_soft_attribs.h character_soft_attribs.h \
+  box_trigger_interface.cpp character.cpp character.h manip_obj.cpp \
+  manip_obj.h entity_maker.h entityflags.h switch_obj.cpp switch_obj.h \
+  switch_obj_signals.h bone.cpp entity.cpp anim_maker.h controller.h \
+  debug_render.h dropshadow.h element.h entityid.h fogmgr.h geomgr.h projconst.h \
+  iri.h forceflags.h lightmgr.h mbi.h spiderman_controller.h spiderman_common.h \
+  spiderman_anims.h spiderman_anims_mac.h spiderman_sounds.h \
+  spiderman_sounds_mac.h thrown_item.h grenade_signals.h vm_thread.h \
+  vm_stack.h widget_entity.h ai_interface.h ai_locomotion.h ai_polypath.h \
+  ai_polypath_heap.h ai_polypath_cell.h ../sgi_stl/algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h ai_threat.h \
+  animation_interface.h script_data_interface.h biped_ids.h polytube.cpp \
+  polytube.h b_spline.h vertwork.h animation_interface.cpp file_finder.h \
+  script_data_interface.cpp
+files_misc1.o: files_misc1.cpp archalloc.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h beam.cpp beam.h entity.h frame_info.h ostimer.h \
+  hwosps2/ps2_timer.h /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h \
+  entflavor.h algebra.h chunkfile.h po.h visrep.h color.h renderflav.h \
+  script_object.h vm_symbol_list.h vm_symbol.h vm_executable.h \
+  script_library_class.h so_data_block.h fast_vector.h anim.h anim_flavor.h \
+  anim_flavors.h refptr.h signals.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h anim_ids.h bone.h link_interface.h \
+  entity_interface.h entity_signals.h beam_signals.h pmesh.h vert.h \
+  maxskinbones.h wedge.h meshrefs.h txtcoord.h face.h faceflags.h material.h \
+  hwrasterize.h hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/color.h \
+  hwosps2/ps2_texturemgr.h /sm/src/singleton.h /sm/src/refptr.h \
+  /sm/src/types.h hwosps2/ps2_graphics.h /sm/src/algebra.h hwosps2/krender.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h map_e.h wds.h generator.h mobject.h conglom.h \
+  entity_anim.h po_anim.h linear_anim.h signal_anim.h rect.h camera.h mic.h \
+  constants.h scene_anim.h path.h capsule.h colgeom.h physics.h render_data.h \
+  terrain.h cface.h light.h /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h hull.h plane.h portal.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h vm_thread.h vm_stack.h app.h \
+  global_signals.h collide.h forceflags.h game.h game_info_vars.h matfac.h \
+  controller.cpp controller.h item.h item_signals.h mcs.h inputmgr.h commands.h \
+  osdevopts.h hwosps2/ps2_devopts.h /sm/src/devoptflags.h \
+  /sm/src/devoptstrs.h /sm/src/devoptints.h crate.cpp file_finder.cpp \
+  file_finder.h game.cpp anim_maker.h billboard.h debug_render.h element.h \
+  entity_maker.h fogmgr.h game_info.h game_process.h gamefile.h geomgr.h \
+  projconst.h hwaudio.h hwosps2/ps2_audio.h hwosps2/gas_iop.h hwmovieplayer.h \
+  hwosps2/ps2_movieplayer.h interface.h widget.h aggvertbuf.h localize.h \
+  joystick.h keyboard.h mouse.h msgboard.h profiler.h sound_group.h random.h \
+  spiderman_controller.h spiderman_common.h spiderman_anims.h \
+  spiderman_anims_mac.h spiderman_sounds.h spiderman_sounds_mac.h stash.h \
+  trigger.h trigger_signals.h widget_script.h script_lib_controller.h \
+  script_controller_signals.h script_lib_mfg.h script_mfg_signals.h console.h \
+  /usr/local/sce/common/include/libcdvd.h game_process.cpp gamefile.cpp \
+  entityflags.h gun.cpp particle.h gun.h handheld_item.h simple_classes.h \
+  damage_interface.h attribute_template.h sound_interface.h script_access.h \
+  handheld_item.cpp script_lib_vector3d.h interface.cpp widget_entity.h \
+  hwxform.h hwosps2/ps2_xform.h /sm/src/po.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstdarg item.cpp marker.cpp marker.h \
+  mic.cpp scanner.cpp scanner.h scanner_signals.h ai_interface.h \
+  ai_locomotion.h ai_polypath.h ai_polypath_heap.h ai_polypath_cell.h \
+  ../sgi_stl/algo.h /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h ai_threat.h ai_senses.h \
+  ai_communication.h vertwork.h sky.cpp sky.h sound_group.cpp thrown_item.cpp \
+  thrown_item.h grenade_signals.h switch_obj.h switch_obj_signals.h \
+  physical_interface.h guidance_sys.h trigger.cpp \
+  /usr/local/sce/ee/gcc/include/g++-2/algorithm turret.cpp iri.h turret.h \
+  wds.cpp bsp_collide.h fcs.h lightmgr.h manip_obj.h particlecleaner.h \
+  spiderman_camera.h polytube.h b_spline.h time_interface.h \
+  /usr/local/sce/ee/gcc/include/g++-2/numeric tool_dialogs.cpp \
+  tool_dialogs.h vectorx.cpp vectorx.h guidance_sys.cpp attrib.cpp \
+  profcounters.cpp proftimers.cpp serialin.cpp vsplit.h textfile.h
+files_misc2.o: files_misc2.cpp widget_entity.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h app.h signals.h fast_vector.h script_object.h \
+  vm_symbol_list.h vm_symbol.h chunkfile.h vm_executable.h \
+  script_library_class.h so_data_block.h ostimer.h hwosps2/ps2_timer.h \
+  /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h global_signals.h game.h \
+  constants.h game_info_vars.h projconst.h camera.h algebra.h po.h entity.h \
+  frame_info.h entflavor.h visrep.h color.h renderflav.h anim.h anim_flavor.h \
+  anim_flavors.h refptr.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h anim_ids.h bone.h link_interface.h \
+  entity_interface.h entity_signals.h mic.h iri.h forceflags.h widget.h \
+  hwrasterize.h hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/meshrefs.h \
+  /sm/src/color.h hwosps2/ps2_texturemgr.h /sm/src/singleton.h \
+  /sm/src/refptr.h /sm/src/types.h hwosps2/ps2_graphics.h /sm/src/algebra.h \
+  hwosps2/krender.h /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h rect.h osdevopts.h hwosps2/ps2_devopts.h \
+  /sm/src/devoptflags.h /sm/src/devoptstrs.h /sm/src/devoptints.h \
+  aggvertbuf.h material.h map_e.h matfac.h widget_entity.h conglom.h \
+  entityflags.h entity_maker.h path.h anim_maker.h wds.h generator.h mobject.h \
+  entity_anim.h po_anim.h linear_anim.h signal_anim.h scene_anim.h capsule.h \
+  colgeom.h physics.h render_data.h terrain.h pmesh.h vert.h wedge.h meshrefs.h \
+  face.h faceflags.h cface.h light.h /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h hull.h plane.h portal.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h geomgr.h time_interface.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstdarg \
+  /usr/local/sce/ee/gcc/include/g++-2/algorithm \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h widget_script.cpp \
+  widget_script.h script_lib_mfg.h script_mfg_signals.h matfac.cpp \
+  billboard.cpp billboard.h maxiri.h profiler.h element.h vertwork.h camera.cpp \
+  inputmgr.h commands.h collide.h controller.h item.h beam.h beam_signals.h \
+  item_signals.h gun.h handheld_item.h simple_classes.h debug_render.cpp \
+  debug_render.h text_font.h element.cpp geomgr.cpp light.cpp lightmgr.cpp \
+  lightmgr.h hwxform.h hwosps2/ps2_xform.h /sm/src/po.h clipflags.h \
+  msgboard.cpp msgboard.h particle.cpp particle.h particlecleaner.h random.h \
+  file_finder.h particlecleaner.cpp pmesh.cpp vertnorm.h vsplit.h visrep.cpp \
+  actuator.cpp actuator.h hinge.h capsule.cpp cface.cpp convex_box.cpp \
+  colgeom.cpp physical_interface.h guidance_sys.h collide.cpp bsp_collide.h \
+  fcs.cpp fcs.h generator.cpp shock_mods.h joint.cpp joint.h mcs.cpp mcs.h \
+  portal.cpp region.cpp vm_thread.h vm_stack.h terrain.cpp bsp_tree.h bp_tree.h \
+  binary_tree.h /usr/local/sce/ee/gcc/include/g++-2/memory \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h vector_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/functional localize.cpp textfile.h \
+  localize.h
+files_misfits.o: files_misfits.cpp spiderman_combo_data.cpp entity_maker.cpp \
+  global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h entity_maker.h entity.h frame_info.h ostimer.h \
+  hwosps2/ps2_timer.h /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h \
+  entflavor.h algebra.h chunkfile.h po.h visrep.h color.h renderflav.h \
+  script_object.h vm_symbol_list.h vm_symbol.h vm_executable.h \
+  script_library_class.h so_data_block.h fast_vector.h anim.h anim_flavor.h \
+  anim_flavors.h refptr.h signals.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h anim_ids.h bone.h link_interface.h \
+  entity_interface.h entity_signals.h path.h entityflags.h wds.h generator.h \
+  mobject.h conglom.h entity_anim.h po_anim.h linear_anim.h signal_anim.h rect.h \
+  camera.h mic.h constants.h scene_anim.h capsule.h colgeom.h physics.h \
+  render_data.h terrain.h pmesh.h vert.h maxskinbones.h wedge.h meshrefs.h \
+  txtcoord.h face.h faceflags.h material.h hwrasterize.h \
+  hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/color.h \
+  hwosps2/ps2_texturemgr.h /sm/src/singleton.h /sm/src/refptr.h \
+  /sm/src/types.h hwosps2/ps2_graphics.h /sm/src/algebra.h hwosps2/krender.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h map_e.h cface.h light.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h hull.h plane.h portal.h region.h hwosps2/krender.h \
+  box_trigger_interface.h convex_box.h crawl_box.h profiler.h marker.h \
+  particle.h item.h beam.h beam_signals.h item_signals.h turret.h scanner.h \
+  scanner_signals.h sky.h gun.h handheld_item.h simple_classes.h matfac.h \
+  thrown_item.h random.h grenade_signals.h file_finder.h widget_entity.h \
+  widget.h osdevopts.h hwosps2/ps2_devopts.h /sm/src/devoptflags.h \
+  /sm/src/devoptstrs.h /sm/src/devoptints.h aggvertbuf.h manip_obj.h \
+  switch_obj.h switch_obj_signals.h polytube.h b_spline.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstdarg \
+  /usr/local/sce/ee/gcc/include/g++-2/algorithm \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h conglom.cpp lightmgr.h \
+  hwxform.h hwosps2/ps2_xform.h /sm/src/po.h iri.h forceflags.h controller.h \
+  physical_interface.h guidance_sys.h damage_interface.h attribute_template.h \
+  ai_interface.h ai_locomotion.h ai_polypath.h ai_polypath_heap.h \
+  ai_polypath_cell.h ../sgi_stl/algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h ai_threat.h collide.h \
+  skeleton_interface.h hard_attrib_interface.h entity_hard_attribs.h \
+  character_hard_attribs.h soft_attrib_interface.h entity_soft_attribs.h \
+  character_soft_attribs.h app.cpp app.h global_signals.h bp_tree.h \
+  binary_tree.h /usr/local/sce/ee/gcc/include/g++-2/memory vector_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/functional debug_render.h geomgr.h \
+  projconst.h fogmgr.h element.h trigger.h trigger_signals.h hwaudio.h \
+  hwosps2/ps2_audio.h hwosps2/gas_iop.h dropshadow.h hwmovieplayer.h \
+  hwosps2/ps2_movieplayer.h hwosps2/ps2_input.h /sm/src/inputmgr.h \
+  /sm/src/warnlvl.h hwosps2/ps2_types.h /usr/local/sce/ee/include/libpad.h \
+  game.h game_info_vars.h msgboard.h vertwork.h script_lib_controller.h \
+  script_controller_signals.h script_lib_mfg.h script_mfg_signals.h
+files_script.o: files_script.cpp script_lib.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h script_library_class.h script_lib_entity.h algebra.h \
+  inputmgr.h hwmath.h joystick.h commands.h chunkfile.h game.h ostimer.h \
+  hwosps2/ps2_timer.h /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h \
+  constants.h game_info_vars.h geomgr.h hull.h plane.h projconst.h hwrasterize.h \
+  hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/meshrefs.h \
+  /sm/src/color.h hwosps2/ps2_texturemgr.h /sm/src/singleton.h \
+  /sm/src/refptr.h /sm/src/osassert.h /sm/src/types.h hwosps2/ps2_graphics.h \
+  /sm/src/algebra.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h /sm/src/osalloc.h \
+  /usr/local/sce/ee/include/libdma.h /sm/src/maxskinbones.h fogmgr.h light.h \
+  entity.h frame_info.h entflavor.h po.h visrep.h renderflav.h script_object.h \
+  vm_symbol_list.h vm_symbol.h vm_executable.h so_data_block.h fast_vector.h \
+  anim.h anim_flavor.h anim_flavors.h signals.h hwosps2/krender.h anim_ids.h \
+  bone.h link_interface.h entity_interface.h entity_signals.h hwaudio.h \
+  hwosps2/ps2_audio.h hwosps2/gas_iop.h vm_stack.h wds.h generator.h mobject.h \
+  conglom.h entity_anim.h po_anim.h linear_anim.h signal_anim.h rect.h camera.h \
+  mic.h scene_anim.h path.h capsule.h colgeom.h physics.h render_data.h terrain.h \
+  pmesh.h vert.h wedge.h meshrefs.h face.h faceflags.h material.h map_e.h cface.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h sphere.h \
+  hyperplane.h portal.h region.h hwosps2/krender.h box_trigger_interface.h \
+  convex_box.h crawl_box.h msgboard.h app.h global_signals.h hwmovieplayer.h \
+  hwosps2/ps2_movieplayer.h vm_thread.h trigger.h trigger_signals.h localize.h \
+  element.h debug_render.h text_font.h osdevopts.h hwosps2/ps2_devopts.h \
+  /sm/src/devoptflags.h /sm/src/devoptstrs.h /sm/src/devoptints.h collide.h \
+  time_interface.h ai_interface.h ai_locomotion.h ai_polypath.h \
+  ai_polypath_heap.h ai_polypath_cell.h ../sgi_stl/algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h damage_interface.h \
+  attribute_template.h ai_threat.h profiler.h console.h widget.h aggvertbuf.h \
+  matfac.h keyboard.h script_lib_anim.cpp script_lib_anim.h file_finder.h \
+  script_lib_beam.cpp script_lib_beam.h beam.h beam_signals.h \
+  script_lib_vector3d.h entity_maker.h script_lib_entity.cpp \
+  script_lib_signal.h script_lib_sound_inst.h script_lib_sound_stream.h \
+  script_lib_item.h entityflags.h item.h item_signals.h physical_interface.h \
+  guidance_sys.h random.h sound_interface.h sound_group.h \
+  script_lib_entity2.cpp spiderman_common.h lightmgr.h \
+  script_lib_entity_widget.cpp script_lib_entity_widget.h widget_entity.h \
+  script_lib_gun.cpp script_lib_gun.h gun.h handheld_item.h simple_classes.h \
+  script_lib_item.cpp thrown_item.h grenade_signals.h script_lib_scanner.cpp \
+  script_lib_scanner.h scanner.h scanner_signals.h script_lib_scene_anim.cpp \
+  script_lib_scene_anim.h script_lib_signal.cpp script_lib_sound_inst.cpp \
+  script_lib_sound_stream.cpp script_lib_switch.cpp script_lib_switch.h \
+  switch_obj.h switch_obj_signals.h script_lib_trigger.cpp \
+  script_lib_trigger.h script_lib_vector3d.cpp script_lib_widget.cpp \
+  script_lib_widget.h widget_script.h interface.h script_lib_controller.cpp \
+  script_lib_controller.h script_controller_signals.h script_lib_mfg.cpp \
+  script_lib_mfg.h script_mfg_signals.h script_lib_list.cpp script_lib_list.h \
+  script_access.cpp script_access.h script_register.cpp script_register.h
+files_spiderman.o: files_spiderman.cpp spidey_consolecmds.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h console.h ostimer.h hwosps2/ps2_timer.h /sm/src/hwmath.h \
+  /usr/local/sce/ee/include/libpc.h visrep.h color.h chunkfile.h po.h algebra.h \
+  renderflav.h widget.h hwrasterize.h hwosps2/ps2_rasterize.h \
+  /sm/src/txtcoord.h /sm/src/meshrefs.h /sm/src/color.h \
+  hwosps2/ps2_texturemgr.h /sm/src/singleton.h /sm/src/refptr.h \
+  /sm/src/osassert.h /sm/src/types.h hwosps2/ps2_graphics.h /sm/src/algebra.h \
+  hwosps2/krender.h /sm/src/pstring.h /usr/local/sce/ee/include/libgraph.h \
+  /usr/local/sce/ee/include/eeregs.h /usr/local/sce/ee/include/eekernel.h \
+  /usr/local/sce/ee/include/eetypes.h /usr/local/sce/ee/include/eestruct.h \
+  /sm/src/osalloc.h /usr/local/sce/ee/include/libdma.h \
+  /sm/src/maxskinbones.h rect.h osdevopts.h hwosps2/ps2_devopts.h \
+  /sm/src/devoptflags.h /sm/src/devoptstrs.h /sm/src/devoptints.h entity.h \
+  frame_info.h entflavor.h script_object.h vm_symbol_list.h vm_symbol.h \
+  vm_executable.h script_library_class.h so_data_block.h fast_vector.h anim.h \
+  anim_flavor.h anim_flavors.h signals.h hwosps2/krender.h anim_ids.h bone.h \
+  link_interface.h entity_interface.h entity_signals.h aggvertbuf.h material.h \
+  map_e.h matfac.h keyboard.h inputmgr.h consoleVars.h consoleCmds.h \
+  spidey_consolecmds.h marker.h entity_maker.h path.h file_finder.h fogmgr.h \
+  lightmgr.h sphere.h light.h sound_interface.h sound_group.h random.h hwaudio.h \
+  hwosps2/ps2_audio.h hwosps2/gas_iop.h damage_interface.h \
+  attribute_template.h game.h constants.h game_info_vars.h item.h beam.h \
+  beam_signals.h item_signals.h terrain.h pmesh.h vert.h wedge.h meshrefs.h \
+  face.h faceflags.h cface.h capsule.h colgeom.h physics.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h wds.h generator.h \
+  mobject.h conglom.h entity_anim.h po_anim.h linear_anim.h signal_anim.h \
+  camera.h mic.h scene_anim.h render_data.h box_trigger_interface.h bound.h \
+  convex_box.h crawl_box.h hyperplane.h hull.h plane.h portal.h region.h \
+  hwosps2/krender.h app.h global_signals.h scanner.h scanner_signals.h \
+  collide.h entityflags.h geomgr.h projconst.h osfile.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algorithm \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h spidey_consolevars.cpp \
+  spidey_consolevars.h interface.h ai_interface.h ai_locomotion.h \
+  ai_polypath.h ai_polypath_heap.h ai_polypath_cell.h ../sgi_stl/algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  /usr/local/sce/ee/gcc/include/g++-2/tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_numeric.h ../sgi_stl/heap.h \
+  ../sgi_stl/stl_heap.h ai_constants.h ai_cue.h ai_threat.h game_info.h \
+  spiderman_controller.h controller.h spiderman_common.h spiderman_anims.h \
+  spiderman_anims_mac.h spiderman_sounds.h spiderman_sounds_mac.h \
+  spiderman_anims.cpp spiderman_sounds.cpp spiderman_controller_logic.cpp \
+  spiderman_camera.h spiderman_web.h thrown_item.h handheld_item.h \
+  simple_classes.h grenade_signals.h physical_interface.h guidance_sys.h \
+  spiderman_controller.cpp blendmodes.h commands.h mouse.h joystick.h \
+  switch_obj.h switch_obj_signals.h manip_obj.h debug_render.h script_access.h \
+  spiderman_camera.cpp spiderman_controller_physics.cpp spiderman_common.cpp \
+  spiderman_script_lib.cpp script_lib_entity.h vm_stack.h vm_thread.h \
+  spiderman_web.cpp polytube.h b_spline.h spiderman_ai_goals.cpp \
+  spiderman_ai_goals.h ai_goals.h ai_senses.h animation_interface.h \
+  ai_actions.h gun.h profiler.h
+files_vsim.o: files_vsim.cpp pstring.cpp global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  types.h project.h /usr/local/sce/ee/gcc/ee/include/stdlib.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h archalloc.h stl_adapter.h \
+  warnlvl.h osassert.h /usr/local/sce/ee/gcc/ee/include/assert.h oserrmsg.h \
+  hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h /sm/src/hwmath.h \
+  /sm/src/hwosps2/ps2_math.h /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/include/libvu0.h /usr/local/sce/ee/include/eetypes.h \
+  /sm/src/usefulmath.h /sm/src/types.h /sm/src/chunkfile.h /sm/src/osfile.h \
+  /sm/src/hwosps2/ps2_file.h /sm/src/stringx.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/string.h /sm/src/textfile.h \
+  /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h /sm/src/filespec.h \
+  /sm/src/users.h /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc errorcontext.h \
+  singleton.h graph.h /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h instance.h osalloc.h \
+  hwosps2/ps2_alloc.h pstring.h console.cpp console.h ostimer.h \
+  hwosps2/ps2_timer.h /sm/src/hwmath.h /usr/local/sce/ee/include/libpc.h \
+  visrep.h color.h chunkfile.h po.h algebra.h renderflav.h widget.h hwrasterize.h \
+  hwosps2/ps2_rasterize.h /sm/src/txtcoord.h /sm/src/meshrefs.h \
+  /sm/src/color.h hwosps2/ps2_texturemgr.h /sm/src/singleton.h \
+  /sm/src/refptr.h /sm/src/osassert.h /sm/src/types.h hwosps2/ps2_graphics.h \
+  /sm/src/algebra.h hwosps2/krender.h /sm/src/pstring.h \
+  /usr/local/sce/ee/include/libgraph.h /usr/local/sce/ee/include/eeregs.h \
+  /usr/local/sce/ee/include/eekernel.h /usr/local/sce/ee/include/eetypes.h \
+  /usr/local/sce/ee/include/eestruct.h /sm/src/osalloc.h \
+  /usr/local/sce/ee/include/libdma.h /sm/src/maxskinbones.h rect.h \
+  osdevopts.h hwosps2/ps2_devopts.h /sm/src/devoptflags.h \
+  /sm/src/devoptstrs.h /sm/src/devoptints.h entity.h frame_info.h entflavor.h \
+  script_object.h vm_symbol_list.h vm_symbol.h vm_executable.h \
+  script_library_class.h so_data_block.h fast_vector.h anim.h anim_flavor.h \
+  anim_flavors.h signals.h hwosps2/krender.h anim_ids.h bone.h link_interface.h \
+  entity_interface.h entity_signals.h aggvertbuf.h material.h map_e.h matfac.h \
+  keyboard.h inputmgr.h consoleCmds.h consoleVars.h consoleCmds.cpp \
+  consoleVars.cpp chunkfile.cpp filespec.cpp filespec.h textfile.cpp osfile.h \
+  textfile.h aggvertbuf.cpp profiler.h bitplane.cpp bitplane.h color.cpp \
+  fogmgr.cpp fogmgr.h geomgr.h hull.h plane.h projconst.h frame_info.cpp \
+  material.cpp file_finder.h blendmodes.h \
+  /usr/local/sce/ee/gcc/include/g++-2/algorithm \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tempbuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algo.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_heap.h text_font.cpp text_font.h \
+  vertwork.h forceflags.h widget.cpp app.h global_signals.h game.h constants.h \
+  game_info_vars.h camera.h mic.h iri.h pmesh.h vert.h wedge.h meshrefs.h face.h \
+  faceflags.h commands.h localize.h entityflags.h conglom.h entity_maker.h \
+  path.h widget_entity.h /usr/local/sce/ee/gcc/include/g++-2/cstdarg \
+  osassert.cpp inputmgr.cpp algebra.cpp geometry.cpp geometry.h hull.cpp \
+  sphere.h plane.cpp po.cpp hwxform.h hwosps2/ps2_xform.h /sm/src/po.h \
+  debugutil.cpp errorcontext.cpp eventmgr.cpp eventmgr.h path.cpp beam.h \
+  beam_signals.h wds.h generator.h mobject.h entity_anim.h po_anim.h \
+  linear_anim.h signal_anim.h scene_anim.h capsule.h colgeom.h physics.h \
+  render_data.h terrain.h cface.h light.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stack \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_deque.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_stack.h colmesh.h bound.h \
+  hyperplane.h portal.h region.h hwosps2/krender.h box_trigger_interface.h \
+  convex_box.h crawl_box.h collide.h debug_render.h profiler.cpp signal.cpp \
+  vm_thread.h vm_stack.h singleton.cpp stash.cpp stash.h stash_support.h \
+  avltree.h stash_support.cpp stringx.cpp b_spline.cpp b_spline.h opcodes.cpp \
+  opcodes.h opcode_t opcode_arg_t script_library_class.cpp script_object.cpp \
+  sl_debugger.h so_data_block.cpp /usr/local/sce/ee/gcc/include/g++-2/memory \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_raw_storage_iter.h \
+  vm_executable.cpp vm_stack.cpp vm_symbol.cpp vm_thread.cpp
+hwosps2/krender.o: hwosps2/krender.cpp /usr/local/sce/ee/include/libdma.h \
+  /usr/local/sce/ee/include/eeregs.h /usr/local/sce/ee/include/eekernel.h \
+  /usr/local/sce/ee/include/eetypes.h /usr/local/sce/ee/include/libvu0.h \
+  /usr/local/sce/ee/include/libsn.h /usr/local/sce/ee/include/libpkt.h \
+  /usr/local/sce/ee/include/libdmapk.h /usr/local/sce/ee/include/libvifpk.h \
+  /usr/local/sce/ee/include/eestruct.h /usr/local/sce/ee/include/libgifpk.h \
+  /usr/local/sce/ee/include/sifdev.h /usr/local/sce/ee/include/sifrpc.h \
+  /usr/local/sce/ee/gcc/ee/include/math.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/reent.h \
+  /usr/local/sce/ee/gcc/ee/include/_ansi.h \
+  /usr/local/sce/ee/gcc/ee/include/sys/config.h \
+  /usr/local/sce/ee/gcc/ee/include/time.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/time.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stddef.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/types.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/ieeefp.h \
+  /usr/local/sce/ee/gcc/ee/include/machine/fastmath.h \
+  /usr/local/sce/ee/gcc/ee/include/malloc.h \
+  /usr/local/sce/ee/include/devfont.h /usr/local/sce/ee/include/libgraph.h \
+  /usr/local/sce/ee/gcc/ee/include/stdio.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/stdarg.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/va-mips.h \
+  /usr/local/sce/ee/gcc/ee/include/stdlib.h /sm/src/global.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/limits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/float.h \
+  /sm/src/types.h /sm/src/project.h /sm/src/archalloc.h /sm/src/stl_adapter.h \
+  /sm/src/warnlvl.h /sm/src/osassert.h \
+  /usr/local/sce/ee/gcc/ee/include/assert.h /sm/src/oserrmsg.h \
+  /sm/src/hwosps2/ps2_errmsg.h /sm/src/debug.h /sm/src/algebra.h \
+  /sm/src/hwmath.h /sm/src/hwosps2/ps2_math.h /sm/src/usefulmath.h \
+  /sm/src/chunkfile.h /sm/src/osfile.h /sm/src/hwosps2/ps2_file.h \
+  /sm/src/stringx.h /usr/local/sce/ee/gcc/ee/include/string.h \
+  /sm/src/textfile.h /sm/src/stash.h /sm/src/pstring.h /sm/src/avltree.h \
+  /sm/src/filespec.h /sm/src/users.h \
+  /usr/local/sce/ee/gcc/include/g++-2/vector \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_algobase.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_config.h \
+  /usr/local/sce/ee/gcc/ee/include/_G_config.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_relops.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_pair.h \
+  /usr/local/sce/ee/gcc/include/g++-2/type_traits.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new.h \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/new \
+  c:/usr/local/sce/ee/gcc/lib/gcc-lib/ee/2.9-ee-991111/include/exception \
+  /usr/local/sce/ee/gcc/include/g++-2/iostream.h \
+  /usr/local/sce/ee/gcc/include/g++-2/streambuf.h \
+  /usr/local/sce/ee/gcc/include/g++-2/libio.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_iterator.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_construct.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_uninitialized.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_vector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_bvector.h \
+  /usr/local/sce/ee/gcc/include/g++-2/list \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_list.h \
+  /usr/local/sce/ee/gcc/include/g++-2/string \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstddef \
+  /usr/local/sce/ee/gcc/include/g++-2/std/straits.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cctype \
+  /usr/local/sce/ee/gcc/ee/include/ctype.h \
+  /usr/local/sce/ee/gcc/include/g++-2/cstring \
+  /usr/local/sce/ee/gcc/include/g++-2/alloc.h \
+  /usr/local/sce/ee/gcc/include/g++-2/iterator \
+  /usr/local/sce/ee/gcc/include/g++-2/cassert \
+  /usr/local/sce/ee/gcc/include/g++-2/std/bastring.cc \
+  /sm/src/errorcontext.h /sm/src/singleton.h /sm/src/graph.h \
+  /usr/local/sce/ee/gcc/include/g++-2/map \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_tree.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_function.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_map.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multimap.h \
+  /usr/local/sce/ee/gcc/include/g++-2/set \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_set.h \
+  /usr/local/sce/ee/gcc/include/g++-2/stl_multiset.h /sm/src/instance.h \
+  /sm/src/osalloc.h /sm/src/hwosps2/ps2_alloc.h /sm/src/osassert.h \
+  /sm/src/osfile.h /sm/src/stash.h /sm/src/profiler.h /sm/src/ostimer.h \
+  /sm/src/hwosps2/ps2_timer.h /sm/src/hwmath.h \
+  /usr/local/sce/ee/include/libpc.h /sm/src/color.h /sm/src/pstring.h \
+  hwosps2/krender.h hwosps2/dmadebug.h hwosps2/sntty.h

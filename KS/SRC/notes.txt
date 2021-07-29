@@ -1,0 +1,39 @@
+Profiling:
+extern profiler_timer proftimer_advance;
+  proftimer_advance.start();
+  proftimer_advance.stop();
+
+Singletons:
+geometry_manager::inst();
+
+Structure:
+
+    App.cpp
+        void app::tick()
+        the_game->frame_advance();
+                hw_rasta::inst()->begin_scene();
+                the_game->render();
+    Game.cpp
+        frame_advance
+
+    wds.cpp
+        world_dynamics_system::frame_advance()
+
+Pad:
+  inputmgr->register_control( game_control(PAD_GRAB, CT_BOOLEAN) );
+  inputmgr->map_control( PAD_GRAB, JOYSTICK_DEVICE, JOY_PS2_BTNO );
+
+KS:
+
+void kellyslater_controller::frame_advance(time_value_t t)
+{
+  get_owner()->physical_ifc()->disable();
+
+	process_controls();
+
+  update(t);
+
+	physicsSys.Update(t);
+
+  my_board_controller.Update(t);
+}

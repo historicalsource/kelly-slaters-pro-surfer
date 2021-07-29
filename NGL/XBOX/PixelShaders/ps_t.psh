@@ -1,0 +1,7 @@
+#include "ngl_PixelShadersMacro.h"
+
+tex t0  ; base map
+
+mul r0, t0, v0
+
+XFC_NO_SPECULAR

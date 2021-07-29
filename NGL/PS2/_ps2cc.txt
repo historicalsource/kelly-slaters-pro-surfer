@@ -1,0 +1,19 @@
+-fno-exceptions
+-fdevstudio
+-g
+-G0
+-mvu0-use-vf0-vf31
+-DNGL_FINAL
+-DSN_TARGET_PS2
+-DPROJECT_KELLYSLATER
+-DNGL_DISABLE_MIPMAPS
+-w
+-O2
+-I.
+-I../common
+-I"C:\Program Files\Microsoft Xbox SDK\Include"
+-IC:\mssdk\include
+-IC:\usr\local\sce\common\include
+-IC:\usr\local\sce\ee\include
+-c C:\NGL\ps2\ngl_ps2.cpp
+-o PS2_EE_Bootable\ngl_ps2.obj

@@ -1,0 +1,1 @@
+ /c /nologo /FD /W0 /FI PS2_in_VC.h /I . /I C:\usr\local\sce\ee\include /I C:\usr\local\sce\ee\gcc\ee\include /I C:\usr\local\sce\ee\gcc\lib\gcc-lib\ee\2.9-ee-991111\include /I ../common /D NGL_FINAL /D SN_TARGET_PS2 /D PROJECT_KELLYSLATER /D NGL_DISABLE_MIPMAPS

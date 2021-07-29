@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ngl_ps2_vc7", "ngl_ps2_vc7.vcproj", "{F862D0D1-6219-4F35-A5A5-29902A5872CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F862D0D1-6219-4F35-A5A5-29902A5872CC}.Debug.ActiveCfg = Debug|Win32
+		{F862D0D1-6219-4F35-A5A5-29902A5872CC}.Debug.Build.0 = Debug|Win32
+		{F862D0D1-6219-4F35-A5A5-29902A5872CC}.Release.ActiveCfg = Release|Win32
+		{F862D0D1-6219-4F35-A5A5-29902A5872CC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,94 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "KellySlater"=.\KellySlater.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ks/src", JQFAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ngl_xbox
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nsl_xbox
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nvl_xbox
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ngl_xbox"=..\..\NGL\XBOX\ngl_xbox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NGL/XBOX", KCCBAAAA
+    ..\..\ngl\xbox
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nsl_xbox"=..\..\NSL\XBOX\nsl_xbox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NSL/xbox", HBBAAAAA
+    ..\..\NSL\XBOX
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nvl_xbox"=..\..\nvl\XBOX\nvl_xbox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NVL/xbox", SHLAAAAA
+    ..\..\nvl\xbox
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/NSL/XBOX", YKPEAAAA
+    ..\..\NSL\XBOX
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

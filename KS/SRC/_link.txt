@@ -1,0 +1,66 @@
+-o ..\bin\KellySlaterPS2_bootable.elf
+-Wl,-Map,..\bin\KellySlaterPS2_bootable.map
+-L ..\..\ngl\ps2\PS2_EE_Bootable
+-L zlib\PS2_EE_Bootable
+-L ..\..\nsl\ps2\PS2_EE_Bootable
+-L ..\..\nvl\ps2\ps2_EE_Bootable
+-L "C:\Program Files\Microsoft Xbox SDK\Lib"
+-L C:\mssdk\lib
+-L C:\usr\local\sce\ee\lib
+.\PS2_EE_Bootable\files_ai.obj
+.\PS2_EE_Bootable\files_anim.obj
+.\PS2_EE_Bootable\files_entity.obj
+.\PS2_EE_Bootable\files_frontend.obj
+.\PS2_EE_Bootable\files_hwosps2.obj
+.\PS2_EE_Bootable\files_kellyslater.obj
+.\PS2_EE_Bootable\files_misc1.obj
+.\PS2_EE_Bootable\files_misc2.obj
+.\PS2_EE_Bootable\files_misfits.obj
+.\PS2_EE_Bootable\files_script.obj
+.\PS2_EE_Bootable\files_vsim.obj
+.\PS2_EE_Bootable\files_wave.obj
+crt0.o
+..\..\nvl\ps2\ps2_EE_Bootable\nvl_ps2.lib
+C:\usr\local\sce\ee\lib\libsdr.a
+C:\usr\local\sce\ee\lib\libsdr.a
+..\..\nsl\ps2\PS2_EE_Bootable\nsl.lib
+C:\usr\local\sce\ee\lib\libmc.a
+C:\usr\local\sce\ee\lib\libmc.a
+zlib\PS2_EE_Bootable\libz_ps2.lib
+..\..\ngl\ps2\PS2_EE_Bootable\ngl_ps2.lib
+C:\usr\local\sce\ee\gcc\ee\lib\libstdc++.a
+C:\usr\local\sce\ee\lib\libsn.a
+C:\usr\local\sce\ee\lib\libsn.a
+C:\usr\local\sce\ee\lib\libgraph.a
+C:\usr\local\sce\ee\lib\libgraph.a
+C:\usr\local\sce\ee\lib\libdma.a
+C:\usr\local\sce\ee\lib\libdma.a
+C:\usr\local\sce\ee\lib\libdev.a
+C:\usr\local\sce\ee\lib\libdev.a
+C:\usr\local\sce\ee\lib\libpad.a
+C:\usr\local\sce\ee\lib\libpad.a
+C:\usr\local\sce\ee\lib\libpkt.a
+C:\usr\local\sce\ee\lib\libpkt.a
+C:\usr\local\sce\ee\lib\libvu0.a
+C:\usr\local\sce\ee\lib\libvu0.a
+C:\usr\local\sce\ee\lib\libcdvd.a
+C:\usr\local\sce\ee\lib\libcdvd.a
+C:\usr\local\sce\ee\lib\libmpeg.a
+C:\usr\local\sce\ee\lib\libmpeg.a
+C:\usr\local\sce\ee\lib\libipu.a
+C:\usr\local\sce\ee\lib\libipu.a
+C:\usr\local\sce\ee\lib\libpc.a
+C:\usr\local\sce\ee\lib\libpc.a
+C:\usr\local\sce\ee\lib\sntty.lib
+C:\usr\local\sce\ee\lib\sntty.lib
+dmadebug.a
+C:\usr\local\sce\ee\lib\libscf.a
+C:\usr\local\sce\ee\lib\libscf.a
+\NGL\ps2\PS2_EE_Bootable\ngl_ps2.lib
+\NVL\ps2\PS2_EE_Bootable\nvl_ps2.lib
+\NSL\PS2\PS2_EE_Bootable\nsl.lib
+-lm
+-T .\app.cmd
+-nostartfiles
+-strip-unused
+-collect2

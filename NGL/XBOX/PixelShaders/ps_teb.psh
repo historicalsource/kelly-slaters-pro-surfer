@@ -1,0 +1,38 @@
+; Pixel shader - Bumped surface reflections.
+; Transforms the bumpmap into the local coordinate system
+; by the basis vectors supplied from the vertex shader.
+; Then uses the normal and eye vector to generate a 
+; reflection vector which looks into a cubemap.
+ 
+#include "ngl_PixelShadersMacro.h"
+
+; Define t0 as a standard 3-vector from bumpmap
+; The format is A = ignored, B = 8-bit x in [-1,1], 
+; G = 8-bit y in [-1,1], R = 8-bit z in [-1,1]
+tex t0			
+
+; Perform matrix multiply to get a local normal bump.  Then
+; reflect the eye vector through the normal and sample from 
+; a cubic environment map.
+; Modifier _bx2 must be used to convert input vector into correct range.
+; 0x1 --> -1, 0x80 - 0x0, 0xff --> +1
+texm3x3pad t1, t0_bx2
+texm3x3pad t2, t0_bx2		
+texm3x3vspec t3, t0_bx2
+
+; result goes in output color
+;mov r0, t3		; ignore vertex color		
+;mul r0, t3, v0	; modulate by vertex color
+;add r0, t3, v0	; add vertex color
+;xmma discard.rgb, discard.rgb, r0.rgb, t3.rgb, BUMPMAP_ENV_BM_CONST, v0.rgb, BUMPMAP_VERT_BM_CONST
+;+mov r0.a, v0.a
+
+; use specular alpha to determine reflection map strength
+xmma discard.rgb, discard.rgb, r0.rgb, t3, 1-v1.a, v0, 1-zero
++mov r0.a, v0.a
+
+; Uncomment when basic effect is already working
+;xmma discard.rgb, discard.rgb, r0.rgb, t0.rgb, 1-zero, t2.rgb, 1-zero
+;+xmma discard.a, discard.a, r0.a, 1-zero.a, 1-zero, zero, zero
+
+;XFC_NO_SPECULAR
